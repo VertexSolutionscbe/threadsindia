@@ -277,14 +277,14 @@
                                     <li><a href="Shade-No-Master.aspx">Shade No.Master</a></li>
                                     <li><a href="Shade-Master.aspx">Shade Master</a></li>
                                     <li><a href="Item-Master.aspx">Item Master</a></li>
-                                    <li><a href="#">Party Master</a></li>
-                                    <li><a href="#">Partywise Rate</a></li>
-                                    <li><a href="#">Clone TypeMaster</a></li>
+                                    <li><a href="Party-Master.aspx">Party Master</a></li>
+                                    <li><a href="Party-Wise Rate.aspx">Partywise Rate</a></li>
+                                    <li><a href="Cone-Type-Master.aspx">Cone TypeMaster</a></li>
                                      <li>
                                 <a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i> &nbsp;&nbsp; <span class="nav-label">Tax Heads</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="#">Addition Deduction</a></li>
-                                    <li><a href="#">Addition Deduction Type</a></li>
+                                    <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
+                                    <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
                                   
                                 </ul>
                             </li>

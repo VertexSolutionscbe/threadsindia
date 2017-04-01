@@ -27,7 +27,9 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+       
     </head>
+    
     <form id="Form1" runat="server">
     <body>
         <!-- Static navbar -->
@@ -278,14 +280,14 @@
                                     <li><a href="Shade-No-Master.aspx">Shade No.Master</a></li>
                                     <li><a href="Shade-Master.aspx">Shade Master</a></li>
                                     <li><a href="Item-Master.aspx">Item Master</a></li>
-                                    <li><a href="#">Party Master</a></li>
-                                    <li><a href="#">Partywise Rate</a></li>
-                                    <li><a href="#">Clone TypeMaster</a></li>
+                                    <li><a href="Party-Master.aspx">Party Master</a></li>
+                                    <li><a href="Party-Wise Rate.aspx">Partywise Rate</a></li>
+                                    <li><a href="Cone-Type-Master.aspx">Cone Type Master</a></li>
                                      <li>
                                 <a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i> &nbsp;&nbsp; <span class="nav-label">Tax Heads</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="#">Addition Deduction</a></li>
-                                    <li><a href="#">Addition Deduction Type</a></li>
+                                    <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
+                                    <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
                                   
                                 </ul>
                             </li>
@@ -526,7 +528,53 @@
                                 <div class="panel-body">
                                      <div class="row">
                                      <div class="col-sm-12">
-                                
+                            
+
+<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+
+<asp:TabContainer ID="TabContainer1" runat="server" Height="250px" Width="100%">
+
+<asp:TabPanel ID ="Units" runat="server" HeaderText="Units">
+
+
+<ContentTemplate>
+
+
+</ContentTemplate>
+</asp:TabPanel>
+<asp:TabPanel ID="Locations" runat="server" HeaderText="Locations"> 
+
+<ContentTemplate>
+
+</ContentTemplate>
+
+
+
+</asp:TabPanel>
+
+<asp:TabPanel ID ="Convertion" runat="server" HeaderText="Coversion">
+
+
+<ContentTemplate>
+
+
+</ContentTemplate>
+
+</asp:TabPanel>
+<asp:TabPanel ID ="Others" runat="server" HeaderText="Others">
+
+
+<ContentTemplate>
+
+
+</ContentTemplate>
+
+</asp:TabPanel>
+</asp:TabContainer>
+
+
+
 
                                      </div>
                                </div></div>

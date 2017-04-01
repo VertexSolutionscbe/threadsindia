@@ -1265,3 +1265,15 @@ Pricing tables
     font-weight:600;
     margin-left:20px;
 }
+
+
+.ajax__tab_xp .ajax__tab_header .ajax__tab_tab 
+{
+    font-size:15px;
+   
+    font-weight:600;
+             height:80px;
+             width:auto;
+             
+           
+}
