@@ -291,14 +291,27 @@
                             </li>
 
                             <li>
-                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                                                <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="form_basic.html">Basic form</a></li>
-                                    <li><a href="form_advanced.html">Advanced form</a></li>
-                                    <li><a href="form_wizard.html">Wizard form</a></li>
-                                    <li><a href="form_file_upload.html">File upload</a></li>
-                                    <li><a href="form_text_editor.html">Text editor</a></li>
-                                    <li><a href="form_inline_edit.html">Inline edit</a></li>
+                                                          <li>
+                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i> <span class="nav-label">Transactions</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Pur-Price-Cnfm.aspx">Purchase Price conformation</a></li>
+                                    <li><a href="Order-Indent-Precot.aspx">Order Indent - Precot</a></li>
+                                    <li><a href="Purchase-Oreder-Other.aspx">Purchase Order - Other</a></li>
+                                    <li><a href="Goods-Received-Precot.aspx">Goods Received - Precot</a></li>
+                                    <li><a href="Goods-Received-Note-Other.aspx">Goods Received Note - Other </a></li>
+                                    <li><a href="#">Purchase Invoice</a></li>
+                                    <li><a href="#">Mismatched Invoice Closed</a></li>
+                                    <li><a href="#">Intent Short Close Entry</a></li>
+                                    <li><a href="#">Goods Return</a></li>
+                                    <li><a href="#">Mill-Urgent E-Mail</a></li>
+                                    <li><a href="#">Mill Pending XL Import</a></li>
+                                     <li><a href="#">Mill Indent Confirmation Entry</a></li>
+                                  
+
+                                </ul>
+                            </li>
                                 </ul>
                             </li>
                             <li>
