@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Dimensions.aspx.cs" Inherits="Dimensions" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Mill-Indent-Conformation-Entry.aspx.cs" Inherits="Mill_Indent_Confirmation_Entry" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta charset="utf-8">
+ <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -25,7 +25,9 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+       
     </head>
+    
     <form id="Form1" runat="server">
     <body>
         <!-- Static navbar -->
@@ -245,7 +247,7 @@
                                     
                                 </ul>
                             </li>
-                            <li  class="active">
+                            <li>
                                 <a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i> <span class="nav-label">Admin Setup </span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                      <li>
@@ -290,8 +292,8 @@
                                 </ul>
                             </li>
 
-                            <li>
-                                               <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
+                            <li  class="active">
+                                            <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                                           <li>
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i> <span class="nav-label">Transactions</span><span class="fa arrow"></span></a>
@@ -301,7 +303,7 @@
                                     <li><a href="Purchase-Oreder-Other.aspx">Purchase Order - Other</a></li>
                                     <li><a href="Goods-Received-Precot.aspx">Goods Received - Precot</a></li>
                                     <li><a href="Goods-Received-Note-Other.aspx">Goods Received Note - Other </a></li>
-                              <li><a href="Purchase-Invoice.aspx">Purchase Invoice</a></li>
+                        <li><a href="Purchase-Invoice.aspx">Purchase Invoice</a></li>
                                     <li><a href="Mismatched-Invoice-Close.aspx">Mismatched Invoice Closed</a></li>
                                     <li><a href="Indenet-ShortClose-Entry.aspx">Intent Short Close Entry</a></li>
                                     <li><a href="Goods-Return.aspx">Goods Return</a></li>
@@ -428,7 +430,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">Dimensions <small>Details</small></h1>
+                                <h1 class="gnrl">Mill Indent Conformation <small>Entry</small></h1>
                                
                             </div>
                         </div>
@@ -439,7 +441,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Dimensions</h4>
+                                    <h4 class="panel-title">Mill Indent Conformation Entry</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
@@ -449,10 +451,10 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-2 col-md-2 control-label"><asp:CheckBox ID="CheckBox2" runat="server"></asp:CheckBox>  <asp:Label ID="Label1" runat="server" Text="Dim 1 "></asp:Label></div>
-                                                            <div class="col-lg-10 col-md-9">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Doc Id"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
                                                            
-                                                              <asp:TextBox ID="TextBox1" runat="server" Class="txt"></asp:TextBox>
+                                                             <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
@@ -460,118 +462,172 @@
                                   
                                   
                                  </div>
-                                    <div class="col-sm-6">
-                                                                        <div class="form-group">
-                                                            <div class="col-lg-2 col-md2 control-label"> <asp:Label ID="Label4" runat="server" Text="Code "></asp:Label></div>
-                                                            <div class="col-lg-10 col-md-9">
+
+                                                                   <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label3" runat="server" Text="Doc Date"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
                                                            
-                                                              <asp:TextBox ID="TextBox2" runat="server" Class="txt"></asp:TextBox>
+                                                             <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
                                                         </div>
+                                  
+                                  
                                  </div>
+                                  
+                                 </div>
+                                 <br />                      <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Order Half"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                             <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+
+                                  
+                                  
+                                 </div>
+                                                 
                               
                                 </div>
-                                <br />
+                          
+                             
+                              
+                                   <br />
+                                 
+                         </div>
+
+                            
+                                </div>
+                            </div><!-- End .panel --> 
+                
+
+              
+                           <div class="row">
+                        <div class="col-md-12">
+                             <div class="panel panel-default recent-activites">
+                                <!-- Start .panel -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Mill Indent Conformation Entry</h4>
+                                    <div class="panel-actions">
+                                        <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+                                        <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                     <div class="row">
+                                     <div class="col-sm-12">
+                            
+
+
+
+
+
+
+                                     </div>
+                               </div></div>
+                         </div>
+                   
+                                </div>
+                            </div><!-- End .panel --> 
+
+                               <div class="row">
+                        <div class="col-md-12">
+                             <div class="panel panel-default recent-activites">
+                                <!-- Start .panel -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Mill Indent Conformation Entry</h4>
+                                    <div class="panel-actions">
+                                        <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+                                        <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                     <div class="row">
+                                     <div class="col-sm-12">
+                            
+
                                  <div class="row">
                                  <div class="col-sm-6">
-                                                                        <div class="form-group">
-                                                            <div class="col-lg-2 col-md-2 control-label"><asp:CheckBox ID="CheckBox3" runat="server"></asp:CheckBox>  <asp:Label ID="Label3" runat="server" Text="Dim 2 "></asp:Label></div>
-                                                            <div class="col-lg-10 col-md-9">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="Total Quantity"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
                                                            
-                                                              <asp:TextBox ID="TextBox3" runat="server" Class="txt"></asp:TextBox>
+                                                             <asp:TextBox ID="TextBox4" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
                                                         </div>
-                                 </div>
-                                    <div class="col-sm-6">
-                                                                        <div class="form-group">
-                                                            <div class="col-lg-2 col-md-2 control-label"> <asp:Label ID="Label2" runat="server" Text="Code "></asp:Label></div>
-                                                            <div class="col-lg-10 col-md-9">
-                                                           
-                                                              <asp:TextBox ID="TextBox4" runat="server" Class="txt"></asp:TextBox>
-                                                               
-                                                              
-                                                            </div>
-                                                        </div>
-                                 </div>
-                              
-                                 </div>
-                                 <br /><div class="row">
-                                 <div class="col-sm-6">
-                                      <div class="form-group">
-                                                            <div class="col-lg-2 col-md-2 control-label"><asp:CheckBox ID="CheckBox4" runat="server"></asp:CheckBox>  <asp:Label ID="Label5" runat="server" Text="Dim 3"></asp:Label></div>
-                                                            <div class="col-lg-10 col-md-9">
-                                                           
-                                                             <asp:TextBox ID="TextBox5" runat="server" Class="txt" TextMode="SingleLine"></asp:TextBox>
-                                                               
-                                                              
-                                                            </div>
-                                                        </div>
-                                 </div>
-                                                                  <div class="col-sm-6">
-                                     <div class="form-group">
-                                                            <div class="col-lg-2 col-md-2 control-label"><asp:Label ID="Label6" runat="server" Text="Code"></asp:Label></div>
-                                                            <div class="col-lg-10 col-md-9">
-                                                           
-                                                             <asp:TextBox ID="TextBox6" runat="server" Class="txt" TextMode="SingleLine"></asp:TextBox>
-                                                               
-                                                              
-                                                            </div>
-                                                        </div>
-                                                        </div>
+                                  
+                                  
                                  </div>
 
-                                        <br /><div class="row">
-                                 <div class="col-sm-6">
-                                      <div class="form-group">
-                                                            <div class="col-lg-2 col-md-2 control-label"><asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox>  <asp:Label ID="Label7" runat="server" Text="Dim 4"></asp:Label></div>
-                                                            <div class="col-lg-10 col-md-9">
+                                                                   <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Total Bags"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
                                                            
-                                                             <asp:TextBox ID="TextBox7" runat="server" Class="txt" TextMode="SingleLine"></asp:TextBox>
+                                                             <asp:TextBox ID="TextBox5" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
                                                         </div>
+                                  
+                                  
                                  </div>
-                                                                  <div class="col-sm-6">
-                                     <div class="form-group">
-                                                            <div class="col-lg-2 col-md-2 control-label"><asp:Label ID="Label8" runat="server" Text="Code"></asp:Label></div>
-                                                            <div class="col-lg-10 col-md-9">
+                                  
+                                 </div>
+                                 <br />                      <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label6" runat="server" Text="Narration"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
                                                            
-                                                             <asp:TextBox ID="TextBox8" runat="server" Class="txt" TextMode="SingleLine"></asp:TextBox>
+                                                             <asp:TextBox ID="TextBox6" runat="server" class="txt" TextMode="MultiLine"></asp:TextBox>
                                                                
                                                               
                                                             </div>
                                                         </div>
-                                                        </div>
+                                  
+                                  
                                  </div>
 
-                                    
-                                 <br /><div class="row">
+                                  
+                                  
+                                 </div>
+
+                                     <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
                                                             <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
-                                 </div><br />
+                                 </div>    <br />
+
+
+                                     </div>
+                               </div></div>
                          </div>
-<br />
-                            
+                   
                                 </div>
                             </div><!-- End .panel --> 
                         </div>
-                    </div>
-                      
-                                </div>
+             </div>
     
 
                       
                                 
-                </div> 
+          
           
         </section>
 
@@ -610,5 +666,4 @@
     </body>
     </form>
 </html>
-
 

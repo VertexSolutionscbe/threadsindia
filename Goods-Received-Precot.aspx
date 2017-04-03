@@ -303,17 +303,37 @@
                                     <li><a href="Purchase-Oreder-Other.aspx">Purchase Order - Other</a></li>
                                     <li><a href="Goods-Received-Precot.aspx">Goods Received - Precot</a></li>
                                     <li><a href="Goods-Received-Note-Other.aspx">Goods Received Note - Other </a></li>
-                                    <li><a href="#">Purchase Invoice</a></li>
-                                    <li><a href="#">Mismatched Invoice Closed</a></li>
-                                    <li><a href="#">Intent Short Close Entry</a></li>
-                                    <li><a href="#">Goods Return</a></li>
-                                    <li><a href="#">Mill-Urgent E-Mail</a></li>
-                                    <li><a href="#">Mill Pending XL Import</a></li>
-                                     <li><a href="#">Mill Indent Confirmation Entry</a></li>
+                               <li><a href="Purchase-Invoice.aspx">Purchase Invoice</a></li>
+                                    <li><a href="Mismatched-Invoice-Close.aspx">Mismatched Invoice Closed</a></li>
+                                    <li><a href="Indenet-ShortClose-Entry.aspx">Intent Short Close Entry</a></li>
+                                    <li><a href="Goods-Return.aspx">Goods Return</a></li>
+                                    <li><a href="Mill-Urgent-E-mail.aspx">Mill-Urgent E-Mail</a></li>
+                                    <li><a href="Mill-Pending-XL-Import.aspx">Mill Pending XL Import</a></li>
+                                     <li><a href="Mill-Indent-Conformation-Entry.aspx">Mill Indent Confirmation Entry</a></li>
                                   
 
                                 </ul>
                             </li>
+                                            <li>
+                                <a href="#"><i class="fa fa-files-o"></i>  <span class="nav-label">Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Order-Indent-Report.aspx">Order Indent Report</a></li>
+                                    <li><a href="Stock-and-Mill-Indent-Pending.aspx">Stock and Mill Indent Pending</a></li>
+                                    <li><a href="Mill-Indent-Pending-Halfwise-Report.aspx">Mill Indent Pending Halfwise</a></li>
+                                    <li><a href="Mill-Indent-Pending-Overall.aspx">Mill Indent Pending Overal</a></li>
+                                    <li><a href="Purchase-Report.aspx">Purchase Report</a></li>
+                                    <li><a href="Purchase-Registor-PartyWise-Report.aspx">Purchase Registor Partywise Report</a></li>
+                                     <li><a href="Goods-Received-Registor-Precot.aspx">Goods Received Registor-Precot</a></li>
+                                     <li><a href="Purchase-Registor-Report.aspx">Purchase Registor</a></li>
+                                     <li><a href="Mismatch-Mill-Pending-Report.aspx">Mismatch Mill Pending</a></li>
+                                     <li><a href="Goods-Received-Summary-Report.aspx">Goods Received Summary</a></li>
+                                     <li><a href="Mismatch-Mill-Indent-Report.aspx">Mismatch Mill Indent Report</a></li>
+                                     <li><a href="Mill-Urgent-Pending-and-Nill-Stock-List.aspx">Mill Urgent Pending and Nill Stk List</a></li>
+                                     <li><a href="Excess-Goods-Arrival-Report.aspx">Excess Goods Arrival Report</a></li>
+
+                                </ul>
+                            </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
