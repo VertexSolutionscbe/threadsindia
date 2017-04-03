@@ -276,14 +276,14 @@
                                     <li><a href="Shade-No-Master.aspx">Shade No.Master</a></li>
                                     <li><a href="Shade-Master.aspx">Shade Master</a></li>
                                     <li><a href="Item-Master.aspx">Item Master</a></li>
-                                    <li><a href="#">Party Master</a></li>
-                                    <li><a href="#">Partywise Rate</a></li>
-                                    <li><a href="#">Clone TypeMaster</a></li>
+                                    <li><a href="Party-Master.aspx">Party Master</a></li>
+                                    <li><a href="Party-Wise Rate.aspx">Partywise Rate</a></li>
+                                    <li><a href="Cone-Type-Master.aspx">Cone Type Master</a></li>
                                      <li>
                                 <a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i> &nbsp;&nbsp; <span class="nav-label">Tax Heads</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="#">Addition Deduction</a></li>
-                                    <li><a href="#">Addition Deduction Type</a></li>
+                                    <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
+                                    <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
                                   
                                 </ul>
                             </li>
@@ -291,14 +291,46 @@
                             </li>
 
                             <li>
-                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                                               <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="form_basic.html">Basic form</a></li>
-                                    <li><a href="form_advanced.html">Advanced form</a></li>
-                                    <li><a href="form_wizard.html">Wizard form</a></li>
-                                    <li><a href="form_file_upload.html">File upload</a></li>
-                                    <li><a href="form_text_editor.html">Text editor</a></li>
-                                    <li><a href="form_inline_edit.html">Inline edit</a></li>
+                                                          <li>
+                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i> <span class="nav-label">Transactions</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Pur-Price-Cnfm.aspx">Purchase Price conformation</a></li>
+                                    <li><a href="Order-Indent-Precot.aspx">Order Indent - Precot</a></li>
+                                    <li><a href="Purchase-Oreder-Other.aspx">Purchase Order - Other</a></li>
+                                    <li><a href="Goods-Received-Precot.aspx">Goods Received - Precot</a></li>
+                                    <li><a href="Goods-Received-Note-Other.aspx">Goods Received Note - Other </a></li>
+                              <li><a href="Purchase-Invoice.aspx">Purchase Invoice</a></li>
+                                    <li><a href="Mismatched-Invoice-Close.aspx">Mismatched Invoice Closed</a></li>
+                                    <li><a href="Indenet-ShortClose-Entry.aspx">Intent Short Close Entry</a></li>
+                                    <li><a href="Goods-Return.aspx">Goods Return</a></li>
+                                    <li><a href="Mill-Urgent-E-mail.aspx">Mill-Urgent E-Mail</a></li>
+                                    <li><a href="Mill-Pending-XL-Import.aspx">Mill Pending XL Import</a></li>
+                                     <li><a href="Mill-Indent-Conformation-Entry.aspx">Mill Indent Confirmation Entry</a></li>
+                                  
+
+                                </ul>
+                            </li>
+                                            <li>
+                                <a href="#"><i class="fa fa-files-o"></i>  <span class="nav-label">Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Order-Indent-Report.aspx">Order Indent Report</a></li>
+                                    <li><a href="Stock-and-Mill-Indent-Pending.aspx">Stock and Mill Indent Pending</a></li>
+                                    <li><a href="Mill-Indent-Pending-Halfwise-Report.aspx">Mill Indent Pending Halfwise</a></li>
+                                    <li><a href="Mill-Indent-Pending-Overall.aspx">Mill Indent Pending Overal</a></li>
+                                    <li><a href="Purchase-Report.aspx">Purchase Report</a></li>
+                                    <li><a href="Purchase-Registor-PartyWise-Report.aspx">Purchase Registor Partywise Report</a></li>
+                                     <li><a href="Goods-Received-Registor-Precot.aspx">Goods Received Registor-Precot</a></li>
+                                     <li><a href="Purchase-Registor-Report.aspx">Purchase Registor</a></li>
+                                     <li><a href="Mismatch-Mill-Pending-Report.aspx">Mismatch Mill Pending</a></li>
+                                     <li><a href="Goods-Received-Summary-Report.aspx">Goods Received Summary</a></li>
+                                     <li><a href="Mismatch-Mill-Indent-Report.aspx">Mismatch Mill Indent Report</a></li>
+                                     <li><a href="Mill-Urgent-Pending-and-Nill-Stock-List.aspx">Mill Urgent Pending and Nill Stk List</a></li>
+                                     <li><a href="Excess-Goods-Arrival-Report.aspx">Excess Goods Arrival Report</a></li>
+
+                                </ul>
+                            </li>
                                 </ul>
                             </li>
                             <li>
