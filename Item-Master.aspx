@@ -291,18 +291,27 @@
                             </li>
                                 </ul>
                             </li>
+                            
+<li>
+                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Financial Management</span><span class="fa arrow"></span></a>
+                                                                           <ul class="nav nav-second-level collapse">
 
-                            <li>
-                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="form_basic.html">Basic form</a></li>
-                                    <li><a href="form_advanced.html">Advanced form</a></li>
-                                    <li><a href="form_wizard.html">Wizard form</a></li>
-                                    <li><a href="form_file_upload.html">File upload</a></li>
-                                    <li><a href="form_text_editor.html">Text editor</a></li>
-                                    <li><a href="form_inline_edit.html">Inline edit</a></li>
+                                    <li><a href=""><span class="nav-label">General Ledger Masters</span><span class="fa arrow"></span></a></li>
+                                                                    <ul class="nav nav-third-level">
+                                     
+                                     <li>   <a href="Chart Of Account.aspx">Chart of Account</a></li>
+                                     <li>  <a href="">Dimension List of Value</a></li>
+                                       <li>   <a href="Account Budget.aspx">Account Budget</a></li>
+                                   <li> <a href="MIS Configurator.aspx">MS Configurator</a></li>
+                                       <li><a href=""><span class="nav-label">Account Setup</span><span class="fa arrow"></span></a></li>
+                                   <li><a href="Linked Accounts.aspx"><span class="nav-label">Linked Account</span><span class="fa arrow"></span></a></li>
+                                    
+                                    </ul>
                                 </ul>
+                               
                             </li>
+
+
                             <li>
                                 <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">

@@ -288,14 +288,19 @@
                             </li>
                             
                             <li>
-                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Financial Management </span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="form_basic.html">Basic form</a></li>
-                                    <li><a href="form_advanced.html">Advanced form</a></li>
-                                    <li><a href="form_wizard.html">Wizard form</a></li>
-                                    <li><a href="form_file_upload.html">File upload</a></li>
-                                    <li><a href="form_text_editor.html">Text editor</a></li>
-                                    <li><a href="form_inline_edit.html">Inline edit</a></li>
+                                    <li><a href="form_basic.html">General Ledger Masters</a></li>
+                                     
+                                        <ul class="nav nav-third-level">
+                                           
+                                          <li><a href="form_advanced.html">Chart Of Accounts</a></li>
+                                    <li><a href="form_wizard.html">Dimension List of Value</a></li>
+                                    <li><a href="form_file_upload.html">Account Budget</a></li>
+                                    <li><a href="form_text_editor.html">MS Configurator</a></li>
+                                 </ul>
+                                      </ul>
+                                    
                                 </ul>
                             </li>
                             <li>
