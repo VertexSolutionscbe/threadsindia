@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Chart_Of_Account : System.Web.UI.Page
+public partial class Chart_Of_Accounts : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {

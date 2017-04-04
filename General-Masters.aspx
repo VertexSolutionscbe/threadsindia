@@ -331,7 +331,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="lockscreen.html">Lockscreen</a></li>
                                     <li><a href="login.html">Login</a></li>
@@ -344,11 +344,32 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-calendar-times-o fa-2x" aria-hidden="true"></i> <span class="nav-label">Financial Management</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="orders.html">orders</a></li>
-                                    <li><a href="order-view.html">order View</a></li>
-                                    <li><a href="products.html">Products</a></li>
+                                  <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">General Leger Master</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Account-Budget.aspx">Account Budget</a></li>
+                                    <li><a href="MIS-Configurator.aspx">MIS Configurator</a></li>
+
+                                    
+                                    
+                                </ul>
+                            </li>
+                                           <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i> <span class="nav-label">Account Set Up</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Chart-Of-Accounts.aspx">Chart of Accounts</a></li>
+                                    <li><a href="Financial-Years.aspx">Financial Years</a></li>
+                                        <li><a href="Linked-Accounts.aspx">Linked Accounts</a></li>
+                                            <li><a href="Transaction-Controll-Setting.aspx">Transaction Controll Settings</a></li>
+                                           <li><a href="Sub-Ledger-Type.aspx">Sub Ledger Type</a></li>
+                                              <li><a href="Voucher-Types.aspx">Voucher Types</a></li>
+                                               <li><a href="Ledger-Opening-Balance.aspx">Ledger Opening </a></li>
+                                                <li><a href="AR-AP-Billwise-Opening-Balance.aspx">AP/AP Billwise Opening Balance</a></li>
+                                    
+                                </ul>
+                            </li>
                                     
                                     
                                 </ul>

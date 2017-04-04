@@ -288,7 +288,7 @@
                             </li>
                             
                             <li>
-<<<<<<< HEAD
+
                                 <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Financial Management </span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="form_basic.html">General Ledger Masters</a></li>
@@ -301,8 +301,8 @@
                                     <li><a href="form_text_editor.html">MS Configurator</a></li>
                                  </ul>
                                       </ul>
-                                    
-=======
+                                      
+                                      
                                 <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li>
@@ -343,7 +343,7 @@
 
                                 </ul>
                             </li>
->>>>>>> 895aa58d1ba6ca9e7e99d1a15f80ca5fa89bc15f
+
                                 </ul>
                             </li>
                             <li>
