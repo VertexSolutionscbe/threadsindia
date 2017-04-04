@@ -1,10 +1,10 @@
-﻿s<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Addition-Deduction-Type.aspx.cs" Inherits="Addition_Deduction_Type" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Voucher-Types.aspx.cs" Inherits="Voucher_Types" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta charset="utf-8">
+ <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -20,7 +20,7 @@
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNINGs: Respond.js doesn't work if you view the page via file:// -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -280,7 +280,7 @@
                                     <li><a href="Item-Master.aspx">Item Master</a></li>
                                     <li><a href="Party-Master.aspx">Party Master</a></li>
                                     <li><a href="Party-Wise Rate.aspx">Partywise Rate</a></li>
-                                    <li><a href="Cone-Type-Master.aspx">Cone TypeMaster</a></li>
+                                    <li><a href="Cone-Type-Master.aspx">Cone Type Master</a></li>
                                      <li>
                                 <a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i> &nbsp;&nbsp; <span class="nav-label">Tax Heads</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
@@ -293,7 +293,7 @@
                             </li>
 
                             <li>
-                                                <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
+                                            <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                                           <li>
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i> <span class="nav-label">Transactions</span><span class="fa arrow"></span></a>
@@ -303,7 +303,7 @@
                                     <li><a href="Purchase-Oreder-Other.aspx">Purchase Order - Other</a></li>
                                     <li><a href="Goods-Received-Precot.aspx">Goods Received - Precot</a></li>
                                     <li><a href="Goods-Received-Note-Other.aspx">Goods Received Note - Other </a></li>
-                               <li><a href="Purchase-Invoice.aspx">Purchase Invoice</a></li>
+                                    <li><a href="Purchase-Invoice.aspx">Purchase Invoice</a></li>
                                     <li><a href="Mismatched-Invoice-Close.aspx">Mismatched Invoice Closed</a></li>
                                     <li><a href="Indenet-ShortClose-Entry.aspx">Intent Short Close Entry</a></li>
                                     <li><a href="Goods-Return.aspx">Goods Return</a></li>
@@ -430,7 +430,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">Addition Deduction Type <small>Details</small></h1>
+                                <h1 class="gnrl">Voucher Types <small>Details</small></h1>
                                
                             </div>
                         </div>
@@ -441,7 +441,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Addition Deduction Type</h4>
+                                    <h4 class="panel-title">Voucher Types</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
@@ -451,10 +451,10 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-5 col-md-2 control-label"> <asp:Label ID="Label1" runat="server" Text="Addition Deduction Type"></asp:Label></div>
-                                                            <div class="col-lg-7 col-md-8">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Voucher Code"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
                                                            
-                                                             <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                           <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
@@ -466,7 +466,25 @@
                                   
                                   
                                  </div>
-                              
+                                 <br />                      <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Voucher Types"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                            <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+
+                                  
+                                  
+                                 </div>
+                                                 
                               
                                 </div>
                           
@@ -494,7 +512,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Addition Deduction Type</h4>
+                                    <h4 class="panel-title">Voucher Types Details</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
@@ -503,7 +521,10 @@
                                 <div class="panel-body">
                                      <div class="row">
                                      <div class="col-sm-12">
-  
+                            
+
+
+
 
 
 
@@ -558,5 +579,4 @@
     </body>
     </form>
 </html>
-
 

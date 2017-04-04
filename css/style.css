@@ -987,7 +987,7 @@ Pricing tables
 }
 .tabs-container .tabs-right .tab-content{
     overflow: hidden;
-    background-color:#fff;
+    background-color:#fff
 }
 .buttons-column{
     padding: 20px;
@@ -1230,50 +1230,39 @@ Pricing tables
     background-color: #fff;
     margin-bottom: 30px;
 }
-.gnrl
-{
-  border-bottom-style: groove;
-   border-bottom-width: thin;
-    border-bottom-color: #000000;
-}
 .txt
 {
     width:100%;
 }
 .btn
 {
-    width:100px;
-    height:40px;
-    margin-left:10px;
-    margin-right:10px;
     background-color:Green;
+    width:100px;
     color:White;
-    font-weight:bold;
-  
-}
-.btn1
-{
-    text-align:center;
-    
-}
-
-.ex
-{
-    font-size:medium;
-    font-family:Century;
-    color: 	#8B4513;
     font-weight:600;
-    margin-left:20px;
+    height:40px;
+ 
 }
-
-
-.ajax__tab_xp .ajax__tab_header .ajax__tab_tab 
-{
-    font-size:15px;
-   
-    font-weight:600;
-             height:80px;
-             width:auto;
-             
-           
-}
+ .ajax__tab_xp .ajax__tab_header .ajax__tab_tab 
+    {
+        height: 60px !important;
+        font-weight:600;
+        font-size:15px;
+       
+    }
+    .gnrl
+    {
+ border-bottom-style: groove;
+  border-bottom-width: thin; 
+  border-bottom-color: #666666;
+    }
+    .lbl
+    {
+        color:Purple;
+        font-size:medium;
+        font-family:Century;
+        font-weight:600;
+   border-bottom-style: groove; 
+   border-bottom-width: thin; 
+   border-bottom-color: #999999;
+    }

@@ -1,30 +1,41 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Linked Accounts.aspx.cs" Inherits="Linked_Accounts" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="MIS-Configurator.aspx.cs" Inherits="MIS_Configurator" %>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-  <meta charset="utf-8">
+  <meta charset="utf-8" >
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
 
         <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/waves.min.css" type="text/css" rel="stylesheet">
-        <link href="css/select.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap-slider.min.css">
-        <link href="css/bootstrap-switch.min.css" type="text/css" rel="stylesheet">
-        <link href="css/menu.css" type="text/css" rel="stylesheet">
-        <link href="css/style.css" type="text/css" rel="stylesheet">
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/waves.min.css" type="text/css" rel="stylesheet"/>
+        <link href="css/select.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/bootstrap-slider.min.css"/>
+        <link href="css/bootstrap-switch.min.css" type="text/css" rel="stylesheet"/>
+        <link href="css/menu.css" type="text/css" rel="stylesheet"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+    <style type="text/css">
+        .style1
+        {
+            width: 71px;
+        }
+        .style2
+        {
+            width: 110px
+        }
+    </style>
     </head>
     <form id="Form1" runat="server">
     <body>
@@ -293,33 +304,33 @@
                             <li>
                                 <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="form_basic.html">Basic form</a></li>
-                                    <li><a href="form_advanced.html">Advanced form</a></li>
-                                    <li><a href="form_wizard.html">Wizard form</a></li>
-                                    <li><a href="form_file_upload.html">File upload</a></li>
-                                    <li><a href="form_text_editor.html">Text editor</a></li>
-                                    <li><a href="form_inline_edit.html">Inline edit</a></li>
+                                    <li><a href="">Basic form</a></li>
+                                    <li><a href="">Advanced form</a></li>
+                                    <li><a href="">Wizard form</a></li>
+                                    <li><a href="">File upload</a></li>
+                                    <li><a href="">Text editor</a></li>
+                                    <li><a href="">Inline edit</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="lockscreen.html">Lockscreen</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="empty_page.html">Empty page</a></li>
-                                    <li><a href="gallery.html">gallery</a></li>
-                                    <li><a href="price_tables.html">Price tables</a></li>
-                                    <li><a href="page_contact.html">Contact Page</a></li>
+                                    <li><a href="">Lockscreen</a></li>
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Register</a></li>
+                                    <li><a href="">404 Page</a></li>
+                                    <li><a href="">Empty page</a></li>
+                                    <li><a href="">gallery</a></li>
+                                    <li><a href="">Price tables</a></li>
+                                    <li><a href="">Contact Page</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="orders.html">orders</a></li>
-                                    <li><a href="order-view.html">order View</a></li>
-                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="">orders</a></li>
+                                    <li><a href="">order View</a></li>
+                                    <li><a href="">Products</a></li>
                                     
                                     
                                 </ul>
@@ -327,9 +338,9 @@
                             <li>
                                 <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="icons.html">Icons</a></li>
-                                    <li><a href="buttons.html">Buttons</a></li>
+                                    <li><a href="">Typography</a></li>
+                                    <li><a href="">Icons</a></li>
+                                    <li><a href="">Buttons</a></li>
                                     <li><a href="video.html">Video</a></li>
                                     <li><a href="tabs_panels.html">Panels</a></li>
                                     <li><a href="tabs.html">Tabs</a></li>
@@ -396,65 +407,127 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">Linked Accounts<small></small></h1>
+                                <h1 class="gnrl">MIS Configurator<small></small></h1>
                                
                             </div>
                         </div>
                     </div><!-- end .page title-->
-                 
+               
                     <div class="row">
                         <div class="col-md-12">
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
-                                <div class="panel-heading">
-                                <span class="pull-left">
-                                            <img src="images/save.png" alt="" class="img-square" width="20"/>
-                                        </span>
-                                    <h4 class="panel-title" >Save </h4>
+                            
+                                <div class="panel-heading"  >
+                                 
+                               <div style="width:100%;" >
+                                    <div  style ="float:left; padding:10px; ">
+                                            <h4 class="panel-title" >List View |</h4>
+                                    </div>
+
+                                    <div  style ="float:left; padding:10px;">
+                                     <img src="images/new.png" alt="" class="img-square" width="20" />                                  
+                                                                            </div>
+                                     <div  style ="float:left; padding:10px;">
+                                     <h4 class="panel-title" >New |</h4>
+
+                                     </div>
+
+                                   <div style ="float:left; padding:3px;">
+                                                   <img src="images/rsz_save-icon-5.jpg" alt="" class="img-square" width="20"   />
+                                                   
+                                   </div>
+                                    <div style ="float:left; padding:10px;">
+                                                                                       <h4 class="panel-title">Save |</h4>
+                                    </div>
+                                    
+                                   <div style ="float:left; padding:3px;">
+                                                   <img src="images/rsz_1search-icon.jpg" alt="" class="img-square" width="20"   />
+                                                   
+                                   </div>
+                                    <div style ="float:left; padding:10px;">
+                                                                                       <h4 class="panel-title">Search |</h4>
+                                    </div>
+                                    <div style ="float:left; padding:3px;">
+                                                   <img src="images/rsz_untitled-25-512.jpg" alt="" class="img-square" width="20"   />
+                                                   
+                                   </div>
+                                    <div style ="float:left; padding:10px;">
+                                                                                       <h4 class="panel-title">Remove |</h4>
+                                    </div>
+                                <div style ="float:left; padding:3px;">
+                                                   <img src="images/rsz_1images.jpg" alt="" class="img-square" width="20"   />
+                                                   
+                                   </div>
+                                    <div style ="float:left; padding:10px;">
+                                                                                       <h4 class="panel-title">Task |</h4>
+                                    </div>
+                               </div>
+                               <br />
+                               <br />
+
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
                                     </div>
-                                </div>
+                             </div>
+                             
+
                                 <div class="panel-body">
                                      <div class="row">
-                                 <div class="col-sm-6">
+                                 <div class="col-sm-12">
                                  <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Currency Gain or Loss A/C "></asp:Label></div>
+                                                           <div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Configuration ID* "></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
-                                                           
-                                                              
-                                                            
-                                                              <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
+                                                              <asp:DropDownList ID="DropDownList1" runat="server" class="txt" Width="200px"></asp:DropDownList>
                                                             </div>
                                                         </div>
-                                  
+                                                         <div class="col-sm-6">
+                                                                      <%--  <div class="form-group">
+                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label3" runat="server" Text="Year Of Budget "></asp:Label></div>
+                                                            <div class="col-lg-9 col-md-8">
+                                                               
+                                                                 <asp:DropDownList ID="DropDownList2" runat="server" class="txt" Width="200px"></asp:DropDownList>
+                                                            </div>
+                                                        </div>--%>
+                                 </div>
+                                   </div>
                                   
                                  </div>
                               
                                 </div>
-                                <br />
-                                 <div class="row">
-                                 <div class="col-sm-6">
-                                                                        <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label3" runat="server" Text="Round-Up Adjustment A/C "></asp:Label></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                               
-                                                                 <asp:DropDownList ID="DropDownList2" runat="server" class="txt"></asp:DropDownList>
-                                                            </div>
-                                                        </div>
-                                 </div>
                               
-                                 </div>
                                  <br /><div class="row">
-                                 <div class="col-sm-6">
+                                 <div class="col-sm-12">
                                       <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Profit or Loss C/F A/C"></asp:Label></div>
+                                      <div class="col-sm-6">
+                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Item List"></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
                                                            
-                                                          <asp:DropDownList ID="DropDownList3" runat="server" class="txt"></asp:DropDownList>
+                                                          <asp:DropDownList ID="DropDownList3" runat="server" class="txt" Width="250px"></asp:DropDownList>
                                                                
-                                                              
+                                                              </div>
+
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                             <div class="col-lg-3 col-md-3 control-label"> 
+                                                            <asp:Label ID="Label8" runat="server" Text="Caption"></asp:Label> </div> <asp:TextBox ID="txtval1" runat="server" class="txt" Width="200px"></asp:TextBox>
+
+                                                           </div>
+                                                            <div class="col-lg-9 col-md-8">
+                                                          
+                                                              </div>
+                                                            </div>   <div class="col-sm-6">
+                                                            <div class="col-lg-3 col-md-3 control-label"> </div></div>
+                                                           <div class="col-sm-6">
+                                                             
+                                                            
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                            <div class="col-lg-3 col-md-3 control-label"> </div>
+                                                            <div class="col-lg-9 col-md-8">
+                                                             
+                                                              </div>
                                                             </div>
                                                         </div>
                                                           
@@ -464,46 +537,18 @@
                                   <br /><div class="row">
                                  <div class="col-sm-6">
                                       <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Stock Increase/Decrease A/C"></asp:Label></div>
+                                                            <div class="col-lg-3 col-md-3 control-label"> </div>
                                                             <div class="col-lg-9 col-md-8">
-                                                           
+                                                                                          
                                                      
-                                                                 <asp:DropDownList ID="DropDownList4" runat="server" class="txt"></asp:DropDownList>
                                                             </div>
                                                         </div>
                                                           
                                  </div>
                                            
                                  </div>
-                                  <br /><div class="row">
-                                 <div class="col-sm-6">
-                                      <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label6" runat="server" Text="TDS in Customer's Receipt"></asp:Label></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                           
-                                                             <asp:DropDownList ID="DropDownList5" runat="server" class="txt"></asp:DropDownList>
-                                                               
-                                                              
-                                                            </div>
-                                                        </div>
-                                                          
-                                 </div>
-                                           
-                                 </div>
-                                  <br /><div class="row">
-                                 <div class="col-sm-6">
-                                      <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label8" runat="server" Text="TDS in Supplier's Payment"></asp:Label></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                           
-                                                          
-                                                                 <asp:DropDownList ID="DropDownList6" runat="server" class="txt"></asp:DropDownList>
-                                                            </div>
-                                                        </div>
-                                                         
-                                 </div>
-                                           
-                                 </div>
+                                  
+                                 
                                  
                                  </div>
                                  <br /><div class="row">
@@ -517,18 +562,120 @@
                             
                                 </div>
                             </div><!-- End .panel --> 
+                           <%-- <div>
+                            
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td class="style1" style="margin:-25px 20px 20px 45px" >
+                                            |&nbsp; List View</td>
+                                        <td class="style2">
+                                              <img src="images/new.png" alt="" class="img-square" width="20" " style="margin:10px 10px 10px 10px"/>
+                                       
+&nbsp;<h4 class="panel-title" style="margin:-35px 7px 6px 46px" >New |</h4>
+
+</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                </table>
+                            
+                            </div>--%>
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+                                                    <Columns>
+                                                        <asp:TemplateField HeaderText="S No">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("[S No]") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("[S No]") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="A/C Description">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox2" runat="server" 
+                                                                    Text='<%# Bind("[A/C Description]") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("[A/C Description]") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="A/C No">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("[A/C No]") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("[A/C No]") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="Cost Centre">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("[Cost Centre]") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label4" runat="server" Text='<%# Bind("[Cost Centre]") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="Project">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("Project") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label5" runat="server" Text='<%# Bind("Project") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="Employee">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Employee") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label6" runat="server" Text='<%# Bind("Employee") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="Budget Amount">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("[Budget Amount]") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label7" runat="server" Text='<%# Bind("[Budget Amount]") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                    </Columns>
+                                                </asp:GridView>
                         </div>
+                        <div class="content-wrapper">
+                                                
+                                                </div>
                     </div>
                       
+                          
+          
         </section>
 
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/metisMenu.min.js"></script>
-        <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="js/pace.min.js"></script>
-        <script src="js/waves.min.js"></script>
-        <script src="js/jquery-jvectormap-world-mill-en.js"></script>
+        <script  type="text/javascript" src="js/metisMenu.min.js"></script>
+        <script type="text/javascript" src="js/jquery-jvectormap-1.2.2.min.js"></script>
+        <script type="text/javascript" src="js/pace.min.js"></script>
+        <script type="text/javascript" src="js/waves.min.js"></script>
+        <script type="text/javascript" src="js/jquery-jvectormap-world-mill-en.js"></script>
         <!--        <script src="js/jquery.nanoscroller.min.js"></script>-->
         <script type="text/javascript" src="js/custom.js"></script>
         <!--page plugins-->
