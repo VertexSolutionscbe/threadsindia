@@ -278,6 +278,16 @@
                                   
                                 </ul>
                             </li>
+                                          <li>
+                                <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Depoartment-Details.aspx"> Department</a></li>
+                                    <li><a href="Designation.aspx"> Designation</a></li>
+                                  
+                                  
+                                  
+                                </ul>
+                            </li>
                                 </ul>
                             </li>
                             <li>
@@ -406,7 +416,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl"> Department<small></small></h1>
+                                <h1 class="gnrl"> Designation<small></small></h1>
                                
                             </div>
                         </div>
@@ -420,47 +430,46 @@
                                 <div class="panel-heading"  >
                                  
                                <div style="width:100%;" >
-                                    <div  style ="float:left; padding:10px; ">
-                                            <h4 class="panel-title" >List View |</h4>
-                                    </div>
+                                    
 
                                     <div  style ="float:left; padding:10px;">
+<<<<<<< HEAD
                                     <%-- <img src="images/new.png" alt="" class="img-square" width="20" /> --%>   <asp:ImageButton ID="ImageButton1" runat="server" src="images/new.png" alt="" class="img-square" width="20"></asp:ImageButton>                              
                                                       <asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-success-sm">New|</asp:LinkButton>                      </div>
                                      <div  style ="float:left; padding:10px;">
                                      <%--<h4 class="panel-title" >New |</h4>--%>
 
                                      </div>
-
-                                   <div style ="float:left; padding:3px;">
-                                                   <img src="images/rsz_save-icon-5.jpg" alt="" class="img-square" width="20"   />
-                                                   
-                                   </div>
-                                    <div style ="float:left; padding:10px;">
-                                                                                       <h4 class="panel-title">Save |</h4>
-                                    </div>
+=======
+                                    <h4 class="panel-title" > <img src="images/new.png" alt="" class="img-square" width="20" />   
+                                     <asp:Button ID="Button1" runat="server" class="btn1" Text="New"></asp:Button>                               
+                                                                       |</h4>     </div>
                                     
-                                   <div style ="float:left; padding:3px;">
-                                                   <img src="images/rsz_1search-icon.jpg" alt="" class="img-square" width="20"   />
-                                                   
-                                   </div>
-                                    <div style ="float:left; padding:10px;">
-                                                                                       <h4 class="panel-title">Search |</h4>
-                                    </div>
-                                    <div style ="float:left; padding:3px;">
-                                                   <img src="images/rsz_untitled-25-512.jpg" alt="" class="img-square" width="20"   />
-                                                   
-                                   </div>
-                                    <div style ="float:left; padding:10px;">
-                                                                                       <h4 class="panel-title">Remove |</h4>
-                                    </div>
-                                <div style ="float:left; padding:3px;">
-                                                   <img src="images/rsz_1images.jpg" alt="" class="img-square" width="20"   />
-                                                   
-                                   </div>
-                                    <div style ="float:left; padding:10px;">
-                                                                                       <h4 class="panel-title">Task |</h4>
-                                    </div>
+                                      <div  style ="float:left; padding:10px;">
+                                    <h4 class="panel-title" >   <img src="images/rsz_save-icon-5.jpg" alt="" class="img-square" width="20"   />
+                                     <asp:Button ID="Button2" runat="server" class="btn1" Text="Save"></asp:Button>                               
+                                                                       |</h4>     </div>
+>>>>>>> 68e41bf7f6dda0c2e86980c0c68909ba7b475642
+
+                                  
+                                       <div  style ="float:left; padding:10px;">
+                                    <h4 class="panel-title" >   <img src="images/rsz_1search-icon.jpg" alt="" class="img-square" width="20"   />
+                                     <asp:Button ID="Button3" runat="server" class="btn1" Text="Search"></asp:Button>                               
+                                                                       |</h4>     </div>
+                                   
+                                 
+                                      <div  style ="float:left; padding:10px;">
+                                    <h4 class="panel-title" >    <img src="images/rsz_untitled-25-512.jpg" alt="" class="img-square" width="20"   />
+                                     <asp:Button ID="Button4" runat="server" class="btn1" Text="Remove"></asp:Button>                               
+                                                                       |</h4>     </div>
+                                    
+                                    
+                                        <div  style ="float:left; padding:10px;">
+                                    <h4 class="panel-title" >    <img src="images/rsz_1images.jpg" alt="" class="img-square" width="20"   />
+                                     <asp:Button ID="Button5" runat="server" class="btn1" Text="Task"></asp:Button>                               
+                                                                       </h4>     </div>
+                               
+                                   
                                </div>
                                <br />
                                <br />

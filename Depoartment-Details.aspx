@@ -1,3 +1,4 @@
+<<<<<<< HEAD:Department.aspx
 ﻿<<<<<<< HEAD
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Department.aspx.cs" Inherits="Department" %>
 =======
@@ -5,26 +6,21 @@
 
 
 >>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
+=======
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Depoartment-Details.aspx.cs" Inherits="Depoartment_Details" %>
+>>>>>>> 68e41bf7f6dda0c2e86980c0c68909ba7b475642:Depoartment-Details.aspx
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<<<<<<< HEAD
 <head runat="server">
-<meta charset="utf-8">
+ <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-=======
-<head id="Head1" runat="server">
-  <meta charset="utf-8" >
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
 
         <!-- Bootstrap -->
-<<<<<<< HEAD
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/waves.min.css" type="text/css" rel="stylesheet">
         <link href="css/select.css" type="text/css" rel="stylesheet">
@@ -33,39 +29,15 @@
         <link href="css/menu.css" type="text/css" rel="stylesheet">
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-=======
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="css/waves.min.css" type="text/css" rel="stylesheet"/>
-        <link href="css/select.css" type="text/css" rel="stylesheet"/>
-        <link rel="stylesheet" href="css/bootstrap-slider.min.css"/>
-        <link href="css/bootstrap-switch.min.css" type="text/css" rel="stylesheet"/>
-        <link href="css/menu.css" type="text/css" rel="stylesheet"/>
-        <link href="css/style.css" type="text/css" rel="stylesheet"/>
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-<<<<<<< HEAD
        
     </head>
     
-=======
-    <style type="text/css">
-        .style1
-        {
-            width: 71px;
-        }
-        .style2
-        {
-            width: 110px
-        }
-    </style>
-    </head>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
     <form id="Form1" runat="server">
     <body>
         <!-- Static navbar -->
@@ -285,7 +257,7 @@
                                     
                                 </ul>
                             </li>
-                            <li  class="active">
+                            <li class="active">
                                 <a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i> <span class="nav-label">Admin Setup </span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                      <li>
@@ -308,19 +280,16 @@
                                   
                                 </ul>
                             </li>
-<<<<<<< HEAD
-                                                                      <li>
+                                                                        <li>
                                 <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="Department.aspx"> Department</a></li>
+                                    <li><a href="Depoartment-Details.aspx"> Department</a></li>
                                     <li><a href="#"> Designation</a></li>
                                   
                                   
                                   
                                 </ul>
                             </li>
-=======
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
                                 </ul>
                             </li>
                             <li>
@@ -329,7 +298,6 @@
                                     <li><a href="Shade-No-Master.aspx">Shade No.Master</a></li>
                                     <li><a href="Shade-Master.aspx">Shade Master</a></li>
                                     <li><a href="Item-Master.aspx">Item Master</a></li>
-<<<<<<< HEAD
                                     <li><a href="Party-Master.aspx">Party Master</a></li>
                                     <li><a href="Party-Wise Rate.aspx">Partywise Rate</a></li>
                                     <li><a href="Cone-Type-Master.aspx">Cone Type Master</a></li>
@@ -338,16 +306,6 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
                                     <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
-=======
-                                    <li><a href="#">Party Master</a></li>
-                                    <li><a href="#">Partywise Rate</a></li>
-                                    <li><a href="#">Clone TypeMaster</a></li>
-                                     <li>
-                                <a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i> &nbsp;&nbsp; <span class="nav-label">Tax Heads</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="#">Addition Deduction</a></li>
-                                    <li><a href="#">Addition Deduction Type</a></li>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
                                   
                                 </ul>
                             </li>
@@ -355,7 +313,6 @@
                             </li>
 
                             <li>
-<<<<<<< HEAD
                                             <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                                           <li>
@@ -396,22 +353,11 @@
 
                                 </ul>
                             </li>
-=======
-                                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="">Basic form</a></li>
-                                    <li><a href="">Advanced form</a></li>
-                                    <li><a href="">Wizard form</a></li>
-                                    <li><a href="">File upload</a></li>
-                                    <li><a href="">Text editor</a></li>
-                                    <li><a href="">Inline edit</a></li>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
                                 </ul>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-<<<<<<< HEAD
                                     <li><a href="lockscreen.html">Lockscreen</a></li>
                                     <li><a href="login.html">Login</a></li>
                                     <li><a href="register.html">Register</a></li>
@@ -420,30 +366,14 @@
                                     <li><a href="gallery.html">gallery</a></li>
                                     <li><a href="price_tables.html">Price tables</a></li>
                                     <li><a href="page_contact.html">Contact Page</a></li>
-=======
-                                    <li><a href="">Lockscreen</a></li>
-                                    <li><a href="">Login</a></li>
-                                    <li><a href="">Register</a></li>
-                                    <li><a href="">404 Page</a></li>
-                                    <li><a href="">Empty page</a></li>
-                                    <li><a href="">gallery</a></li>
-                                    <li><a href="">Price tables</a></li>
-                                    <li><a href="">Contact Page</a></li>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
                                 </ul>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-<<<<<<< HEAD
                                     <li><a href="orders.html">orders</a></li>
                                     <li><a href="order-view.html">order View</a></li>
                                     <li><a href="products.html">Products</a></li>
-=======
-                                    <li><a href="">orders</a></li>
-                                    <li><a href="">order View</a></li>
-                                    <li><a href="">Products</a></li>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
                                     
                                     
                                 </ul>
@@ -451,15 +381,9 @@
                             <li>
                                 <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-<<<<<<< HEAD
                                     <li><a href="typography.html">Typography</a></li>
                                     <li><a href="icons.html">Icons</a></li>
                                     <li><a href="buttons.html">Buttons</a></li>
-=======
-                                    <li><a href="">Typography</a></li>
-                                    <li><a href="">Icons</a></li>
-                                    <li><a href="">Buttons</a></li>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
                                     <li><a href="video.html">Video</a></li>
                                     <li><a href="tabs_panels.html">Panels</a></li>
                                     <li><a href="tabs.html">Tabs</a></li>
@@ -526,83 +450,22 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-<<<<<<< HEAD
-                                <h1 class="gnrl">Department <small>Details</small></h1>
-=======
-                                <h1 class="gnrl"> Department<small></small></h1>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
+                                <h1 class="gnrl">Department Details <small>Details</small></h1>
                                
                             </div>
                         </div>
                     </div><!-- end .page title-->
-<<<<<<< HEAD
                  
-=======
-               
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
                     <div class="row">
                         <div class="col-md-12">
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
-<<<<<<< HEAD
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Department</h4>
-=======
-                            
-                                <div class="panel-heading"  >
-                                 
-                               <div style="width:100%;" >
-                                    <div  style ="float:left; padding:10px; ">
-                                            <h4 class="panel-title" >List View |</h4>
-                                    </div>
-
-                                    <div  style ="float:left; padding:10px;">
-                                     <img src="images/new.png" alt="" class="img-square" width="20" />                                  
-                                                                            </div>
-                                     <div  style ="float:left; padding:10px;">
-                                     <h4 class="panel-title" >New |</h4>
-
-                                     </div>
-
-                                   <div style ="float:left; padding:3px;">
-                                                   <img src="images/rsz_save-icon-5.jpg" alt="" class="img-square" width="20"   />
-                                                   
-                                   </div>
-                                    <div style ="float:left; padding:10px;">
-                                                                                       <h4 class="panel-title">Save |</h4>
-                                    </div>
-                                    
-                                   <div style ="float:left; padding:3px;">
-                                                   <img src="images/rsz_1search-icon.jpg" alt="" class="img-square" width="20"   />
-                                                   
-                                   </div>
-                                    <div style ="float:left; padding:10px;">
-                                                                                       <h4 class="panel-title">Search |</h4>
-                                    </div>
-                                    <div style ="float:left; padding:3px;">
-                                                   <img src="images/rsz_untitled-25-512.jpg" alt="" class="img-square" width="20"   />
-                                                   
-                                   </div>
-                                    <div style ="float:left; padding:10px;">
-                                                                                       <h4 class="panel-title">Remove |</h4>
-                                    </div>
-                                <div style ="float:left; padding:3px;">
-                                                   <img src="images/rsz_1images.jpg" alt="" class="img-square" width="20"   />
-                                                   
-                                   </div>
-                                    <div style ="float:left; padding:10px;">
-                                                                                       <h4 class="panel-title">Task |</h4>
-                                    </div>
-                               </div>
-                               <br />
-                               <br />
-
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
+                                    <h4 class="panel-title">Department Details</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
                                     </div>
-<<<<<<< HEAD
                                 </div>
                                 <div class="panel-body">
                                      <div class="row">
@@ -611,10 +474,10 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="lblval1" runat="server" Text="Department"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                            
-                                                                  <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                           <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox> 
+                                                               
                                                               
-                                                            </div>
+                                                            </div>s
                                                         </div>
                                   
                                   
@@ -628,8 +491,8 @@
                                  <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Head Of Department"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
-                                                            <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
-                                                         
+                                                           
+                                                             <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
                                                                
                                                               
                                                             </div>
@@ -698,6 +561,7 @@
                       
                                 
           
+<<<<<<< HEAD:Department.aspx
 =======
                              </div>
                              
@@ -894,24 +758,18 @@
                       
                           
 >>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
+=======
+>>>>>>> 68e41bf7f6dda0c2e86980c0c68909ba7b475642:Depoartment-Details.aspx
           
         </section>
 
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
         <script src="js/metisMenu.min.js"></script>
         <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="js/pace.min.js"></script>
         <script src="js/waves.min.js"></script>
         <script src="js/jquery-jvectormap-world-mill-en.js"></script>
-=======
-        <script  type="text/javascript" src="js/metisMenu.min.js"></script>
-        <script type="text/javascript" src="js/jquery-jvectormap-1.2.2.min.js"></script>
-        <script type="text/javascript" src="js/pace.min.js"></script>
-        <script type="text/javascript" src="js/waves.min.js"></script>
-        <script type="text/javascript" src="js/jquery-jvectormap-world-mill-en.js"></script>
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
         <!--        <script src="js/jquery.nanoscroller.min.js"></script>-->
         <script type="text/javascript" src="js/custom.js"></script>
         <!--page plugins-->
