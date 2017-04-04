@@ -1266,3 +1266,19 @@ Pricing tables
    border-bottom-width: thin; 
    border-bottom-color: #999999;
     }
+.btn1
+{
+    font-size:medium;
+    width:90px;
+    height:30px;
+    background-color:#00BFFF;
+    color:White;
+    font-family:Century;
+    font-weight:600;
+    
+}
+.btn1:hover
+{
+    background-color:Green;
+    color:White;
+}
