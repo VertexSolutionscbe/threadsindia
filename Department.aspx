@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Department.aspx.cs" Inherits="Department" %>
 =======
 ﻿
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Department.aspx.cs" Inherits="Department" %>
+
 
 >>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
 
@@ -608,7 +608,7 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Department"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="lblval1" runat="server" Text="Department"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
                                                             
@@ -832,7 +832,7 @@
                                                                 <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("[S No]") %>'></asp:TextBox>
                                                             </EditItemTemplate>
                                                             <ItemTemplate>
-                                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("[S No]") %>'></asp:Label>
+                                                                <asp:Label ID="lblsno" runat="server" Text='<%# Bind("[S No]") %>'></asp:Label>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
                                                         <asp:TemplateField HeaderText="A/C Description">

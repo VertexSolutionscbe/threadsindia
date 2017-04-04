@@ -425,10 +425,10 @@
                                     </div>
 
                                     <div  style ="float:left; padding:10px;">
-                                     <img src="images/new.png" alt="" class="img-square" width="20" />                                  
-                                                                            </div>
+                                    <%-- <img src="images/new.png" alt="" class="img-square" width="20" /> --%>   <asp:ImageButton ID="ImageButton1" runat="server" src="images/new.png" alt="" class="img-square" width="20"></asp:ImageButton>                              
+                                                      <asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-success-sm">New|</asp:LinkButton>                      </div>
                                      <div  style ="float:left; padding:10px;">
-                                     <h4 class="panel-title" >New |</h4>
+                                     <%--<h4 class="panel-title" >New |</h4>--%>
 
                                      </div>
 
@@ -476,7 +476,7 @@
                                      <div class="row">
                                  <div class="col-sm-12">
                                  <div class="form-group">
-                                                           <div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Department* "></asp:Label></div>
+                                                           <div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Designation Code* "></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
                                                              <%-- <asp:DropDownList ID="DropDownList1" runat="server" class="txt" Width="200px"></asp:DropDownList>--%>
                                                               <asp:TextBox ID="Txtval1" runat="server" class="txt|" Width ="200px"></asp:TextBox>
@@ -501,11 +501,11 @@
                                  <div class="col-sm-12">
                                       <div class="form-group">
                                       <div class="col-sm-6">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Head Of Department*"></asp:Label></div>
+                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Designation Name*"></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
-                                                           
-                                                          <asp:DropDownList ID="DropDownList3" runat="server" class="txt" Width="200px"></asp:DropDownList>
-                                                               
+                                                              <asp:TextBox ID="txtval2" runat="server" class="txt|" Width ="200px"></asp:TextBox>
+                                                         <%-- <asp:DropDownList ID="DropDownList3" runat="server" class="txt" Width="200px"></asp:DropDownList>
+                                                               --%>
                                                               </div>
                                                             </div>
                                                               <div class="col-sm-6">
