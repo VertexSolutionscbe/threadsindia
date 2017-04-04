@@ -1,14 +1,7 @@
-<<<<<<< HEAD:Department.aspx
-﻿<<<<<<< HEAD
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Department.aspx.cs" Inherits="Department" %>
-=======
-﻿
 
 
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
-=======
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Depoartment-Details.aspx.cs" Inherits="Depoartment_Details" %>
->>>>>>> 68e41bf7f6dda0c2e86980c0c68909ba7b475642:Depoartment-Details.aspx
+
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Department-Details.aspx.cs" Inherits="Depoartment_Details" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 

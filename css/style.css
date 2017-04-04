@@ -1271,14 +1271,24 @@ Pricing tables
     font-size:medium;
     width:90px;
     height:30px;
-    background-color:#00BFFF;
+    background-color:#008CBA;
     color:White;
     font-family:Century;
     font-weight:600;
-    
+   
 }
 .btn1:hover
 {
-    background-color:Green;
-    color:White;
+    background-color:Gray;
+    color:Black;
+   
+}
+.btn1:active
+{
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 1px;
+   
+    -webkit-border-radius: 4px;
+    
 }
