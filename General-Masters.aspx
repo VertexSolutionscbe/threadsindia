@@ -579,7 +579,8 @@
                             
                                    <div class="row">
                               <div class="col-sm-8" align="right">
-                                <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" 
+                                        Text="Save" onclick="Button4_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button5" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button6" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                               

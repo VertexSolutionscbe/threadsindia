@@ -25,6 +25,39 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+<link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
+    rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#divdialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "shake",
+                    duration: 1000
+                }
+            });
+        });
+        function ShowMessage() {
+            if ($('#txtName').val() == "") {
+                $("#divdialog").dialog("open");
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+    <style type="text/css">
+        .MessageStyle
+        {
+            font-size: 12px;
+        }
+    </style>
     <style type="text/css">
         .style1
         {
@@ -35,6 +68,11 @@
             width: 110px
         }
     </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+<link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
+    rel="stylesheet" type="text/css" />
+
     </head>
     <form id="Form1" runat="server">
     <body>
@@ -435,13 +473,13 @@
                                      <div  style ="float:left; padding:10px;">
 
                                     <h4 class="panel-title" ><%-- <img src="images/new.png" alt="" class="img-square" width="20" />   --%>
-                                     <asp:Button ID="Button1" runat="server" class="btn" Text="New"></asp:Button>                               
+                                     <asp:Button ID="Button1" runat="server" class="btn1" Text="New"></asp:Button>                               
                                                                        </h4>     </div>
                                     
                                       <div  style ="float:left; padding:10px;">
                                     <h4 class="panel-title" >   <%--<img src="images/rsz_save-icon-5.jpg" alt="" class="img-square" width="20"   />--%>
                                      <asp:Button ID="Button2" runat="server" class="btn1" Text="Save"  
-                                            onclick="Button2_Click" ></asp:Button>                               
+                                            onclick="Button2_Click" OnClientClick="ShowMessage();"></asp:Button>                               
                                                                        </h4>     </div>
 
 
@@ -481,10 +519,21 @@
                                      <div class="row">
                                  <div class="col-sm-12">
                                  <div class="form-group">
-                                                           <div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Designation Code* "></asp:Label></div>
+
+                                                           <div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Designation Code* " Visible="false" ></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
                                                              <%-- <asp:DropDownList ID="DropDownList1" runat="server" class="txt" Width="200px"></asp:DropDownList>--%>
-                                                              <asp:TextBox ID="txtval1" runat="server" class="txt|" Width ="200px"></asp:TextBox>
+                                                              <asp:TextBox ID="txtval1" runat="server" class="txt|" Width ="200px" visible="false"></asp:TextBox>
+             <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="CustomValidator" 
+                                                                    onservervalidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
+             
+                                                              <asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+<ContentTemplate>
+   <%-- <asp:Button ID="Button6" Text="Show Message" runat="server" OnClick="ShowMessage" />--%>
+</ContentTemplate>
+</asp:UpdatePanel>
                                                             </div>
                                                         </div>
                                                          <div class="col-sm-6">
@@ -600,65 +649,37 @@
                                 </table>
                             
                             </div>--%>
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                        CssClass="table table-hover table-striped" 
+                        onselectedindexchanged="GridView1_SelectedIndexChanged">
                                                     <Columns>
-                                                        <asp:TemplateField HeaderText="S No">
+                                                        <asp:TemplateField HeaderText="ID" Visible="false">
                                                             <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("[S No]") %>'></asp:TextBox>
+                                                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("ID") %>'></asp:TextBox>
                                                             </EditItemTemplate>
                                                             <ItemTemplate>
-                                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("[S No]") %>'></asp:Label>
+                                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("ID") %>'></asp:Label>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="A/C Description">
+                                                        <asp:TemplateField HeaderText="DesignationCode" Visible="false">
                                                             <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox2" runat="server" 
-                                                                    Text='<%# Bind("[A/C Description]") %>'></asp:TextBox>
+                                                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("DesignationCode") %>'></asp:TextBox>
                                                             </EditItemTemplate>
                                                             <ItemTemplate>
-                                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("[A/C Description]") %>'></asp:Label>
+                                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("DesignationCode") %>'></asp:Label>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="A/C No">
+                                                        <asp:TemplateField HeaderText="DesignationName">
                                                             <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("[A/C No]") %>'></asp:TextBox>
+                                                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("DesignationName") %>'></asp:TextBox>
                                                             </EditItemTemplate>
                                                             <ItemTemplate>
-                                                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("[A/C No]") %>'></asp:Label>
+                                                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("DesignationName") %>'></asp:Label>
+                                                                <br /><asp:HiddenField ID="hfid" Value='<%# Bind("DesignationCode") %>' runat="server"></asp:HiddenField>
+                                                                  
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="Cost Centre">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("[Cost Centre]") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label4" runat="server" Text='<%# Bind("[Cost Centre]") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="Project">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("Project") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label5" runat="server" Text='<%# Bind("Project") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="Employee">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Employee") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label6" runat="server" Text='<%# Bind("Employee") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="Budget Amount">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("[Budget Amount]") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label7" runat="server" Text='<%# Bind("[Budget Amount]") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
+                                                        <asp:CommandField HeaderText="Select" ShowSelectButton="True" />
                                                     </Columns>
                                                 </asp:GridView>
                         </div>
