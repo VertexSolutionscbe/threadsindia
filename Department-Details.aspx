@@ -470,7 +470,7 @@
                                                            <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox> 
                                                                
                                                               
-                                                            </div>s
+                 
                                                         </div>
                                   
                                   
@@ -485,8 +485,8 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Head Of Department"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                             <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
-                                                               
+                                                            <%-- <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>--%>
+                                                               <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
                                                               
                                                             </div>
                                                         </div>
@@ -506,7 +506,8 @@
                                  <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
@@ -525,7 +526,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Department Details</h4>
+                                    <h4 class="panel-title">Department Details       <h4 class="panel-title">Department Details</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
@@ -554,9 +555,7 @@
                       
                                 
           
-<<<<<<< HEAD:Department.aspx
-=======
-                             </div>
+                    </div>
                              
 
                                 <div class="panel-body">

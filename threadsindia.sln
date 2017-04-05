@@ -5,20 +5,20 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "threadsindia", "E:\threadsi
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/threadsindia"
-		Debug.AspNetCompiler.PhysicalPath = "E:\threadsindia\threadsindia\"
+		Debug.AspNetCompiler.PhysicalPath = "..\threadsindia\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\threadsindia\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/threadsindia"
-		Release.AspNetCompiler.PhysicalPath = "E:\threadsindia\threadsindia\"
+		Release.AspNetCompiler.PhysicalPath = "..\threadsindia\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\threadsindia\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "23624"
+		VWDPort = "34214"
 	EndProjectSection
 EndProject
 Global
