@@ -542,26 +542,12 @@
                              
                                 </div>
                                 
-                            
-<<<<<<< HEAD
-                                   <div class="row">
-                              <div class="col-sm-8" align="right">
-                                <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" 
-                                        Text="Save" onclick="Button4_Click"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button5" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
-                                  <div class="col-sm-2"> <asp:Button ID="Button6" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
-                              
-                           
-                              
-                              </div>
-=======
-                               
->>>>>>> efd4832f03c0de84ed859e137feb07876ef01b57
+
                                <br />
                               </div>
                               
                             </div><!-- End .panel --> 
-                           
+                
                         </div>
                        
               
