@@ -265,6 +265,16 @@
                                   
                                 </ul>
                             </li>
+                                                <li>
+                                <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Designation.aspx"> Designation</a></li>
+                                    <li><a href="Department-Details.aspx"> Department</a></li>
+                                    
+                                  
+                                  
+                                </ul>
+                            </li>
                                 </ul>
                             </li>
                             <li>
