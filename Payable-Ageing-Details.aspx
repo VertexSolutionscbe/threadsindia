@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Receivable-with-adjustment.aspx.cs" Inherits="Receivable_with_adjustment" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Payable-Ageing-Details.aspx.cs" Inherits="Payable_Ageing_Details" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -408,7 +408,7 @@
                                 </ul>
                             </li> 
                                
-                            <li  class="active">
+                            <li>
                                 <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Receivable</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                   <li>
@@ -420,7 +420,7 @@
                                     
                                 </ul>
                             </li> 
-                                 <li   class="active">
+                                 <li>
                                 <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Receivable Report</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                      <li><a href="Receivable-Ageing-Details.aspx">Receivable Ageing Details</a></li>
@@ -428,6 +428,32 @@
                                         <li><a href="Receivable-with-adjustment.aspx">Receivable with adjustment</a></li>
                                           <li><a href="Receivable-Outstanding.aspx">Receivable Outstanding</a></li>
                                      <li><a href="Adjustment-and-on-Accounts.aspx">Adjustment & on Accounts</a></li>
+                                    
+                                </ul>
+                            </li> 
+                                   
+                                 </ul>
+                            </li> 
+
+                              <li class="active">
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Payable</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                  <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="#">Supplier Payment</a></li>
+                                      
+                                   
+                                    
+                                </ul>
+                            </li> 
+                                 <li class="active">
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Reports</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Payable-Ageing-Details.aspx">Payable Ageing Details</a></li>
+                                    <li><a href="Payable-Ageing-Summary.aspx">Payable Ageing Summary</a></li>
+                                          <li><a href="Payable-Outstanding.aspx">Payable Outstanding</a></li>
+                                     <li><a href="Payable-With-Adjustment.aspx">Payable With Adjustment</a></li>
                                     
                                 </ul>
                             </li> 
@@ -448,7 +474,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">Receivables with Adjustment<small></small></h1>
+                                <h1 class="gnrl">Payable Ageing <small> Details</small></h1>
                                
                             </div>
                         </div>
@@ -459,7 +485,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Receivables with Adjustment</h4>
+                                    <h4 class="panel-title">Payable Ageing Details</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
@@ -480,44 +506,106 @@
                                   
                                  </div></div>
 
-                              
+                                 <br />   <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label2" runat="server" Text="Payable Account"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                           <asp:DropDownList ID="DropDownList2" runat="server" class="txt"></asp:DropDownList>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                      <br /> <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label3" runat="server" Text="Slab1"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                         <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                  <br />    <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label4" runat="server" Text="Slab2"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                         <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                    <br />  <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label5" runat="server" Text="Slab3"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                         <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                       <br />   <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label6" runat="server" Text="Slab4"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                         <asp:TextBox ID="TextBox4" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                        <br />  <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label7" runat="server" Text="Slab5"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                         <asp:TextBox ID="TextBox5" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                 
+                                        <br />  <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label8" runat="server" Text="As on Date"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                        <asp:DropDownList ID="DropDownList3" runat="server" class="txt"></asp:DropDownList>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
                                
                                         <br />  <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-3 col-md-2 control-label"> <asp:Label ID="Label9" runat="server" Text="Recevable Accounts"></asp:Label></div>
-                                                            <div class="col-lg-1 col-md-8">
-                                                              <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox>
-                                                            </div>
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label9" runat="server" Text="Choice"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-8">
-                                                      <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
-                                                               <asp:TextBox ID="TextBox2" runat="server" class="txt" TextMode="MultiLine"></asp:TextBox>
-                                                              
-                                                            </div>
-                                                        </div>
-                                  
-                                  
-                                 </div></div>
-                                     <br />  <div class="row">
-                                 <div class="col-sm-6">
-                                 <div class="form-group">
-                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label2" runat="server" Text="Base"></asp:Label></div>
-                                                            <div class="col-lg-8 col-md-8">
-                                                       
-                                                           <asp:DropDownList ID="DropDownList2" runat="server" class="txt"></asp:DropDownList>
-                                                              
-                                                            </div>
-                                                        </div>
-                                  
-                                  
-                                 </div></div>
-                                      <br />  <div class="row">
-                                 <div class="col-sm-6">
-                                 <div class="form-group">
-                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label3" runat="server" Text="As on Date"></asp:Label></div>
-                                                            <div class="col-lg-8 col-md-8">
-                                                       
-                                                           <asp:DropDownList ID="DropDownList3" runat="server" class="txt"></asp:DropDownList>
+                                                         <asp:DropDownList ID="DropDownList4" runat="server" class="txt"></asp:DropDownList>
+                                                               
                                                               
                                                             </div>
                                                         </div>
@@ -545,7 +633,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Receivables with adjustment</h4>
+                                    <h4 class="panel-title">Payable Ageing Details</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
