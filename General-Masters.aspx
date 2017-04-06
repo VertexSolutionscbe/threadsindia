@@ -458,7 +458,8 @@
                                                         
                                                              <div class="row">
                               <div class="col-sm-8 col-sm-offset-2" align="right">
-                                <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                        Text="Save" onclick="Button1_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                               
@@ -484,7 +485,8 @@
                                                          
                                                              <div class="row">
                               <div class="col-sm-8 col-sm-offset-2" align="right">
-                                <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" 
+                                        Text="Save" onclick="Button4_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button5" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button6" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                               
@@ -515,7 +517,7 @@
                                                         </div>
                                                              <div class="row">
                               <div class="col-sm-8 col-sm-offset-2" align="right">
-                                <div class="col-sm-2"> <asp:Button ID="Button7" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                <div class="col-sm-2"> <asp:Button ID="Button7" runat="server" Class="btn" Text="Save" onclick="Button7_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button8" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button9" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                               
@@ -529,6 +531,7 @@
                                                             <label class="col-lg-2 col-md-3 control-label">Currency</label>
                                                             <div class="col-lg-10 col-md-9">
                                                              <asp:TextBox ID="TextBox6" runat="server" Class="txt"></asp:TextBox> 
+<asp:Label ID="currencycode" runat="server" Text="Label" Visible="false"></asp:Label>
                                                             </div>
                                                         </div>
                                                         <!-- End .control-group  -->
@@ -540,7 +543,7 @@
                                                         </div>
                                                              <div class="row">
                               <div class="col-sm-8 col-sm-offset-2" align="right">
-                                <div class="col-sm-2"> <asp:Button ID="Button10" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                <div class="col-sm-2"> <asp:Button ID="Button10" runat="server" Class="btn" Text="Save" onclick="Button10_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button11" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button12" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                               

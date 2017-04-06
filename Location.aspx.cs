@@ -33,15 +33,14 @@ public partial class Location : System.Web.UI.Page
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable dt = new DataTable();
 
-            //  string strSQL = "SELECT * FROM DesignationMaster WHERE DesignationCode = " '"+ txtval1.Text"';
-            //   da.SelectCommand = new SqlCommand(strSQL);
-            da.SelectCommand = new SqlCommand("SELECT * FROM locationmaster WHERE LocationName ='" + TextBox3.Text + "'");
+
+            da.SelectCommand = new SqlCommand("SELECT LocationCode FROM locationmaster WHERE LocationCode ='" + Label2.Text + "'");
             da.SelectCommand.Connection = conn;
             da.Fill(dt);
 
-            if (dt.Rows.Count > 0) // Means Student Id is already present
+            if (dt.Rows.Count > 0) 
             {
-                // Label1.Text = "This designation is already added!";
+               
                 string message = "This LocationName is already added!')";
                 ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
             }
@@ -50,20 +49,19 @@ public partial class Location : System.Web.UI.Page
                 string query = "InsertLocation";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
-                // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
+                
                 cmd.Parameters.AddWithValue("@LocationType", TextBox1.Text);
                 cmd.Parameters.AddWithValue("@LocationName", TextBox3.Text);
                 cmd.Parameters.AddWithValue("@LocationAddress", TextBox7.Text);
                 cmd.Parameters.AddWithValue("@isactive", Chklabel15.Text);
-                //cmd.Parameters.AddWithValue("@isactive", CheckBox1.Checked);
+             
                 cmd.ExecuteNonQuery();
-                // Response.Write("Record inserted successsfully");
+                
                 string message = "Record inserted successsfully";
 
                 ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
                 conn.Close();
-                //bindgridview();
+                
 
             }
       

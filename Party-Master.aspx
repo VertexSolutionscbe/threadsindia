@@ -11,7 +11,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
-
+                 <link type="text/css" href="css/jquery-ui-1.8.19.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script><script type="text/javascript">
+    $(function () {
+        $("#TextBox7").datepicker();
+    });
+</script>
+<style type="text/css">
+.ui-datepicker { font-size:8pt !important}
+</style>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/waves.min.css" type="text/css" rel="stylesheet">
@@ -39,10 +48,10 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form role="form">
+                    <form1 role="form">
                         <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
                         <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>
+                    </form1>
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -518,7 +527,7 @@
                                                             <div class="col-lg-8 col-md-9">
                                                            
                                                            
-                                                               <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
+                                                               <asp:TextBox ID="TextBox3" runat="server" class="txt" Text="MS" Enabled="false"></asp:TextBox>
                                                               
                                                             </div>
                                                         </div>
@@ -527,11 +536,11 @@
                                  </div>
                                                                   <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label8" runat="server" Text="Winding Code"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label8" runat="server" Text="State"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                           
-                                                               <asp:TextBox ID="TextBox4" runat="server" class="txt"></asp:TextBox>
+                                                               <asp:DropDownList ID="DropDownList4" runat="server" class="txt"></asp:DropDownList>
+                                                              
                                                               
                                                             </div>
                                                         </div>
@@ -547,7 +556,10 @@
                                  <div class="form-group">
                               <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="Control Account"></asp:Label></div>
                                <div class="col-lg-8 col-md-9">
-                                 <asp:DropDownList ID="DropDownList3" runat="server" class="txt"></asp:DropDownList>
+                                 <asp:DropDownList ID="DropDownList3" runat="server" class="txt">
+                                     <asp:ListItem>Sundry Debtor</asp:ListItem>
+                                     <asp:ListItem>Sundry Creditor</asp:ListItem>
+                                   </asp:DropDownList>
                                  </div>
                                   </div>
                      
@@ -585,10 +597,10 @@
                                  </div>
                                  <div class="col-sm-6">
                                   <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label10" runat="server" Text="State"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label10" runat="server" Text="Winding Code"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
-                                                           
-                                                            <asp:DropDownList ID="DropDownList4" runat="server" class="txt"></asp:DropDownList>
+                                                            <asp:TextBox ID="TextBox4" runat="server" class="txt"></asp:TextBox>
+                                                        
                                                                
                                                               
                                                             </div>
@@ -602,11 +614,15 @@
                                  
                                  <div class="col-sm-6">
                                    <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label11" runat="server" Text="Tin Date"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> 
+                                                                
+                                                            <asp:Label ID="Label11" runat="server" Text="Tin Date"></asp:Label>
+                                                            
+                                                            </div>
                                                             <div class="col-lg-8 col-md-9">
-                                                           
+                                                           <%--<asp:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></asp:ToolkitScriptManager> --%>
                                                              <asp:TextBox ID="TextBox7" runat="server" class="txt"></asp:TextBox>
-                                                               
+                                                                <asp:CalendarExtender ID="Calendar1" PopupButtonID="imgPopup" runat="server" TargetControlID="TextBox7" Format="dd/MM/yyyy" PopupPosition="Right"></asp:CalendarExtender>  
                                                               
                                                             </div>
                                                         </div>
@@ -631,7 +647,10 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label14" runat="server" Text="Party Type"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                           <asp:DropDownList ID="DropDownList5" runat="server" class="txt"></asp:DropDownList>
+                                                           <asp:DropDownList ID="DropDownList5" runat="server" class="txt">
+                                                               <asp:ListItem>Customer</asp:ListItem>
+                                                               <asp:ListItem>Supplier</asp:ListItem>
+                                                                </asp:DropDownList>
                                                                
                                                               
                                                             </div>
@@ -729,7 +748,10 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label21" runat="server" Text="Introduced By"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                            <asp:DropDownList ID="DropDownList6" runat="server" class="txt"></asp:DropDownList>
+                                                            <asp:DropDownList ID="DropDownList6" runat="server" class="txt">
+                                                                <asp:ListItem>Admin</asp:ListItem>
+                                                                <asp:ListItem>Worker</asp:ListItem>
+                                                                </asp:DropDownList>
                                                                
                                                               
                                                             </div>
@@ -1036,8 +1058,10 @@
                                  <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
+                                             Text="  Clear" onclick="Button2_Click"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
                                  </div>      </div>
