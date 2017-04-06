@@ -1,9 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Journal-Templates.aspx.cs" Inherits="Journal_Templates" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Reconcile Account.aspx.cs" Inherits="Reconcile_Account" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
 <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -377,37 +378,44 @@
                                     
                                 </ul>
                             </li>
-                                        <li class="active">
+                                        <li>
                                 <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Journal</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Journal-Templates.aspx">Journal Templates</a></li>
                                     <li><a href="Journals.aspx">Journals</a></li>
-                                      <li><a href="Stock-Posting.aspx">Stock Posting</a></li>
-                                    <li><a href="Year-End-Journals.aspx">Year End Journals</a></li>
+                                     <li><a href="Stock-Posting.aspx">Stock Post</a></li>
+                                     <li><a href="Year-End-Journals.aspx">Year End Journals</a></li>
                                     
                                 </ul>
                             </li> 
-                                       <li>
+                                <li>
                                 <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Cash / Bank Accounting</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Receipt.aspx">Receipt</a></li>
                                     <li><a href="Payment.aspx">Payment</a></li>
-                                       <li><a href="Fund-Transfer.aspx">Fund Transfer</a></li>
-                                   
+                                      <li><a href="Fund-Transfer.aspx">Fund Transfer</a></li>
+                                    <li><a href="Year-End-Journals.aspx">Year End Journals</a></li>
                                     
                                 </ul>
                             </li> 
-                                   <li>
+                                <li class="active" >
                                 <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Bank Reconcilation</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Reconcile Account.aspx">Reconcile Account</a></li>
-                                    <li><a href="Reconcilation-Report.aspx">Reconcilation Report</a></li>
-                                       
+                                      <li><a href="Reconcilation-Report.aspx">Reconcilation Report</a></li>
                                    
                                     
                                 </ul>
                             </li> 
-                              
+                             <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Receivable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Customer-Receipt.aspx">Customer Receipt</a></li>
+                                      <li><a href="AR-AP-Offset.aspx">AR/AP Offset</a></li>
+                                   
+                                    
+                                </ul>
+                            </li>
                                     
                                 </ul>
                             </li>
@@ -416,12 +424,12 @@
                     </div>
                 </div>
             </nav>
-            <div id="wrapper">
+               <div id="wrapper">
                 <div class="content-wrapper container">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">Journal <small>Templates</small></h1>
+                                <h1 class="gnrl">Reconcile Accounts <small> Details</small></h1>
                                
                             </div>
                         </div>
@@ -432,7 +440,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Journal Template</h4>
+                                    <h4 class="panel-title">Reconcile Accounts</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
@@ -442,8 +450,8 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-6 col-md-2 control-label"> <asp:Label ID="Label1" runat="server" Text="Company"></asp:Label></div>
-                                                            <div class="col-lg-6 col-md-8">
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label1" runat="server" Text="Branch"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
                                                            <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
                                                                
                                                               
@@ -452,12 +460,12 @@
                                   
                                   
                                  </div></div>
-                                 <br />  <div class="row">
-                                    <div class="col-sm-6">
+                            <br />  <div class="row">
+                                 <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-6 col-md-2 control-label"> <asp:Label ID="Label2" runat="server" Text="Voucher Type"></asp:Label></div>
-                                                            <div class="col-lg-6 col-md-8">
-                                                           <asp:DropDownList ID="DropDownList2" runat="server" class="txt"></asp:DropDownList>
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label2" runat="server" Text="Reconcile Ref"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                          <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
@@ -465,60 +473,44 @@
                                   
                                   
                                  </div>
-                                </div>
-                               
-                                   <br />  <div class="row">
-                                    <div class="col-sm-6">
+                               </div>
+                                    <br />  <div class="row">
+                                 <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-6 col-md-2 control-label"> <asp:Label ID="Label3" runat="server" Text="Template Number"></asp:Label></div>
-                                                            <div class="col-lg-6 col-md-8">
-                                                        <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
-                                                               
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label4" runat="server" Text="Bank Account"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                         
+                                                               <asp:DropDownList ID="DropDownList2" runat="server" class="txt"></asp:DropDownList>
                                                               
                                                             </div>
                                                         </div>
                                   
                                   
                                  </div>
-                                </div>
-                                  <br />  <div class="row">
-                                    <div class="col-sm-6">
+                                 </div>
+                                     <br />  <div class="row">
+                                 <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-6 col-md-2 control-label"> <asp:Label ID="Label4" runat="server" Text="Template Description"></asp:Label></div>
-                                                            <div class="col-lg-6 col-md-8">
-                                                           <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>
-                                                               
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label6" runat="server" Text="Bank Statement "></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
+                                                         
+                                                               <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>
                                                               
                                                             </div>
                                                         </div>
                                   
                                   
                                  </div>
-                                </div>
-                                  <br />  <div class="row">
-                                    <div class="col-sm-6">
-                                 <div class="form-group">
-                                                            <div class="col-lg-6 col-md-2 control-label"> <asp:Label ID="Label5" runat="server" Text="Currency"></asp:Label></div>
-                                                            <div class="col-lg-6 col-md-8">
-                                                        <asp:DropDownList ID="DropDownList3" runat="server" class="txt"></asp:DropDownList>
-                                                              
-                                                            </div>
+                               </div>
+
+                                       <br /><div class="row">
+                                    <div class="col-sm-8">
+                                      <div class="form-group">
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
+                                  <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
-                                  
-                                  
-                                 </div>
-                                </div>
-                               <br />  <div class="row">
-                                    <div class="col-sm-6">
-                                 <div class="form-group">
-                                                            <div class="col-lg-6 col-md-2 control-label"><asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox>  <asp:Label ID="Label6" runat="server" Text="Shedulable"></asp:Label></div>
-                                                           
-                                                        </div>
-                                  
-                                  
-                                 </div>
-                                </div>
-                                </div>
+                                 </div>  
                           
                              
                               
@@ -537,7 +529,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Journal Template Details</h4>
+                                    <h4 class="panel-title">Reconcile Accounts</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
@@ -556,72 +548,7 @@
                    
                                 </div>
                             </div><!-- End .panel --> 
-                                    <div class="row">
-                        <div class="col-md-12">
-                             <div class="panel panel-default recent-activites">
-                                <!-- Start .panel -->
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">Journal Template Details</h4>
-                                    <div class="panel-actions">
-                                        <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
-                                        <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
-                                    </div>
-                                </div>
-                                <div class="panel-body">
-                                     <div class="row">
-                                     <div class="col-sm-12">
-  
-    <br />  <div class="row">
-                                    <div class="col-sm-6">
-                                 <div class="form-group">
-                                                            <div class="col-lg-6 col-md-2 control-label"> <asp:Label ID="Label7" runat="server" Text="Total Debit"></asp:Label></div>
-                                                            <div class="col-lg-6 col-md-8">
-                                                      <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
-                                                              
-                                                            </div>
-                                                        </div>
                                   
-                                  
-                                 </div>
-                                  <div class="col-sm-6">
-                                 <div class="form-group">
-                                                            <div class="col-lg-3 col-md-2 control-label"> <asp:Label ID="Label8" runat="server" Text="Total Credit"></asp:Label></div>
-                                                            <div class="col-lg-6 col-md-8">
-                                                       <asp:TextBox ID="TextBox4" runat="server" class="txt"></asp:TextBox>
-                                                              
-                                                            </div>
-                                                        </div>
-                                  
-                                  
-                                 </div>
-                                </div>
-                                  <br />  <div class="row">
-                                    <div class="col-sm-6">
-                                 <div class="form-group">
-                                                            <div class="col-lg-6 col-md-2 control-label"> <asp:Label ID="Label9" runat="server" Text="Notes"></asp:Label></div>
-                                                            <div class="col-lg-6 col-md-8">
-                                                      <asp:TextBox ID="TextBox5" runat="server" class="txt" TextMode="MultiLine"></asp:TextBox>
-                                                              
-                                                            </div>
-                                                        </div>
-                                  
-                                  
-                                 </div></div>
-
-                                     <br /><div class="row">
-                                    <div class="col-sm-8">
-                                      <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
-                                  <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
-                                                        </div>
-                                 </div>        <br />
-                                     </div>
-                               </div></div>
-                         </div>
-                   
-                                </div>
-                            </div><!-- End .panel --> 
                         </div>
              </div>
     
@@ -667,5 +594,7 @@
     </body>
     </form>
 </html>
+
+
 
 
