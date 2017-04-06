@@ -149,10 +149,7 @@ public partial class General_Masters : System.Web.UI.Page
     {
 
     }
-    protected void Button10_Click(object sender, EventArgs e)
-    {
-        
-    }
+    
     protected void Button1_Click1(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection(connectstringweb);
@@ -258,7 +255,7 @@ public partial class General_Masters : System.Web.UI.Page
     {
         
     }
-    protected void Button7_Click(object sender, EventArgs e)
+    protected void Button10_Click(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection(connectstringweb);
         conn.Open();

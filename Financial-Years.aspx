@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Financial-Years.aspx.cs" Inherits="Financial_Years" %>
-
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,7 +9,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
+         <script language="javascript">
+             function SetDate(dateValue, ctl) {
+                 thisForm = window.opener.document.forms[0].elements[ctl].value = dateValue;
+                 self.close();
+             }
 
+    </script>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/waves.min.css" type="text/css" rel="stylesheet">
@@ -412,10 +418,15 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server"  Text="Start Date"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label">  <asp:Calendar ID="Calendar1" runat="server" ondayrender="Calendar1_DayRender"></asp:Calendar>
+    </div> <asp:Label ID="Label1" runat="server"  Text="Start Date"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
-                                                           
-                                                           <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                            <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </cc1:ToolkitScriptManager>
+        <asp:TextBox ID="txtStartDate" runat="server"></asp:TextBox>
+        <cc1:CalendarExtender ID="CalendarExtender1" TargetControlID="txtDate" runat="server">
+        </cc1:CalendarExtender>
+                                                          <%-- <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>--%>
                                                                
                                                               
                                                             </div>

@@ -456,11 +456,9 @@
                                                         </div>
                                                         <!-- End .control-group  -->
                                                         
-<<<<<<< HEAD
                                                              <div class="row">
                               <div class="col-sm-8 col-sm-offset-2" align="right">
-                                <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
-                                        Text="Save" onclick="Button1_Click1"></asp:Button></div>
+                                <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                               
@@ -473,54 +471,13 @@
                                                         <div class="form-group">
                                                             <label class="col-lg-2 col-md-3 control-label">Country</label>
                                                             <div class="col-lg-8 col-md-9">
-                                                              <asp:DropDownList ID="DropDownList1" runat="server" class="txt" 
-                                                                     
-                                                                    onselectedindexchanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList> 
-                                                                
-                                                            </div>
-                                                        </div>
-                                                        <!-- End .control-group  -->
-                                                        <div class="form-group">
-                                                            <label class="col-lg-2 col-md-3 control-label">State</label>
-                                                            <div class="col-lg-8 col-md-9">
-                                                           <asp:TextBox ID="TextBox2" runat="server" Class="txt"></asp:TextBox>
-                                                            </div>
-                                                        </div>
-                                                         
-=======
->>>>>>> 2eaaa70205126b79b54b24ccc713245a66e3a343
-                                                             <div class="row">
-                              <div class="col-sm-8 col-sm-offset-2" align="right">
-                                <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" Text="Save" onclick="Button4_Click"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button5" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
-                                  <div class="col-sm-2"> <asp:Button ID="Button6" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
-                              
-                           
-                              
-                              </div>
-                                                        <!-- End .control-group  -->
-                                                    </div>
-<<<<<<< HEAD
-                                                    <div class="tab-pane" id="tab3">
-                                                        <div class="form-group">
-                                                            <label class="col-lg-2 col-md-3 control-label">Country</label>
-                                                            <div class="col-lg-8 col-md-9">
-                                                              <asp:DropDownList ID="DropDownList2" runat="server" class="txt"></asp:DropDownList>
-=======
-                                                     <div class="tab-pane" id="tab2">
-                                                        <div class="form-group">
-                                                            <label class="col-lg-2 col-md-3 control-label">Country</label>
-                                                            <div class="col-lg-8 col-md-9">
                                                               <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList> 
->>>>>>> 2eaaa70205126b79b54b24ccc713245a66e3a343
                                                             </div>
                                                         </div>
                                                         <!-- End .control-group  -->
                                                         <div class="form-group">
                                                             <label class="col-lg-2 col-md-3 control-label">State</label>
                                                             <div class="col-lg-8 col-md-9">
-<<<<<<< HEAD
-=======
                                                            <asp:TextBox ID="TextBox2" runat="server" Class="txt"></asp:TextBox>
                                                             </div>
                                                         </div>
@@ -547,7 +504,6 @@
                                                         <div class="form-group">
                                                             <label class="col-lg-2 col-md-3 control-label">State</label>
                                                             <div class="col-lg-8 col-md-9">
->>>>>>> 2eaaa70205126b79b54b24ccc713245a66e3a343
                                                              <asp:DropDownList ID="DropDownList3" runat="server" class="txt"></asp:DropDownList>
                                                             </div>
                                                         </div>
@@ -559,10 +515,8 @@
                                                         </div>
                                                              <div class="row">
                               <div class="col-sm-8 col-sm-offset-2" align="right">
-                                <div class="col-sm-2"> 
-                                    <asp:Button ID="Button7" runat="server" Class="btn" 
-                                        Text="Save" onclick="Button7_Click" ></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button8" runat="server" Class="btn" Text="  Clear" onclick="Button_Click8"></asp:Button></div>
+                                <div class="col-sm-2"> <asp:Button ID="Button7" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button8" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button9" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                               
                            
