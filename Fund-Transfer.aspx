@@ -377,7 +377,7 @@
                                     
                                 </ul>
                             </li>
-                                        <li>
+                                         <li>
                                 <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Journal</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Journal-Templates.aspx">Journal Templates</a></li>
@@ -392,17 +392,26 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Receipt.aspx">Receipt</a></li>
                                     <li><a href="Payment.aspx">Payment</a></li>
-                                       <li><a href="Fund-Transfer.aspx">Fund Transfer</a></li>
-                                    <li><a href="Year-End-Journals.aspx">Year End Journals</a></li>
-                                    
-                                </ul>
-                            </li> 
-                                <li>
+                                      <li><a href="Fund-Transfer.aspx">Fund Transfer</a></li>
+                                   
+                                      <li >
                                 <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Bank Reconcilation</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Reconcile Account.aspx">Reconcile Account</a></li>
-                                    <li><a href="Payment.aspx">Payment</a></li>
-                                       <li><a href="Fund-Transfer.aspx">Fund Transfer</a></li>
+                                      <li><a href="Reconcilation-Report.aspx">Reconcilation Report</a></li>
+                                   
+                                    
+                                </ul>
+                            </li> 
+                                    
+                                </ul>
+                            </li> 
+                              
+                            <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Receivable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Customer-Receipt.aspx">Customer Receipt</a></li>
+                                        <li><a href="AR-AP-Offset.aspx">AR/AP Offset</a></li>
                                    
                                     
                                 </ul>
