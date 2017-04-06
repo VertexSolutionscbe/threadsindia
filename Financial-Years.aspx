@@ -9,13 +9,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
-         <script language="javascript">
-             function SetDate(dateValue, ctl) {
-                 thisForm = window.opener.document.forms[0].elements[ctl].value = dateValue;
-                 self.close();
-             }
-
-    </script>
+         <link type="text/css" href="css/jquery-ui-1.8.19.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script><script type="text/javascript">
+    $(function () {
+        $("#TextBox1").datepicker();
+    });
+</script>
+<style type="text/css">
+.ui-datepicker { font-size:8pt !important}
+</style>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/waves.min.css" type="text/css" rel="stylesheet">
@@ -43,10 +46,10 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form role="form">
+                    <form2 role="form">
                         <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
                         <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>
+                    </form2>
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -418,29 +421,30 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label">  <asp:Calendar ID="Calendar1" runat="server" ondayrender="Calendar1_DayRender"></asp:Calendar>
-    </div> <asp:Label ID="Label1" runat="server"  Text="Start Date"></asp:Label></div>
+<asp:Label ID="FinancialID" runat="server" Text="" Visible="false"></asp:Label>
+                                                            <div class="col-lg-4 col-md-3 control-label">  
+                                                            <asp:Label ID="Label1" runat="server"  Text="Start Date"></asp:Label>
+    </div> </div>
                                                             <div class="col-lg-8 col-md-9">
-                                                            <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-        </cc1:ToolkitScriptManager>
-        <asp:TextBox ID="txtStartDate" runat="server"></asp:TextBox>
-        <cc1:CalendarExtender ID="CalendarExtender1" TargetControlID="txtDate" runat="server">
-        </cc1:CalendarExtender>
-                                                          <%-- <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>--%>
-                                                               
+                                                          
+                                                           <asp:TextBox ID="txtval1" runat="server" class="txt"></asp:TextBox>
+                                                                 <cc1:CalendarExtender ID="CalendarExtender2" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval1" Format="dd/MM/yyyy" PopupPosition="Right"> </cc1:CalendarExtender>  
                                                               
                                                             </div>
                                                         </div>
                                   
                                   
                                  </div>
+                                  </div>
+                                   <div class="row">
                                                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label3" runat="server" Text="End Date"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> 
+                                                            <asp:Label ID="Label3" runat="server" Text="End Date"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
-                                                           
-                                                           <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>
-                                                               
+                                                          <cc1:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></cc1:ToolkitScriptManager>  
+                                                           <asp:TextBox ID="txtval2" runat="server" class="txt"></asp:TextBox>
+                                                               <cc1:CalendarExtender ID="Calendar1" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval2" Format="dd/MM/yyyy" PopupPosition="Right"> </cc1:CalendarExtender>  
                                                               
                                                             </div>
                                                         </div>
@@ -457,7 +461,7 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Financial Year"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                            <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
+                                                            <asp:TextBox ID="txtval3" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
@@ -475,7 +479,7 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="Remarks"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                            <asp:TextBox ID="TextBox4" runat="server" class="txt" TextMode="MultiLine"></asp:TextBox>
+                                                            <asp:TextBox ID="txtval4" runat="server" class="txt" TextMode="MultiLine"></asp:TextBox>
                                                                
                                                               
                                                             </div>
@@ -490,7 +494,10 @@
                                               <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"><asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox> <asp:Label ID="Label5" runat="server" Text="Active"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"><asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox> <asp:Label ID="Label5" runat="server" Text="Active"></asp:Label>
+                                                        <asp:Label ID="Label6" runat="server" Text="Label" Visible="false"></asp:Label>     <asp:TextBox ID="txtval5" runat="server" class="txt" Visible="false"></asp:TextBox>
+                                                               
+                                                            </div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
                                                           
@@ -514,8 +521,10 @@
                                  <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
+                                             Text="  Clear" onclick="Button2_Click"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
                                  </div>          <br />
