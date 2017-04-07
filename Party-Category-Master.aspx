@@ -29,8 +29,9 @@
        
     </head>
     
-    <form id="Form1" runat="server">
+   
     <body>
+     <form id="Form1" runat="server">
         <!-- Static navbar -->
 
         <nav class="navbar navbar-inverse yamm navbar-fixed-top">
@@ -38,10 +39,7 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form1 role="form">
-                        <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
-                        <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form1>
+                  
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -544,6 +542,7 @@
             ga('create', 'UA-3560057-28', 'auto');
             ga('send', 'pageview');
         </script>
+         </form>
     </body>
-    </form>
+   
 </html>

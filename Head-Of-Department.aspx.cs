@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Party_Master : System.Web.UI.Page
+public partial class Head_Of_Department : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {

@@ -30,8 +30,9 @@
        
     </head>
     
-    <form id="Form1" runat="server">
+  
     <body>
+      <form id="Form1" runat="server">
         <!-- Static navbar -->
 
         <nav class="navbar navbar-inverse yamm navbar-fixed-top">
@@ -39,10 +40,7 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form role="form">
-                        <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
-                        <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>
+                  
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -277,7 +275,7 @@
                                 <li><a href="Employee-Master.aspx"> Employee Master</a></li>
                                     <li><a href="Designation.aspx"> Designation</a></li>
                                     <li><a href="Department-Details.aspx"> Department</a></li>
-                                    
+                                       <li><a href="Head-Of-Department.aspx"> Head of Department</a></li>
                                   
                                   
                                 </ul>
@@ -348,18 +346,15 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-files-o fa-2x"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="lockscreen.html">Lockscreen</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="empty_page.html">Empty page</a></li>
-                                    <li><a href="gallery.html">gallery</a></li>
-                                    <li><a href="price_tables.html">Price tables</a></li>
-                                    <li><a href="page_contact.html">Contact Page</a></li>
+                                    <li><a href="Sales-Out-Sheet.aspx">Sales Out Sheet</a></li>
+                                    <li><a href="Small-Sales-Outsheet.aspx">Small Sales Out Sheet</a></li>
+                                    <li><a href="Branch-P-O.aspx">Branch PO</a></li>
+                               
                                 </ul>
                             </li>
+
                             <li class="active">
                                 <a href="#"><i class="fa fa-calendar-times-o fa-2x" aria-hidden="true"></i> <span class="nav-label">Financial Management</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
@@ -654,6 +649,7 @@
             ga('create', 'UA-3560057-28', 'auto');
             ga('send', 'pageview');
         </script>
+          </form>
     </body>
-    </form>
+  
 </html>

@@ -7,7 +7,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
- <meta charset="utf-8">
+<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -31,8 +31,9 @@
        
     </head>
     
-    <form id="Form1" runat="server">
+
     <body>
+        <form id="Form1" runat="server">
         <!-- Static navbar -->
 
         <nav class="navbar navbar-inverse yamm navbar-fixed-top">
@@ -40,10 +41,7 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form role="form">
-                        <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
-                        <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>
+                
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -235,8 +233,7 @@
             </div><!--/.container-fluid -->
         </nav>
         <section class="page">
-
-         <nav class="navbar-aside navbar-static-side" role="navigation">
+        <nav class="navbar-aside navbar-static-side" role="navigation">
                 <div class="sidebar-collapse nano">
                     <div class="nano-content">
                         <ul class="nav metismenu" id="side-menu">
@@ -250,7 +247,7 @@
                                     
                                 </ul>
                             </li>
-                            <li class="active">
+                            <li   class="active">
                                 <a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i> <span class="nav-label">Admin Setup </span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                      <li>
@@ -258,6 +255,7 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="General-Masters.aspx">  General Masters Details</a></li>
                                     <li><a href="Delivery-Chellan-New.aspx"> Delivery Chellan New</a></li>
+                                  
                                   
                                 </ul>
                             </li>
@@ -268,16 +266,18 @@
                                     <li><a href="Company.aspx"> Company</a></li>
                                     <li><a href="Location.aspx"> Location</a></li>
                                      <li><a href="Dimensions.aspx"> Dimension</a></li>
-                                    <li><a href="Business-Segment.aspx"> Business Segment</a></li>
-                                
+                                    <li><a href="Business-Segment.aspx">Business Segment</a></li>
+                                  
+                                  
                                 </ul>
                             </li>
-                                        <li class="active">
+                                                <li   class="active">
                                 <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                 <li><a href="Employee-Master.aspx"> Employee Master</a></li>
                                     <li><a href="Designation.aspx"> Designation</a></li>
-                                    <li><a href="Department-Details.aspx"> Department</a></li>
+                                       <li><a href="Department-Details.aspx"> Department</a></li>
+                                   <li><a href="Head-Of-Department.aspx"> Head Of Department</a></li>
                                     
                                   
                                   
@@ -285,6 +285,7 @@
                             </li>
                                 </ul>
                             </li>
+                            
                             <li>
                                 <a href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i> <span class="nav-label">Masters</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
@@ -299,7 +300,7 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
                                     <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
-                                  
+                                     
                                 </ul>
                             </li>
                                 </ul>
@@ -349,16 +350,12 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-files-o fa-2x"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="lockscreen.html">Lockscreen</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="empty_page.html">Empty page</a></li>
-                                    <li><a href="gallery.html">gallery</a></li>
-                                    <li><a href="price_tables.html">Price tables</a></li>
-                                    <li><a href="page_contact.html">Contact Page</a></li>
+                                    <li><a href="Sales-Out-Sheet.aspx">Sales Out Sheet</a></li>
+                                    <li><a href="Small-Sales-Outsheet.aspx">Small Sales Out Sheet</a></li>
+                                    <li><a href="Branch-P-O.aspx">Branch PO</a></li>
+                               
                                 </ul>
                             </li>
                             <li>
@@ -407,7 +404,7 @@
                                     <li><a href="Payment.aspx">Payment</a></li>
                                       <li><a href="Fund-Transfer.aspx">Fund Transfer</a></li>
                                    
-                                      <li>
+                                      <li >
                                 <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Bank Reconcilation</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Reconcile Account.aspx">Reconcile Account</a></li>
@@ -440,7 +437,7 @@
                                         <li><a href="Receivable-with-adjustment.aspx">Receivable with adjustment</a></li>
                                           <li><a href="Receivable-Outstanding.aspx">Receivable Outstanding</a></li>
                                      <li><a href="Adjustment-and-on-Accounts.aspx">Adjustment & on Accounts</a></li>
-                  
+                                    
                                 </ul>
                             </li> 
                                    
@@ -492,14 +489,12 @@
                     </div>
                 </div>
             </nav>
-
-
             <div id="wrapper">
                 <div class="content-wrapper container">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">Department Details <small>Details</small></h1>
+                                <h1 class="gnrl">Department Details</h1>
                                
                             </div>
                         </div>
@@ -520,29 +515,11 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="lblval1" runat="server" Text="Department"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Department"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                           <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox> 
-                                                               
-                                                              
-                                                            </div>s
-                                                        </div>
-                                  
-                                  
-                                 </div>
-
-                                  
-                                  
-                                 </div>
-                                 <br />                      <div class="row">
-                                 <div class="col-sm-6">
-                                 <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Head Of Department"></asp:Label></div>
-                                                            <div class="col-lg-8 col-md-9">
-                                                           
-                                                             <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
-                                                               
+                                                            
+                                                                 <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
                                                               
                                                             </div>
                                                         </div>
@@ -552,8 +529,9 @@
 
                                   
                                   
-                                 </div>
-                                                 
+
+                             
+                              
                               
                                 </div>
                           
@@ -590,8 +568,6 @@
                                 <div class="panel-body">
                                      <div class="row">
                                      <div class="col-sm-12">
-                            
-
 
 
 
@@ -610,205 +586,6 @@
                       
                                 
           
-<<<<<<< HEAD:Department.aspx
-=======
-                             </div>
-                             
-
-                                <div class="panel-body">
-                                     <div class="row">
-                                 <div class="col-sm-12">
-                                 <div class="form-group">
-                                                           <div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Department* "></asp:Label></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                             <%-- <asp:DropDownList ID="DropDownList1" runat="server" class="txt" Width="200px"></asp:DropDownList>--%>
-                                                              <asp:TextBox ID="Txtval1" runat="server" class="txt|" Width ="200px"></asp:TextBox>
-                                                            </div>
-                                                        </div>
-                                                         <div class="col-sm-6">
-                                                                        <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> </div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                               
-                                                                
-                                                            </div>
-                                                        </div>
-                                 </div>
-                                   </div>
-                                  
-                                 </div>
-                              
-                                </div>
-                              
-                                 <br /><div class="row">
-                                 <div class="col-sm-12">
-                                      <div class="form-group">
-                                      <div class="col-sm-6">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Head Of Department*"></asp:Label></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                           
-                                                          <asp:DropDownList ID="DropDownList3" runat="server" class="txt" Width="200px"></asp:DropDownList>
-                                                               
-                                                              </div>
-                                                            </div>
-                                                              <div class="col-sm-6">
-                                                            <div class="col-lg-3 col-md-3 control-label"> </div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                           
-                                                       <%--    <asp:TextBox ID="txtval3" runat="server" class="txt" Width="200px"></asp:TextBox>
-                                                               --%>
-                                                              </div>
-                                                            </div>
-                                                           <div class="col-sm-6">
-                                                              
-                                                            
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                            <div class="col-lg-3 col-md-3 control-label"> </div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                             
-                                                              </div>
-                                                            </div>
-                                                        </div>
-                                                          
-                                 </div>
-                                           
-                                 </div>
-                                  <br /><div class="row">
-                                 <div class="col-sm-6">
-                                      <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <%--<asp:Label ID="Label2" runat="server" Text="Budget Description"></asp:Label>--%></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                         <%--      <asp:TextBox ID="txtval2" runat="server" class="txt" Width="880px"></asp:TextBox>
-                                                     --%>
-                                                            </div>
-                                                        </div>
-                                                          
-                                 </div>
-                                           
-                                 </div>
-                                  
-                                 
-                                 
-                                 </div>
-                                 <br /><div class="row">
-                                    <div class="col-sm-8">
-                                      <div class="form-group">
-                                                           </div>
-                                                        </div>
-                                 </div><br />
-                         </div>
-<br />
-                            
-                                </div>
-                            </div><!-- End .panel --> 
-                           <%-- <div>
-                            
-                                <table style="width:100%;">
-                                    <tr>
-                                        <td class="style1" style="margin:-25px 20px 20px 45px" >
-                                            |&nbsp; List View</td>
-                                        <td class="style2">
-                                              <img src="images/new.png" alt="" class="img-square" width="20" " style="margin:10px 10px 10px 10px"/>
-                                       
-&nbsp;<h4 class="panel-title" style="margin:-35px 7px 6px 46px" >New |</h4>
-
-</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                    </tr>
-                                </table>
-                            
-                            </div>--%>
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
-                                                    <Columns>
-                                                        <asp:TemplateField HeaderText="S No">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("[S No]") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="lblsno" runat="server" Text='<%# Bind("[S No]") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="A/C Description">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox2" runat="server" 
-                                                                    Text='<%# Bind("[A/C Description]") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("[A/C Description]") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="A/C No">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("[A/C No]") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("[A/C No]") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="Cost Centre">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("[Cost Centre]") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label4" runat="server" Text='<%# Bind("[Cost Centre]") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="Project">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("Project") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label5" runat="server" Text='<%# Bind("Project") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="Employee">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Employee") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label6" runat="server" Text='<%# Bind("Employee") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="Budget Amount">
-                                                            <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("[Budget Amount]") %>'></asp:TextBox>
-                                                            </EditItemTemplate>
-                                                            <ItemTemplate>
-                                                                <asp:Label ID="Label7" runat="server" Text='<%# Bind("[Budget Amount]") %>'></asp:Label>
-                                                            </ItemTemplate>
-                                                        </asp:TemplateField>
-                                                    </Columns>
-                                                </asp:GridView>
-                        </div>
-                        <div class="content-wrapper">
-                                                
-                                                </div>
-                    </div>
-                      
-                          
->>>>>>> 500d886a5ff3eb272eb2ab95812b388483a46491
-=======
->>>>>>> 68e41bf7f6dda0c2e86980c0c68909ba7b475642:Depoartment-Details.aspx
           
         </section>
 
@@ -844,7 +621,8 @@
             ga('create', 'UA-3560057-28', 'auto');
             ga('send', 'pageview');
         </script>
+            </form>
     </body>
-    </form>
+
 </html>
 

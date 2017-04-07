@@ -30,8 +30,9 @@
        
     </head>
     
-    <form id="Form1" runat="server">
+    
     <body>
+    <form id="Form1" runat="server">
         <!-- Static navbar -->
 
         <nav class="navbar navbar-inverse yamm navbar-fixed-top">
@@ -39,10 +40,7 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form role="form">
-                        <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
-                        <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>
+              
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -235,7 +233,7 @@
         </nav>
         <section class="page">
 
-         <nav class="navbar-aside navbar-static-side" role="navigation">
+        <nav class="navbar-aside navbar-static-side" role="navigation">
                 <div class="sidebar-collapse nano">
                     <div class="nano-content">
                         <ul class="nav metismenu" id="side-menu">
@@ -258,6 +256,7 @@
                                     <li><a href="General-Masters.aspx">  General Masters Details</a></li>
                                     <li><a href="Delivery-Chellan-New.aspx"> Delivery Chellan New</a></li>
                                   
+                                  
                                 </ul>
                             </li>
                                    
@@ -267,14 +266,26 @@
                                     <li><a href="Company.aspx"> Company</a></li>
                                     <li><a href="Location.aspx"> Location</a></li>
                                      <li><a href="Dimensions.aspx"> Dimension</a></li>
-                                    <li><a href="Business-Segment.aspx"> Business Segment</a></li>
+                                    <li><a href="Business-Segment.aspx">Business Segment</a></li>
+                                  
+                                  
+                                </ul>
+                            </li>
+                                                <li>
+                                <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                <li><a href="Employee-Master.aspx"> Employee Master</a></li>
+                                    <li><a href="Designation.aspx"> Designation</a></li>
+                                    <li><a href="Department-Details.aspx"> Department</a></li>
+                                       <li><a href="Head-Of-Department.aspx"> Head of Department</a></li>
                                   
                                   
                                 </ul>
                             </li>
                                 </ul>
                             </li>
-                            <li>
+                            
+                            <li  class="active">
                                 <a href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i> <span class="nav-label">Masters</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Shade-No-Master.aspx">Shade No.Master</a></li>
@@ -288,7 +299,7 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
                                     <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
-                                  
+                                     
                                 </ul>
                             </li>
                                 </ul>
@@ -338,16 +349,12 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-files-o fa-2x"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="lockscreen.html">Lockscreen</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="empty_page.html">Empty page</a></li>
-                                    <li><a href="gallery.html">gallery</a></li>
-                                    <li><a href="price_tables.html">Price tables</a></li>
-                                    <li><a href="page_contact.html">Contact Page</a></li>
+                                    <li><a href="Sales-Out-Sheet.aspx">Sales Out Sheet</a></li>
+                                    <li><a href="Small-Sales-Outsheet.aspx">Small Sales Out Sheet</a></li>
+                                    <li><a href="Branch-P-O.aspx">Branch PO</a></li>
+                               
                                 </ul>
                             </li>
                             <li>
@@ -433,9 +440,46 @@
                                 </ul>
                             </li> 
                                    
+                                  </ul>
+                            </li> 
+
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Payable</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                  <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Supplier-Payment.aspx">Supplier Payment</a></li>
+                                      
+                                   
                                     
                                 </ul>
                             </li> 
+                                 <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Reports</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Payable-Ageing-Details.aspx">Payable Ageing Details</a></li>
+                                    <li><a href="Payable-Ageing-Summary.aspx">Payable Ageing Summary</a></li>
+                                          <li><a href="Payable-Outstanding.aspx">Payable Outstanding</a></li>
+                                     <li><a href="Payable-With-Adjustment.aspx">Payable With Adjustment</a></li>
+                                    
+                                </ul>
+                            </li> 
+                                   
+                                    
+                                </ul>
+                            </li> 
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Finance Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Voucher-Query.aspx">Voucher Query</a></li>
+                                    <li><a href="Group-Summary-Party.aspx">Group Summary Party</a></li>
+                                    
+                                    
+                                </ul>
+                            </li> 
+                                  
+                          
                                     
                                 </ul>
                             </li>
