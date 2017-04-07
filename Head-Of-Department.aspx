@@ -1,11 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Item-Group-Master.aspx.cs" Inherits="Item_Group_Master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Head-Of-Department.aspx.cs" Inherits="Head_Of_Department" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-
-
 <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +20,7 @@
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNINGs: Respond.js doesn't work if you view the page via file:// -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -234,8 +232,7 @@
             </div><!--/.container-fluid -->
         </nav>
         <section class="page">
-
-         <nav class="navbar-aside navbar-static-side" role="navigation">
+        <nav class="navbar-aside navbar-static-side" role="navigation">
                 <div class="sidebar-collapse nano">
                     <div class="nano-content">
                         <ul class="nav metismenu" id="side-menu">
@@ -249,7 +246,7 @@
                                     
                                 </ul>
                             </li>
-                            <li>
+                            <li class="active">>
                                 <a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i> <span class="nav-label">Admin Setup </span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                      <li>
@@ -257,6 +254,7 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="General-Masters.aspx">  General Masters Details</a></li>
                                     <li><a href="Delivery-Chellan-New.aspx"> Delivery Chellan New</a></li>
+                                  
                                   
                                 </ul>
                             </li>
@@ -267,13 +265,25 @@
                                     <li><a href="Company.aspx"> Company</a></li>
                                     <li><a href="Location.aspx"> Location</a></li>
                                      <li><a href="Dimensions.aspx"> Dimension</a></li>
-                                    <li><a href="Business-Segment.aspx"> Business Segment</a></li>
+                                    <li><a href="Business-Segment.aspx">Business Segment</a></li>
+                                  
+                                  
+                                </ul>
+                            </li>
+                                                <li class="active">
+                                <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                <li><a href="Employee-Master.aspx"> Employee Master</a></li>
+                                    <li><a href="Designation.aspx"> Designation</a></li>
+                                    <li><a href="Department-Details.aspx"> Department</a></li>
+                                      <li><a href="Head-Of-Department.aspx"> Head Of Department</a></li>
                                   
                                   
                                 </ul>
                             </li>
                                 </ul>
                             </li>
+                            
                             <li>
                                 <a href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i> <span class="nav-label">Masters</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
@@ -288,7 +298,7 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
                                     <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
-                                  
+                                     
                                 </ul>
                             </li>
                                 </ul>
@@ -433,9 +443,46 @@
                                 </ul>
                             </li> 
                                    
+                                  </ul>
+                            </li> 
+
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Payable</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                  <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Supplier-Payment.aspx">Supplier Payment</a></li>
+                                      
+                                   
                                     
                                 </ul>
                             </li> 
+                                 <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Reports</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Payable-Ageing-Details.aspx">Payable Ageing Details</a></li>
+                                    <li><a href="Payable-Ageing-Summary.aspx">Payable Ageing Summary</a></li>
+                                          <li><a href="Payable-Outstanding.aspx">Payable Outstanding</a></li>
+                                     <li><a href="Payable-With-Adjustment.aspx">Payable With Adjustment</a></li>
+                                    
+                                </ul>
+                            </li> 
+                                   
+                                    
+                                </ul>
+                            </li> 
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Finance Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Voucher-Query.aspx">Voucher Query</a></li>
+                                    <li><a href="Group-Summary-Party.aspx">Group Summary Party</a></li>
+                                    
+                                    
+                                </ul>
+                            </li> 
+                                  
+                          
                                     
                                 </ul>
                             </li>
@@ -444,12 +491,12 @@
                     </div>
                 </div>
             </nav>
-               <div id="wrapper">
+            <div id="wrapper">
                 <div class="content-wrapper container">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">Item Group Master <small> Details</small></h1>
+                                <h1 class="gnrl">Head Of Department</small></h1>
                                
                             </div>
                         </div>
@@ -460,48 +507,92 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Item Group Name</h4>
+                                    <h4 class="panel-title">Head Of Department</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
                                     </div>
                                 </div>
                                 <div class="panel-body">
-                                 <br />    <div class="row">
+                                     <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-5 col-md-2 control-label"> <asp:Label ID="Label1" runat="server" Text="Item Group Name"></asp:Label></div>
-                                                            <div class="col-lg-7 col-md-8">
-                                                           <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
-                                                               
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Department"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                                                            
+                                                                <%-- <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>--%>
                                                               
                                                             </div>
                                                         </div>
                                   
                                   
-                                 </div></div>
-                                   <br /><div class="row">
-                                    <div class="col-sm-8 col-sm-offset-2">
+                                 </div>
+
+                                  
+                                  
+                                 </div>
+                                 <br />                      <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Head Of Department"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                            <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                 </div>   
+                                 </div>
+                                </div>
+                          
+                             
+                              
+                                 <br /><div class="row">
+                                    <div class="col-sm-8">
                                       <div class="form-group">
                                                             <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
                                                                     Text="Save" onclick="Button1_Click"></asp:Button></div>
-                                                             <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
-                                                                     Text="Clear" onclick="Button2_Click"></asp:Button></div>
-                                                              <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Remove"></asp:Button></div>
-                                  
-                                 </div>        <br />
-                      
+                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
+                                             Text="  Clear" onclick="Button2_Click"></asp:Button></div>
+                                  <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
+                                                        </div>
+                                 </div>          <br />
+                                 
+                         </div>
+
                             
-                                </div></div>
-                               
-                    <br />
-                    </div></div></div></div>
-                            
-                            <!-- End .panel --> 
+                                </div>
+                            </div><!-- End .panel --> 
                 
 
               
-          
+                           <div class="row">
+                        <div class="col-md-12">
+                             <div class="panel panel-default recent-activites">
+                                <!-- Start .panel -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Head Of Department</h4>
+                                    <div class="panel-actions">
+                                        <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+                                        <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                     <div class="row">
+                                     <div class="col-sm-12">
+
+
+
+
+
+                                     </div>
+                               </div></div>
+                         </div>
+                   
+                                </div>
+                            </div><!-- End .panel --> 
                         </div>
              </div>
     
@@ -547,3 +638,4 @@
     </body>
     </form>
 </html>
+

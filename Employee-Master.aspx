@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Employee-Master.aspx.cs" Inherits="Employee_Master" %>
-
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,7 +11,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
-
+         <link type="text/css" href="css/jquery-ui-1.8.19.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script><script type="text/javascript">
+    $(function () {
+        $("#TextBox3").datepicker();
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $("#TextBox4").datepicker();
+    });
+</script>
+<style type="text/css">
+.ui-datepicker { font-size:8pt !important}
+</style>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/waves.min.css" type="text/css" rel="stylesheet">
@@ -39,10 +53,10 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form role="form">
+                   <%-- <form role="form">
                         <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
                         <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>
+                    </form>--%>
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -515,19 +529,19 @@
                                     </div>
                                 </div>
                                 <div class="panel-body">
-                                 <br />    <div class="row">
+                               <%--  <br /> --%>  <%-- <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label1" runat="server" Text="Employee No"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label1" runat="server" Text="Employee No" Visible="false"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-8">
-                                                           <asp:TextBox ID="TextBox1" runat="server" Class="txt"></asp:TextBox>
+                                                           <asp:TextBox ID="TextBox1" runat="server" Class="txt" Visible="false"></asp:TextBox>
                                                                
                                                               
                                                             </div>
                                                         </div>
                                   
                                   
-                                 </div></div>
+                                 </div></div>--%>
 
                                  <br />   <div class="row">
                                  <div class="col-sm-6">
@@ -539,7 +553,7 @@
                                                               
                                                             </div>
                                                             <div class="col-lg-3 col-md-8">
-                                                            <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox> <asp:Label ID="Label10" runat="server" Text="Inactive"></asp:Label>
+                                                            <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox> <asp:Label ID="Label10" runat="server" Text="Inactive"></asp:Label><asp:Label ID="lblcheck" runat="server" Text="" Visible="false"></asp:Label>
                                                         </div>
                                   </div>
                                   
@@ -548,9 +562,10 @@
                                  <div class="col-sm-6">
                                  <div class="form-group">
                                                             <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label3" runat="server" Text="Gender"></asp:Label></div>
-                                                            <div class="col-lg-4 col-md-8">
+                                                            <div class="col-lg-2 col-md-8">
                                                           
                                                               <asp:RadioButton ID="RadioButton1" runat="server"></asp:RadioButton>  <asp:Label ID="Label4" runat="server" Text="Male"></asp:Label>
+<asp:Label ID="lblgender" runat="server" Text="Label" Visible="false"></asp:Label>
                                                               
                                                             </div>
                                                             <div class="col-lg-4 col-md-8">
@@ -567,8 +582,9 @@
                                  <div class="form-group">
                                                             <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label6" runat="server" Text="Date Of Birth"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-8">
+                                                             <cc1:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></cc1:ToolkitScriptManager>  
                                                           <asp:TextBox ID="TextBox3" runat="server" Class="txt"></asp:TextBox>
-                                                               
+                                                               <cc1:CalendarExtender ID="CalendarExtender2" PopupButtonID="imgPopup" runat="server" TargetControlID="TextBox3" Format="dd/MM/yyyy" PopupPosition="Right"> </cc1:CalendarExtender>   
                                                               
                                                             </div>
                                                            
@@ -581,7 +597,7 @@
                                                             <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label7" runat="server" Text="Date Of Joining"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-8">
                                                           <asp:TextBox ID="TextBox4" runat="server" Class="txt"></asp:TextBox>
-                                                               
+                                                               <cc1:CalendarExtender ID="CalendarExtender1" PopupButtonID="imgPopup" runat="server" TargetControlID="TextBox4" Format="dd/MM/yyyy" PopupPosition="Right"> </cc1:CalendarExtender>   
                                                               
                                                             </div>
                                                            
@@ -616,8 +632,10 @@
                                     <br /><div class="row">
                                     <div class="col-sm-10 col-sm-offset-2">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                                             <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="Clear"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
+                                                             <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
+                                                                     Text="Clear" onclick="Button2_Click"></asp:Button></div>
                                                               <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div>
                                   
                                  </div>        <br />

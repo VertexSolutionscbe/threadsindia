@@ -554,8 +554,8 @@
                                                             </div>
                                                         </div>
                                                            <div class="col-lg-6 col-md-7 control-label">  <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox> 
-                                  <asp:Label ID="Label15" runat="server" Text="Inactive"></asp:Label></div>
-                                                                    <asp:Label ID="Chklabel15" runat="server" ></asp:Label>
+                                  <asp:Label ID="Label15" runat="server" Text="Active"></asp:Label></div>
+                                                                    <asp:Label ID="Chklabel15" runat="server" Visible="false"></asp:Label>
                                  </div>
                                            
                                  </div>
