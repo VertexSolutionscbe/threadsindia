@@ -234,7 +234,7 @@
         </nav>
         <section class="page">
 
-         <nav class="navbar-aside navbar-static-side" role="navigation">
+          <nav class="navbar-aside navbar-static-side" role="navigation">
                 <div class="sidebar-collapse nano">
                     <div class="nano-content">
                         <ul class="nav metismenu" id="side-menu">
@@ -267,6 +267,16 @@
                                     <li><a href="Location.aspx"> Location</a></li>
                                      <li><a href="Dimensions.aspx"> Dimension</a></li>
                                     <li><a href="Business-Segment.aspx"> Business Segment</a></li>
+                                
+                                </ul>
+                            </li>
+                                        <li>
+                                <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                <li><a href="Employee-Master.aspx"> Employee Master</a></li>
+                                    <li><a href="Designation.aspx"> Designation</a></li>
+                                    <li><a href="Department-Details.aspx"> Department</a></li>
+                                    
                                   
                                   
                                 </ul>
@@ -428,6 +438,32 @@
                                         <li><a href="Receivable-with-adjustment.aspx">Receivable with adjustment</a></li>
                                           <li><a href="Receivable-Outstanding.aspx">Receivable Outstanding</a></li>
                                      <li><a href="Adjustment-and-on-Accounts.aspx">Adjustment & on Accounts</a></li>
+                  
+                                </ul>
+                            </li> 
+                                   
+                                  </ul>
+                            </li> 
+
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Payable</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                  <li  class="active">
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Supplier-Payment.aspx">Supplier Payment</a></li>
+                                      
+                                   
+                                    
+                                </ul>
+                            </li> 
+                                 <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Reports</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Payable-Ageing-Details.aspx">Payable Ageing Details</a></li>
+                                    <li><a href="Payable-Ageing-Summary.aspx">Payable Ageing Summary</a></li>
+                                          <li><a href="Payable-Outstanding.aspx">Payable Outstanding</a></li>
+                                     <li><a href="Payable-With-Adjustment.aspx">Payable With Adjustment</a></li>
                                     
                                 </ul>
                             </li> 
@@ -435,6 +471,17 @@
                                     
                                 </ul>
                             </li> 
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Finance Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Voucher-Query.aspx">Voucher Query</a></li>
+                                    <li><a href="Group-Summary-Party.aspx">Group Summary Party</a></li>
+                                    
+                                    
+                                </ul>
+                            </li> 
+                                  
+                          
                                     
                                 </ul>
                             </li>
@@ -485,11 +532,11 @@
                                         <br />  <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-3 col-md-2 control-label"> <asp:Label ID="Label9" runat="server" Text="Recevable Accounts"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-2 control-label"> <asp:Label ID="Label9" runat="server" Text="Recevable Accounts"></asp:Label></div>
                                                             <div class="col-lg-1 col-md-8">
                                                               <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox>
                                                             </div>
-                                                            <div class="col-lg-8 col-md-8">
+                                                            <div class="col-lg-7 col-md-8">
                                                       <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
                                                                <asp:TextBox ID="TextBox2" runat="server" class="txt" TextMode="MultiLine"></asp:TextBox>
                                                               

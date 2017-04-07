@@ -232,7 +232,7 @@
         </nav>
         <section class="page">
 
-         <nav class="navbar-aside navbar-static-side" role="navigation">
+           <nav class="navbar-aside navbar-static-side" role="navigation">
                 <div class="sidebar-collapse nano">
                     <div class="nano-content">
                         <ul class="nav metismenu" id="side-menu">
@@ -246,7 +246,7 @@
                                     
                                 </ul>
                             </li>
-                            <li   class="active">
+                            <li class="active">
                                 <a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i> <span class="nav-label">Admin Setup </span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                      <li>
@@ -258,13 +258,23 @@
                                 </ul>
                             </li>
                                    
-                                             <li   class="active">
+                                             <li  class="active">
                                 <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">Company Set Up</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Company.aspx"> Company</a></li>
                                     <li><a href="Location.aspx"> Location</a></li>
                                      <li><a href="Dimensions.aspx"> Dimension</a></li>
                                     <li><a href="Business-Segment.aspx"> Business Segment</a></li>
+                                
+                                </ul>
+                            </li>
+                                        <li>
+                                <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                <li><a href="Employee-Master.aspx"> Employee Master</a></li>
+                                    <li><a href="Designation.aspx"> Designation</a></li>
+                                    <li><a href="Department-Details.aspx"> Department</a></li>
+                                    
                                   
                                   
                                 </ul>
@@ -351,7 +361,7 @@
                                 <a href="#"><i class="fa fa-calendar-times-o fa-2x" aria-hidden="true"></i> <span class="nav-label">Financial Management</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                   <li>
-                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">General Leger Master</span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">General Ledger Master</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Account-Budget.aspx">Account Budget</a></li>
                                     <li><a href="MIS-Configurator.aspx">MIS Configurator</a></li>
@@ -376,7 +386,100 @@
                                     
                                 </ul>
                             </li>
+                                        <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Journal</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Journal-Templates.aspx">Journal Templates</a></li>
+                                    <li><a href="Journals.aspx">Journals</a></li>
+                                     <li><a href="Stock-Posting.aspx">Stock Post</a></li>
+                                     <li><a href="Year-End-Journals.aspx">Year End Journals</a></li>
                                     
+                                </ul>
+                            </li> 
+                                <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Cash / Bank Accounting</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Receipt.aspx">Receipt</a></li>
+                                    <li><a href="Payment.aspx">Payment</a></li>
+                                      <li><a href="Fund-Transfer.aspx">Fund Transfer</a></li>
+                                   
+                                      <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Bank Reconcilation</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Reconcile Account.aspx">Reconcile Account</a></li>
+                                      <li><a href="Reconcilation-Report.aspx">Reconcilation Report</a></li>
+                                   
+                                    
+                                </ul>
+                            </li>
+                                    
+                                </ul>
+                            </li> 
+                               
+                            <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Receivable</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                  <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Receivable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Customer-Receipt.aspx">Customer Receipt</a></li>
+                                        <li><a href="AR-AP-Offset.aspx">AR/AP Offset</a></li>
+                                   
+                                    
+                                </ul>
+                            </li> 
+                                 <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Receivable Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Receivable-Ageing-Details.aspx">Receivable Ageing Details</a></li>
+                                    <li><a href="Receivable-Ageing-Summary.aspx">Receivable Ageing Summary</a></li>
+                                        <li><a href="Receivable-with-adjustment.aspx">Receivable with adjustment</a></li>
+                                          <li><a href="Receivable-Outstanding.aspx">Receivable Outstanding</a></li>
+                                     <li><a href="Adjustment-and-on-Accounts.aspx">Adjustment & on Accounts</a></li>
+                  
+                                </ul>
+                            </li> 
+                                   
+                                  </ul>
+                            </li> 
+
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Payable</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                  <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Supplier-Payment.aspx">Supplier Payment</a></li>
+                                      
+                                   
+                                    
+                                </ul>
+                            </li> 
+                                 <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Reports</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Payable-Ageing-Details.aspx">Payable Ageing Details</a></li>
+                                    <li><a href="Payable-Ageing-Summary.aspx">Payable Ageing Summary</a></li>
+                                          <li><a href="Payable-Outstanding.aspx">Payable Outstanding</a></li>
+                                     <li><a href="Payable-With-Adjustment.aspx">Payable With Adjustment</a></li>
+                                    
+                                </ul>
+                            </li> 
+                                   
+                                    
+                                </ul>
+                            </li> 
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Finance Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Voucher-Query.aspx">Voucher Query</a></li>
+                                    <li><a href="Group-Summary-Party.aspx">Group Summary Party</a></li>
+                                    
+                                    
+                                </ul>
+                            </li> 
+                                  
+                          
                                     
                                 </ul>
                             </li>
@@ -412,20 +515,7 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Conpany Code "></asp:Label></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                           
-                                                              <asp:TextBox ID="TextBox1" runat="server" Class="txt"></asp:TextBox>
-                                                               
-                                                              
-                                                            </div>
-                                                        </div>
-                                  
-                                  
-                                 </div>
-                                 <div class="col-sm-6">
-                                     <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Company Name "></asp:Label></div>
+                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Conpany Name "></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
                                                            
                                                               <asp:TextBox ID="TextBox2" runat="server" Class="txt"></asp:TextBox>
@@ -433,7 +523,19 @@
                                                               
                                                             </div>
                                                         </div>
+                                  
+                                  
                                  </div>
+                                   <div class="col-sm-6">
+                                     <div class="form-group">
+                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label10" runat="server" Text="Web "></asp:Label></div>
+                                                            <div class="col-lg-9 col-md-8">
+                                                           
+                                                             <asp:TextBox ID="TextBox10" runat="server" Class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                              </div></div>
                                 </div>
                                 <br />
                                  <div class="row">
@@ -494,16 +596,7 @@
                                                             </div>
                                                         </div>
                                  </div>
-                                 <div class="col-sm-6">
-                                     <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label10" runat="server" Text="Web "></asp:Label></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                           
-                                                             <asp:TextBox ID="TextBox10" runat="server" Class="txt"></asp:TextBox>
-                                                               
-                                                              
-                                                            </div>
-                              </div></div></div><br />
+                              </div><br />
                             
                                 </div>
                             </div><!-- End .panel --> 

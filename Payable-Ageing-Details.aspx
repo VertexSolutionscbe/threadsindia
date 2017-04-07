@@ -234,7 +234,7 @@
         </nav>
         <section class="page">
 
-         <nav class="navbar-aside navbar-static-side" role="navigation">
+<nav class="navbar-aside navbar-static-side" role="navigation">
                 <div class="sidebar-collapse nano">
                     <div class="nano-content">
                         <ul class="nav metismenu" id="side-menu">
@@ -257,6 +257,7 @@
                                     <li><a href="General-Masters.aspx">  General Masters Details</a></li>
                                     <li><a href="Delivery-Chellan-New.aspx"> Delivery Chellan New</a></li>
                                   
+                                  
                                 </ul>
                             </li>
                                    
@@ -266,7 +267,18 @@
                                     <li><a href="Company.aspx"> Company</a></li>
                                     <li><a href="Location.aspx"> Location</a></li>
                                      <li><a href="Dimensions.aspx"> Dimension</a></li>
-                                    <li><a href="Business-Segment.aspx"> Business Segment</a></li>
+                                    <li><a href="Business-Segment.aspx">Business Segment</a></li>
+                                  
+                                  
+                                </ul>
+                            </li>
+                                                <li>
+                                <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                <li><a href="Employee-Master.aspx"> Employee Master</a></li>
+                                    <li><a href="Designation.aspx"> Designation</a></li>
+                                    <li><a href="Department-Details.aspx"> Department</a></li>
+                                    
                                   
                                   
                                 </ul>
@@ -432,7 +444,7 @@
                                 </ul>
                             </li> 
                                    
-                                 </ul>
+                                  </ul>
                             </li> 
 
                               <li class="active">
@@ -441,7 +453,7 @@
                                   <li>
                                 <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Transaction</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="#">Supplier Payment</a></li>
+                                    <li><a href="Supplier-Payment.aspx">Supplier Payment</a></li>
                                       
                                    
                                     
@@ -461,6 +473,17 @@
                                     
                                 </ul>
                             </li> 
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Finance Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Voucher-Query.aspx">Voucher Query</a></li>
+                                    <li><a href="Group-Summary-Party.aspx">Group Summary Party</a></li>
+                                    
+                                    
+                                </ul>
+                            </li> 
+                                  
+                          
                                     
                                 </ul>
                             </li>
@@ -469,6 +492,7 @@
                     </div>
                 </div>
             </nav>
+
                <div id="wrapper">
                 <div class="content-wrapper container">
                     <div class="row">
