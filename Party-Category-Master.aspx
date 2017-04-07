@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Customer-Category-Master.aspx.cs" Inherits="Customer_Category_Master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Party-Category-Master.aspx.cs" Inherits="Customer_Category_Master" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -38,10 +38,10 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form role="form">
+                    <form1 role="form">
                         <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
                         <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>
+                    </form1>
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -469,9 +469,10 @@
                                  <br />    <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-5 col-md-2 control-label"> <asp:Label ID="Label1" runat="server" Text="Item Group Name"></asp:Label></div>
+                                                            <div class="col-lg-5 col-md-2 control-label"> <asp:Label ID="Label1" runat="server" Text="Party Type"></asp:Label></div>
                                                             <div class="col-lg-7 col-md-8">
                                                            <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                                <asp:TextBox ID="TextBox2" runat="server" class="txt" Visible="false"></asp:TextBox>
                                                                
                                                               
                                                             </div>
@@ -482,8 +483,10 @@
                                    <br /><div class="row">
                                     <div class="col-sm-8 col-sm-offset-2">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                                             <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="Clear"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
+                                                             <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
+                                                                     Text="Clear" onclick="Button2_Click"></asp:Button></div>
                                                               <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Remove"></asp:Button></div>
                                   
                                  </div>        <br />

@@ -36,10 +36,10 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form role="form">
+                    <form1 role="form">
                         <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
                         <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>
+                    </form1>
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -513,9 +513,15 @@
                                 </div>
                                 <div class="panel-body">
                                      <div class="row">
+                                 
                                  <div class="col-sm-6">
+<<<<<<< HEAD
                                  <div class="form-group">
                                                             <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Conpany Name "></asp:Label></div>
+=======
+                                     <div class="form-group">
+                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Company Name "></asp:Label></div>
+>>>>>>> 6c89737b9b8401c15ae349b30dee1548e4ad3dc6
                                                             <div class="col-lg-9 col-md-8">
                                                            
                                                               <asp:TextBox ID="TextBox2" runat="server" Class="txt"></asp:TextBox>
@@ -523,10 +529,12 @@
                                                               
                                                             </div>
                                                         </div>
-                                  
-                                  
                                  </div>
+<<<<<<< HEAD
                                    <div class="col-sm-6">
+=======
+                                                              <div class="col-sm-6">
+>>>>>>> 6c89737b9b8401c15ae349b30dee1548e4ad3dc6
                                      <div class="form-group">
                                                             <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label10" runat="server" Text="Web "></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
@@ -555,8 +563,8 @@
                                                             <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="Country "></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
                                                            
-                                                              <asp:TextBox ID="TextBox4" runat="server" Class="txt"></asp:TextBox>
-                                                               
+                                                             <%-- <asp:TextBox ID="TextBox4" runat="server" Class="txt"></asp:TextBox>--%>
+                                                               <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
                                                               
                                                             </div>
                                                         </div>
@@ -596,7 +604,11 @@
                                                             </div>
                                                         </div>
                                  </div>
+<<<<<<< HEAD
                               </div><br />
+=======
+    </div><br />
+>>>>>>> 6c89737b9b8401c15ae349b30dee1548e4ad3dc6
                             
                                 </div>
                             </div><!-- End .panel --> 
@@ -665,7 +677,7 @@
                                                             <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label12" runat="server" Text="PAN "></asp:Label></div>
                                                            <div class="col-lg-9 col-md-8">
                                                            
-                                                             
+                                                             <asp:Label ID="lblcompanycode" runat="server" Text="Label" Visible="false"></asp:Label>
                                                                <asp:TextBox ID="TextBox11" runat="server" class="text"></asp:TextBox>
                                                               
                                                             </div>
@@ -679,6 +691,7 @@
                                   <div class="ex">
                                   <asp:Label ID="Label14" runat="server" Text="Other"></asp:Label></div><br />
                                  <div class="col-lg-6 col-md-7 control-label">  <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox>
+<asp:Label ID="lblcheck" runat="server" Text="Label" Visible="false"></asp:Label>
                                   <asp:Label ID="Label15" runat="server" Text="Enable Finance Integration from Other Module"></asp:Label></div>
                                   
                                                            
@@ -698,8 +711,10 @@
                                                         </div><hr />
                                                           <div class="row">
                               <div class="col-sm-8" align="right">
-                                <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
+                                <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                        Text="Save" onclick="Button1_Click"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
+                                             Text="  Clear" onclick="Button2_Click"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                               
                             

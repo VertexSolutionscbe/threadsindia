@@ -518,10 +518,10 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Type"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Type" Visible="false"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                             <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
+                                                             <asp:DropDownList ID="DropDownList1" runat="server" class="txt" Visible="false"></asp:DropDownList>
                                                                
                                                               
                                                             </div>

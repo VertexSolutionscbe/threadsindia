@@ -47,15 +47,15 @@ public partial class General_Masters : System.Web.UI.Page
             string message = "This Country is already added!')";
             ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
         }
-        else if (dt.Rows.Count == 0 && TextBox1.Text != "" && TextBox2.Text != "")
+        else if (dt.Rows.Count == 0 && TextBox1.Text != "" )
         {
-            string query = "InsertCountryState";
+            string query = "InsertCountry";
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.CommandType = CommandType.StoredProcedure;
             // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
             // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
             cmd.Parameters.AddWithValue("@Country", TextBox1.Text);
-            cmd.Parameters.AddWithValue("@State", TextBox2.Text);
+          //  cmd.Parameters.AddWithValue("@State", TextBox2.Text);
             cmd.ExecuteNonQuery();
             // Response.Write("Record inserted successsfully");
             string message = "Record inserted successsfully";
@@ -65,10 +65,22 @@ public partial class General_Masters : System.Web.UI.Page
             //bindgridview();
 
         }
-        else
-        {
+        //else
+        //{
+        //    string query = "InsertCountry";
+        //    SqlCommand cmd = new SqlCommand(query, conn);
+        //    cmd.CommandType = CommandType.StoredProcedure;
+        //    // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
+        //    // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
+        //    cmd.Parameters.AddWithValue("@Country", TextBox1.Text);
+        //    cmd.Parameters.AddWithValue("@State", TextBox2.Text);
+        //    cmd.ExecuteNonQuery();
+        //    // Response.Write("Record inserted successsfully");
+        //    string message = "Record inserted successsfully";
 
-        }
+        //    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+        //    conn.Close();
+        //}
     }
 
     protected void BindContrydropdown()
@@ -149,53 +161,50 @@ public partial class General_Masters : System.Web.UI.Page
     {
 
     }
-    protected void Button10_Click(object sender, EventArgs e)
-    {
-        
-    }
-    protected void Button1_Click1(object sender, EventArgs e)
-    {
-        SqlConnection conn = new SqlConnection(connectstringweb);
-        conn.Open();
+    
+    //protected void Button1_Click1(object sender, EventArgs e)
+    //{
+    //    SqlConnection conn = new SqlConnection(connectstringweb);
+    //    conn.Open();
 
-        SqlDataAdapter da = new SqlDataAdapter();
-        DataTable dt = new DataTable();
+    //    SqlDataAdapter da = new SqlDataAdapter();
+    //    DataTable dt = new DataTable();
 
-        //  string strSQL = "SELECT * FROM DesignationMaster WHERE DesignationCode = " '"+ txtval1.Text"';
-        //   da.SelectCommand = new SqlCommand(strSQL);
-        da.SelectCommand = new SqlCommand("SELECT * FROM country WHERE Country ='" + TextBox1.Text + "'");
-        da.SelectCommand.Connection = conn;
-        da.Fill(dt);
+    //    //  string strSQL = "SELECT * FROM DesignationMaster WHERE DesignationCode = " '"+ txtval1.Text"';
+    //    //   da.SelectCommand = new SqlCommand(strSQL);
+    //    da.SelectCommand = new SqlCommand("SELECT * FROM country WHERE Country ='" + TextBox1.Text + "'");
+    //    da.SelectCommand.Connection = conn;
+    //    da.Fill(dt);
 
-        if (dt.Rows.Count > 0) // Means Student Id is already present
-        {
-            // Label1.Text = "This designation is already added!";
-            string message = "This Country is already added!')";
-            ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
-        }
-        else if (dt.Rows.Count == 0 && TextBox1.Text != "" )
-        {
-            string query = "InsertCountry";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
-            // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
-            cmd.Parameters.AddWithValue("@Country", TextBox1.Text);
+    //    if (dt.Rows.Count > 0) // Means Student Id is already present
+    //    {
+    //        // Label1.Text = "This designation is already added!";
+    //        string message = "This Country is already added!')";
+    //        ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+    //    }
+    //    else if (dt.Rows.Count == 0 && TextBox1.Text != "" )
+    //    {
+    //        string query = "InsertCountry";
+    //        SqlCommand cmd = new SqlCommand(query, conn);
+    //        cmd.CommandType = CommandType.StoredProcedure;
+    //        // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
+    //        // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
+    //        cmd.Parameters.AddWithValue("@Country", TextBox1.Text);
            
-            cmd.ExecuteNonQuery();
-            // Response.Write("Record inserted successsfully");
-            string message = "Record inserted successsfully";
+    //        cmd.ExecuteNonQuery();
+    //        // Response.Write("Record inserted successsfully");
+    //        string message = "Record inserted successsfully";
 
-            ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
-            conn.Close();
-            //bindgridview();
+    //        ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+    //        conn.Close();
+    //        //bindgridview();
 
-        }
-        else
-        {
+    //    }
+    //    else
+    //    {
 
-        }
-    }
+    //    }
+    //}
     protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection(connectstringweb);
@@ -288,6 +297,52 @@ public partial class General_Masters : System.Web.UI.Page
             cmd.Parameters.AddWithValue("@Country", DropDownList2.Text);
             cmd.Parameters.AddWithValue("@State", DropDownList3.Text);
             cmd.Parameters.AddWithValue("@City", TextBox3.Text);
+            cmd.ExecuteNonQuery();
+            // Response.Write("Record inserted successsfully");
+            string message = "Record inserted successsfully";
+
+            ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+            conn.Close();
+            //bindgridview();
+
+        }
+        else
+        {
+
+        }
+    }
+
+
+    protected void Button10_Click(object sender, EventArgs e)
+    {
+        SqlConnection conn = new SqlConnection(connectstringweb);
+        conn.Open();
+
+        SqlDataAdapter da = new SqlDataAdapter();
+        DataTable dt = new DataTable();
+
+        //  string strSQL = "SELECT * FROM DesignationMaster WHERE DesignationCode = " '"+ txtval1.Text"';
+        //   da.SelectCommand = new SqlCommand(strSQL);
+        da.SelectCommand = new SqlCommand("SELECT * FROM currencymaster WHERE CurrencyCode ='" + currencycode.Text + "'");
+        da.SelectCommand.Connection = conn;
+        da.Fill(dt);
+
+        if (dt.Rows.Count > 0) // Means Student Id is already present
+        {
+            // Label1.Text = "This designation is already added!";
+            string message = "This Currency is already added!')";
+            ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+        }
+        else if (dt.Rows.Count == 0 && TextBox6.Text != "" && TextBox7.Text!="")
+        {
+            string query = "InsertCurrency";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
+            // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
+            cmd.Parameters.AddWithValue("@Currency", TextBox6.Text);
+            cmd.Parameters.AddWithValue("@Description", TextBox7.Text);
+          
             cmd.ExecuteNonQuery();
             // Response.Write("Record inserted successsfully");
             string message = "Record inserted successsfully";

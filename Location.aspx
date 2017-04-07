@@ -35,10 +35,10 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-                    <form role="form">
+                    <form1 role="form">
                         <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
                         <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>
+                    </form1>
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -518,7 +518,7 @@
                                                             <div class="col-lg-9 col-md-8">
                                                            
                                                               <asp:TextBox ID="TextBox1" runat="server" Class="txt"></asp:TextBox>
-                                                               
+                                                               <asp:Label ID="Label2" runat="server" Text="Label" Visible="false"></asp:Label>
                                                               
                                                             </div>
                                                         </div>
@@ -555,6 +555,7 @@
                                                         </div>
                                                            <div class="col-lg-6 col-md-7 control-label">  <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox> 
                                   <asp:Label ID="Label15" runat="server" Text="Inactive"></asp:Label></div>
+                                                                    <asp:Label ID="Chklabel15" runat="server" ></asp:Label>
                                  </div>
                                            
                                  </div>
@@ -565,7 +566,7 @@
                                     <div class="col-sm-8">
                                       <div class="form-group">
                                                             <div class="col-sm-2">
-                                                            <asp:Button ID="Button1" runat="server" Class="btn" Text="Save" onclick="Button1_Click1" 
+                                                            <asp:Button ID="Button1" runat="server" Class="btn" Text="Save" onclick="Button1_Click" 
                                                                  />
                                                            <%--  <asp:Button ID="Button1" runat="server" Class="btn" 
                                                                     Text="Save" onclick="Button1_Click"></asp:Button>--%></div>
