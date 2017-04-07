@@ -35,42 +35,55 @@ public partial class Designation : System.Web.UI.Page
 
         SqlConnection conn = new SqlConnection(connectstringweb);
         conn.Open();
+        SqlCommand cmd = new SqlCommand("SELECT * FROM DesignationMaster WHERE DesignationName =@DesignationName", conn);
+        DataSet ds = new DataSet();
 
-        SqlDataAdapter da = new SqlDataAdapter();
-        DataTable dt = new DataTable();
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        cmd.Parameters.AddWithValue("@DesignationName", this.txtval2.Text.Trim());
 
-      //  string strSQL = "SELECT * FROM DesignationMaster WHERE DesignationCode = " '"+ txtval1.Text"';
-       //   da.SelectCommand = new SqlCommand(strSQL);
-        da.SelectCommand = new SqlCommand("SELECT * FROM DesignationMaster WHERE DesignationName ='" + txtval2.Text + "'");
-        da.SelectCommand.Connection = conn;
-        da.Fill(dt);
 
-        if (dt.Rows.Count > 0) // Means Student Id is already present
+       
+        da.Fill(ds);
+        if (ds.Tables[0].Rows.Count > 0)
         {
-           // Label1.Text = "This designation is already added!";
-            string message = "This designation is already added!')";
-            ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+            string message = "This Designation is already added!";
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload=function(){");
+            sb.Append("alert('");
+            sb.Append(message);
+            sb.Append("')};");
+            sb.Append("</script>");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
         }
-        else if (dt.Rows.Count == 0 && txtval2.Text != "")
+
+        else if (txtval2.Text != "")
         {
             string query = "InsertDesignation";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand cmd1 = new SqlCommand(query, conn);
+            cmd1.CommandType = CommandType.StoredProcedure;
             // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
             // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
-            cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
-            cmd.ExecuteNonQuery();
+            cmd1.Parameters.AddWithValue("@DesignationName", txtval2.Text);
+            cmd1.ExecuteNonQuery();
             // Response.Write("Record inserted successsfully");
             string message = "Record inserted successsfully";
 
-            ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload=function(){");
+            sb.Append("alert('");
+            sb.Append(message);
+            sb.Append("')};");
+            sb.Append("</script>");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
             conn.Close();
             //bindgridview();
-            
+
         }
         else
         {
-         
+
         }
 
 

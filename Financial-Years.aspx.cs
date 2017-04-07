@@ -29,13 +29,12 @@ public partial class Financial_Years : System.Web.UI.Page
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable dt = new DataTable();
 
-            //  string strSQL = "SELECT * FROM DesignationMaster WHERE DesignationCode = " '"+ txtval1.Text"';
-            //   da.SelectCommand = new SqlCommand(strSQL);
+          
             da.SelectCommand = new SqlCommand("SELECT * FROM financialyear WHERE ID ='" + FinancialID.Text + "'");
             da.SelectCommand.Connection = conn;
             da.Fill(dt);
 
-            if (dt.Rows.Count > 0) // Means Student Id is already present
+            if (dt.Rows.Count > 0) 
             {
                 // Label1.Text = "This designation is already added!";
                 string message = "This designation is already added!')";
