@@ -4,14 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-<<<<<<< HEAD
-
-public partial class Head_Of_Department : System.Web.UI.Page
-{
-    protected void Page_Load(object sender, EventArgs e)
-    {
-
-=======
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
@@ -102,6 +94,6 @@ public partial class Head_Of_Department : System.Web.UI.Page
     protected void Button2_Click(object sender, EventArgs e)
     {
         TextBox2.Text = "";
->>>>>>> 5b1ff72d0c89662c0d4646b7a7a5e3cb73593c5b
+
     }
 }

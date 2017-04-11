@@ -28,14 +28,14 @@
        
     </head>
     
-<<<<<<< HEAD
+
    
     <body>
-     <form id="Form1" runat="server">
-=======
+    
+
     <form id="Form1" runat="server">
     <body>
->>>>>>> 5b1ff72d0c89662c0d4646b7a7a5e3cb73593c5b
+
         <!-- Static navbar -->
 
         <nav class="navbar navbar-inverse yamm navbar-fixed-top">
@@ -43,14 +43,12 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-<<<<<<< HEAD
-                  
-=======
+
                    <%-- <form role="form">
                         <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
                         <span class="search-close"><i class="fa fa-times"></i></span>
                     </form>--%>
->>>>>>> 5b1ff72d0c89662c0d4646b7a7a5e3cb73593c5b
+
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -365,7 +363,7 @@
                                     <li><a href="Small-Sales-Outsheet.aspx">Small Sales Out Sheet</a></li>
                                     <li><a href="Branch-P-O.aspx">Branch PO</a></li>
                                
-=======
+
                             <li>
                                 <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
@@ -377,7 +375,7 @@
                                     <li><a href="gallery.html">gallery</a></li>
                                     <li><a href="price_tables.html">Price tables</a></li>
                                     <li><a href="page_contact.html">Contact Page</a></li>
->>>>>>> 5b1ff72d0c89662c0d4646b7a7a5e3cb73593c5b
+
                                 </ul>
                             </li>
                             <li>
@@ -591,15 +589,15 @@
                                  <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-<<<<<<< HEAD
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
-=======
+
+                                                            <div class="col-sm-2"> </div>
+                                     <div class="col-sm-2"> </div>
+
                                                             <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
                                                                     Text="Save" onclick="Button1_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
                                              Text="  Clear" onclick="Button2_Click"></asp:Button></div>
->>>>>>> 5b1ff72d0c89662c0d4646b7a7a5e3cb73593c5b
+
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
                                  </div>          <br />
@@ -679,13 +677,13 @@
             ga('create', 'UA-3560057-28', 'auto');
             ga('send', 'pageview');
         </script>
-<<<<<<< HEAD
+
          </form>
     </body>
    
-=======
+
     </body>
     </form>
->>>>>>> 5b1ff72d0c89662c0d4646b7a7a5e3cb73593c5b
+
 </html>
 

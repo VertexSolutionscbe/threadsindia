@@ -526,8 +526,8 @@
                                  </div>
                                                                   <div class="col-sm-6">
                                  <div class="form-group">
-                                                               <div class="col-lg-4 col-md-4 control-label"> <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox> <asp:Label ID="Label3" runat="server" Text="Is PR Shade  (Please Tick for YES) "></asp:Label></div>
-                                                               
+                                                               <div class="col-lg-4 col-md-4 control-label"> <asp:CheckBox ID="ShadChk" runat="server"></asp:CheckBox> <asp:Label ID="Label3" runat="server" Text="Is PR Shade  (Please Tick for YES) "></asp:Label></div>
+                                                               <asp:Label ID="itemLbl" runat="server" Text="Label" Visible="false"></asp:Label>
                                                               
                                                             </div>
                                                      
@@ -536,6 +536,168 @@
                                   
                                  </div>
                               
+                                          
+                                 <br />
+                                           <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Item"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                           
+                                                             <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                                                  <div class="col-sm-6">
+                                 <div class="form-group">
+                                                               <div class="col-lg-4 col-md-4 control-label"> </div>
+                                                               
+                                                              
+                                                            </div>
+                                                     
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                 <br />
+                                  <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Min Level (kgs)"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                           
+                                                              <asp:TextBox ID="TextBox2" runat="server" Class="txt"></asp:TextBox>
+                                                                
+  
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                                                  <div class="col-sm-6">
+                                 <div class="form-group">
+                                                               <div class="col-lg-4 col-md-4 control-label"> </div>
+                                                               
+                                                              
+                                                            </div>
+                                                     
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                 <br />
+                                           <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label7" runat="server" Text="Max Level (kgs)"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                           
+                                                              <asp:TextBox ID="TextBox3" runat="server" Class="txt"></asp:TextBox>
+                                                                <asp:CompareValidator ID="CompareValidator1" runat="server"   
+    ControlToCompare="TextBox2" ControlToValidate="TextBox3" Type="Integer   " Operator ="GreaterThan" 
+    ErrorMessage="Max level should be greater than Min level."></asp:CompareValidator>
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                                                  <div class="col-sm-6">
+                                 <div class="form-group">
+                                                               <div class="col-lg-4 col-md-4 control-label"> </div>
+                                                               
+                                                              
+                                                            </div>
+                                                     
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                 <br />
+                                           <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label9" runat="server" Text="Min Level (Pcs)"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                           
+                                                              <asp:TextBox ID="TextBox4" runat="server" Class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                                                  <div class="col-sm-6">
+                                 <div class="form-group">
+                                                               <div class="col-lg-4 col-md-4 control-label"> </div>
+                                                               
+                                                              
+                                                            </div>
+                                                     
+                                                        </div>
+                                  
+                             </div>     
+                             <br />
+          <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label11" runat="server" Text="Max Level (Pcs)"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                           
+                                                              <asp:TextBox ID="TextBox5" runat="server" Class="txt"></asp:TextBox>
+                                                                <asp:CompareValidator ID="CompareValidator2" runat="server"   
+    ControlToCompare="TextBox4" ControlToValidate="TextBox5" Type="Integer   " Operator ="GreaterThan" 
+    ErrorMessage="Max level should be greater than Min level."></asp:CompareValidator>
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                                                  <div class="col-sm-6">
+                                 <div class="form-group">
+                                                               <div class="col-lg-4 col-md-4 control-label"> </div>
+                                                               
+                                                              
+                                                            </div>
+                                                     
+                                                        </div>
+                                  
+                                 </div>
+                                 
+                              <br />
+                               <div class="row">
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="Color"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-7">
+                                                           
+                                                              <asp:TextBox ID="TextBox6" runat="server" Class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                                                  <div class="col-sm-6">
+                                 <div class="form-group">
+                                                               <div class="col-lg-4 col-md-4 control-label"> </div>
+                                                               
+                                                              
+                                                            </div>
+                                                     
+                                                        </div>
+                                  
+                                 </div>
+                                 
+         
                                 </div>
                           
                              
@@ -543,8 +705,10 @@
                                  <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
+                                             Text="  Clear" onclick="Button2_Click"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
                                  </div>          <br />
