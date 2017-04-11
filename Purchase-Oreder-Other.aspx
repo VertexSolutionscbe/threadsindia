@@ -511,7 +511,7 @@
                                 </div>
                                 <div class="panel-body">
                                      <div class="row">
-                                 <div class="col-sm-4">
+                                 <div class="col-sm-6">
                                  <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Doc Id"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
@@ -524,7 +524,7 @@
                                   
                                  </div>
 
-                                      <div class="col-sm-4">
+                                      <div class="col-sm-6">
                                  <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label6" runat="server" Text="Doc Date"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
@@ -536,11 +536,12 @@
                                                         </div>
                                   
                                   
-                                 </div>
-                                       <div class="col-sm-4">
+                                 </div></div>
+                                <br /> <div class="row">
+                                       <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-5 col-md-3 control-label"> <asp:Label ID="Label3" runat="server" Text="Tax Template"></asp:Label></div>
-                                                            <div class="col-lg-7 col-md-8">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label3" runat="server" Text="Tax Template"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-8">
                                                            
                                                             <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
                                                                
@@ -554,7 +555,7 @@
                                   
                                  </div>
                                  <br />                      <div class="row">
-                                 <div class="col-sm-4">
+                                 <div class="col-sm-6">
                                  <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Party"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
@@ -566,9 +567,9 @@
                                                         </div>
                                   
                                   
-                                 </div>
-
-                                    <div class="col-sm-4">
+                                 </div></div>
+                                 <br /> <div class="row">
+                                    <div class="col-sm-6">
                                  <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="Po.Type"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
@@ -580,8 +581,9 @@
                                                         </div>
                                   
                                   
-                                 </div>
-                                                                     <div class="col-sm-4">
+                                 </div></div>
+                               <br />   <div class="row">
+                                                                     <div class="col-sm-6">
                                  <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Pay Terms"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
@@ -593,7 +595,7 @@
                                                         </div>
                                   
                                   
-                                 </div>
+                                 </div></div>
                                   
                                  </div>
                                                 </div>

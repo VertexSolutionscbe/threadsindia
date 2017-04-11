@@ -31,15 +31,12 @@
 
    
     <body>
-<<<<<<< HEAD
+
      <form id="Form1" runat="server">
 
-=======
-    
 
-    <form id="Form1" runat="server">
-    <body>
->>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
+
+
 
         <!-- Static navbar -->
 
@@ -600,19 +597,14 @@
                                     <div class="col-sm-8">
                                       <div class="form-group">
 
-<<<<<<< HEAD
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
 
-=======
-                                                            <div class="col-sm-2"> </div>
-                                     <div class="col-sm-2"> </div>
+                                                           
 
                                                             <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
                                                                     Text="Save" onclick="Button1_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
                                              Text="  Clear" onclick="Button2_Click"></asp:Button></div>
->>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
+
 
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>

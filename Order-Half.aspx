@@ -1,7 +1,4 @@
-
-
-
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Department-Details.aspx.cs" Inherits="Depoartment_Details" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Order-Half.aspx.cs" Inherits="Order_Half" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -31,9 +28,9 @@
        
     </head>
     
-
+   
     <body>
-        <form id="Form1" runat="server">
+     <form id="Form1" runat="server">
         <!-- Static navbar -->
 
         <nav class="navbar navbar-inverse yamm navbar-fixed-top">
@@ -41,12 +38,7 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-
-                    <%--<form role="form">
-                        <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
-                        <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>--%>
-
+                  
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -238,7 +230,8 @@
             </div><!--/.container-fluid -->
         </nav>
         <section class="page">
-        <nav class="navbar-aside navbar-static-side" role="navigation">
+
+             <nav class="navbar-aside navbar-static-side" role="navigation">
                 <div class="sidebar-collapse nano">
                     <div class="nano-content">
                         <ul class="nav metismenu" id="side-menu">
@@ -252,7 +245,7 @@
                                     
                                 </ul>
                             </li>
-                            <li   class="active">
+                            <li>
                                 <a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i> <span class="nav-label">Admin Setup </span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                      <li>
@@ -276,21 +269,19 @@
                                   
                                 </ul>
                             </li>
-                                                <li   class="active">
+                                                <li>
                                 <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                 <li><a href="Employee-Master.aspx"> Employee Master</a></li>
                                     <li><a href="Designation.aspx"> Designation</a></li>
-                                       <li><a href="Department-Details.aspx"> Department</a></li>
-                                   <li><a href="Head-Of-Department.aspx"> Head Of Department</a></li>
-                                    
+                                    <li><a href="Department-Details.aspx"> Department</a></li>
+                                       <li><a href="Head-Of-Department.aspx"> Head of Department</a></li>
                                   
                                   
                                 </ul>
                             </li>
                                 </ul>
                             </li>
-                            
                             <li>
                                 <a href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i> <span class="nav-label">Masters</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
@@ -305,16 +296,16 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
                                     <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
-                                     
+                                  
                                 </ul>
                             </li>
                                 </ul>
                             </li>
 
-                            <li>
+                            <li class="active">
                                             <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                                          <li>
+                                                          <li class="active">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i> <span class="nav-label">Transactions</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Pur-Price-Cnfm.aspx">Purchase Price conformation</a></li>
@@ -354,7 +345,7 @@
                             </li>
                                 </ul>
                             </li>
-                            <li>
+                              <li>
                                 <a href="#"><i class="fa fa-files-o fa-2x"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Sales-Out-Sheet.aspx">Sales Out Sheet</a></li>
@@ -494,42 +485,39 @@
                     </div>
                 </div>
             </nav>
+
             <div id="wrapper">
                 <div class="content-wrapper container">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">Department Details</h1>
+                                <h1 class="gnrl">Order Half <small>Entry</small></h1>
                                
                             </div>
                         </div>
                     </div><!-- end .page title-->
-                        <div class="row">
+                 
+                    <div class="row">
                         <div class="col-md-12">
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                       <h4 class="panel-title">Department Details</h4>
+                                    <h4 class="panel-title">Order Half Details</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
                                     </div>
                                 </div>
                                 <div class="panel-body">
-                                     <div class="row">
-                                     <div class="col-sm-12">
-
-                                      <div class="col-sm-6">
+                               
+                                 <br />                      <div class="row">
+                                 <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Department"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Order Half"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
-
                                                            
-
-                                                           <asp:Label ID="Label2" runat="server" Text="DeptCode" Visible="false"></asp:Label>
-
-                                                            
-                                                                 <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                            <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                               
                                                               
                                                             </div>
                                                         </div>
@@ -537,32 +525,27 @@
                                   
                                  </div>
 
-
-
-
-                                     </div>
-                               </div>
-                               
-                                  <br /><div class="row">
+                                  
+                                  
+                                 </div>
+                                                </div>
+                          
+                             
+                              
+                                 <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
-                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
-                                             Text="  Clear" onclick="Button2_Click"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
                                  </div>          <br />
-                               
-                               
-                               
-                               </div>
+                                 
                          </div>
-                   
+
+                            
                                 </div>
                             </div><!-- End .panel --> 
-                 
-         
                 
 
               
@@ -571,7 +554,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                       <h4 class="panel-title">Department Details</h4>
+                                    <h4 class="panel-title">Order Half Entry</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
@@ -633,8 +616,9 @@
             ga('create', 'UA-3560057-28', 'auto');
             ga('send', 'pageview');
         </script>
-            </form>
+         </form>
     </body>
-
+   
 </html>
+
 
