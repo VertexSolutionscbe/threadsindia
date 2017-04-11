@@ -4,13 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-<<<<<<< HEAD
 
 
-public partial class Head_Of_Department : System.Web.UI.Page
-{
-    protected void Page_Load(object sender, EventArgs e)
-    {
 
 
 
@@ -108,5 +103,4 @@ public partial class Head_Of_Department : System.Web.UI.Page
         TextBox2.Text = "";
 
     }
-}
 }

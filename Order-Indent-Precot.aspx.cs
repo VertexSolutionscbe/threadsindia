@@ -72,10 +72,10 @@ public partial class Order_Indent_Precot : System.Web.UI.Page
         SqlConnection conn = new SqlConnection(connectstringweb);
         conn.Open();
 
-        SqlCommand cmd = new SqlCommand("select ItemGrpCode,Item from ItemGroupDet", conn);
+        SqlCommand cmd = new SqlCommand("select ItemGrpCode,Item from Item", conn);
         SqlDataAdapter sda = new SqlDataAdapter(cmd);
         DataTable dt = new DataTable();
-        sda.Fill(dt);
+       sda.Fill(dt);
         DropDownList2.DataSource = dt;
 
         DropDownList2.DataTextField = "Item";

@@ -79,6 +79,7 @@ public partial class Shade_No_Master : System.Web.UI.Page
 
                 
                 cmd1.Parameters.AddWithValue("@ShadeNo", TextBox1.Text);
+                cmd1.Parameters.AddWithValue("@Item", DropDownList1.SelectedValue);
                 cmd1.Parameters.AddWithValue("@MinLevelkg", TextBox2.Text);
                 cmd1.Parameters.AddWithValue("@MaxLevelkg", TextBox3.Text);
                 cmd1.Parameters.AddWithValue("@MinLevelPcs", TextBox4.Text);
@@ -112,6 +113,7 @@ public partial class Shade_No_Master : System.Web.UI.Page
 
             SqlDataAdapter da1 = new SqlDataAdapter(cmd1);
             cmd1.Parameters.AddWithValue("@ShadeNo", TextBox1.Text);
+            cmd1.Parameters.AddWithValue("@Item", DropDownList1.SelectedValue);
             cmd1.Parameters.AddWithValue("@MinLevelkg", TextBox2.Text);
             cmd1.Parameters.AddWithValue("@MaxLevelkg", TextBox3.Text);
             cmd1.Parameters.AddWithValue("@MinLevelPcs", TextBox4.Text);
@@ -141,6 +143,7 @@ public partial class Shade_No_Master : System.Web.UI.Page
                 SqlCommand cmd2 = new SqlCommand(query, conn);
                 cmd2.CommandType = CommandType.StoredProcedure;
                 cmd2.Parameters.AddWithValue("@ShadeNo", TextBox1.Text);
+                cmd2.Parameters.AddWithValue("@Item", DropDownList1.SelectedValue);
                 cmd2.Parameters.AddWithValue("@MinLevelkg", TextBox2.Text);
                 cmd2.Parameters.AddWithValue("@MaxLevelkg", TextBox3.Text);
                 cmd2.Parameters.AddWithValue("@MinLevelPcs", TextBox4.Text);

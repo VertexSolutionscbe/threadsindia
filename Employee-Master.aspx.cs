@@ -15,6 +15,22 @@ public partial class Employee_Master : System.Web.UI.Page
     {
         BindDeptdropdown();
         BindDesigndropdown();
+        bindgridview();
+    }
+    private void bindgridview()
+    {
+
+        SqlConnection conn = new SqlConnection(connectstringweb);
+        conn.Open();
+        string query = "EmployeeGrid";
+        SqlCommand cmd = new SqlCommand(query, conn);
+        cmd.CommandType = CommandType.StoredProcedure;
+        DataTable dt = new DataTable();
+        SqlDataAdapter sda = new SqlDataAdapter(cmd);
+        sda.Fill(dt);
+        GridView1.DataSource = dt;
+        GridView1.DataBind();
+        conn.Close();
     }
     protected void BindDeptdropdown()
     {
@@ -211,5 +227,13 @@ public partial class Employee_Master : System.Web.UI.Page
         TextBox2.Text = "";
         TextBox3.Text = "";
         TextBox4.Text = "";
+    }
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        GridViewRow gr = GridView1.SelectedRow;
+        TextBox2.Text = (gr.FindControl("Label1") as Label).Text;
+        TextBox3.Text = (gr.FindControl("Label4") as Label).Text;
+        TextBox4.Text = (gr.FindControl("Label5") as Label).Text;
+        Session["mysession"] = (gr.FindControl("hfid") as HiddenField).Value;
     }
 }

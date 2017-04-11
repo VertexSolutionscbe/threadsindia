@@ -83,7 +83,8 @@ public partial class Tax_Template : System.Web.UI.Page
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
         GridViewRow gr = GridView1.SelectedRow;
-        TextBox1.Text = (gr.FindControl("Label1") as Label).Text;
+        TextBox1.Text = (gr.FindControl("Label1") as Label).Text
+
         Session["mysession"] = (gr.FindControl("hfid") as HiddenField).Value;
     }
     protected void Button3_Click(object sender, EventArgs e)

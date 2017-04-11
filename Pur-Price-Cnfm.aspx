@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Pur-Price-Cnfm.aspx.cs" Inherits="Pur_Price_Cnfm" %>
-
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,7 +9,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
-
+         <link type="text/css" href="css/jquery-ui-1.8.19.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#TextBox1").datepicker();
+    });
+</script>
+<style type="text/css">
+.ui-datepicker { font-size:8pt !important}
+</style>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/waves.min.css" type="text/css" rel="stylesheet">
@@ -512,12 +522,12 @@
                                      <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="DC No"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Doc No"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                             <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
+                                                           <%--  <asp:DropDownList ID="DropDownList1" runat="server" class="txt" Enabled="false"></asp:DropDownList>--%>
                                                                
-                                                              
+                                                              <asp:TextBox ID="TextBox2" runat="server" Enabled="false"></asp:TextBox>
                                                             </div>
                                                         </div>
                                   
@@ -546,6 +556,20 @@
                                                             <div class="col-lg-8 col-md-9">
                                                            
                                                             <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                                 <cc1:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></cc1:ToolkitScriptManager>  
+                                                                <cc1:CalendarExtender ID="Calendar1" PopupButtonID="imgPopup" runat="server" TargetControlID="TextBox1" Format="dd/MM/yyyy" PopupPosition="TopRight"> </cc1:CalendarExtender>  
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+
+                                  <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label3" runat="server" Text="Count Item"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
+                                                           <%-- <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>--%>
                                                                
                                                               
                                                             </div>
@@ -553,8 +577,6 @@
                                   
                                   
                                  </div>
-
-                                  
                                   
                                  </div>
                                                 </div>
@@ -564,8 +586,10 @@
                                  <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
+                                             Text="  Clear" onclick="Button2_Click"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
                                  </div>          <br />

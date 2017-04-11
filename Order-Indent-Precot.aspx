@@ -731,7 +731,9 @@
                                                                     Text="Save" onclick="Button1_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
                                              Text="  Clear" onclick="Button2_Click"></asp:Button></div>
-                                  <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
+                                  <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Remove"></asp:Button></div>
+                                  <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" Text="Exit"></asp:Button></div>
+                                  </div>
                                                         </div>
                                  </div>  </div>
                          </div>

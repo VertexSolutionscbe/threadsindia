@@ -646,7 +646,84 @@
                             
                                 </div></div>
                     <br />
-                    </div></div></div></div>
+                    </div>
+                    <div class="content-wrapper">
+
+                                <asp:GridView ID="GridView1" runat="server" 
+            AutoGenerateColumns="False"  CssClass="table table-hover table-striped" 
+                                    onselectedindexchanged="GridView1_SelectedIndexChanged" >
+                                    <Columns>
+                                    <asp:TemplateField HeaderText="Employee Code">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="txtemocode" runat="server" Text='<%# Bind("[EmpCode]") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="lblemocode" runat="server" Text='<%# Bind("[EmpCode]") %>'></asp:Label>
+                                                  <br /><asp:HiddenField ID="hfid" Value='<%# Bind("EmpCode") %>' runat="server"></asp:HiddenField>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Employee Name">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("[EmployeeName]") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("[EmployeeName]") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Active">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("IsActive") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("IsActive") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Gender">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("Gender") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("Gender") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Date Of Birth">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("[DateOfBirth]") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label4" runat="server" Text='<%# Bind("[DateOfBirth]") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Date Of Joining">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox5" runat="server" 
+                                                    Text='<%# Bind("[DateOfJoin]") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label5" runat="server" Text='<%# Bind("[DateOfJoin]") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Department">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Department") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label6" runat="server" Text='<%# Bind("Department") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Designation">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("Designation") %>'></asp:TextBox>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label7" runat="server" Text='<%# Bind("Designation") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:CommandField HeaderText="Select" ShowSelectButton="True" />
+                                    </Columns>
+        </asp:GridView>
+                                                </div>
+                    </div></div></div>
                             
                             <!-- End .panel --> 
                 
@@ -654,11 +731,11 @@
               
                               
                         </div>
+                        
+                      
              </div>
     
 
-                      
-                                
           
           
         </section>
