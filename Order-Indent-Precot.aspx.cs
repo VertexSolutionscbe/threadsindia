@@ -82,4 +82,72 @@ public partial class Order_Indent_Precot : System.Web.UI.Page
         DropDownList2.DataValueField = "ItemGrpCode";
         DropDownList2.DataBind();
     }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        TextBox2.Text = "";
+        TextBox3.Text = "";
+        
+        }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        SqlConnection conn = new SqlConnection(connectstringweb);
+        conn.Open();
+        SqlCommand cmd = new SqlCommand("SELECT * FROM orderindent WHERE Orderdet =@Orderdet", conn);
+        DataSet ds = new DataSet();
+
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        cmd.Parameters.AddWithValue("@Orderdet", this.TextBox3.Text.Trim());
+
+
+
+        da.Fill(ds);
+        if (ds.Tables[0].Rows.Count > 0)
+        {
+            string message = "This Designation is already added!";
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload=function(){");
+            sb.Append("alert('");
+            sb.Append(message);
+            sb.Append("')};");
+            sb.Append("</script>");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
+        }
+
+        else if (TextBox1.Text!="" && TextBox2.Text!="" &&   TextBox3.Text != "" )
+        {
+            string query = "InsertOrderIndent";
+            SqlCommand cmd1 = new SqlCommand(query, conn);
+            cmd1.CommandType = CommandType.StoredProcedure;
+            cmd1.Parameters.AddWithValue("@DocId", TextBox1.Text);
+            cmd1.Parameters.AddWithValue("@DocDate", TextBox2.Text);
+            cmd1.Parameters.AddWithValue("@Tax", DropDownList4.SelectedValue);
+            cmd1.Parameters.AddWithValue("@Item", DropDownList2.SelectedValue);
+            cmd1.Parameters.AddWithValue("@Pay", DropDownList3.SelectedValue);
+            cmd1.Parameters.AddWithValue("@Party", DropDownList1.SelectedValue);
+            cmd1.Parameters.AddWithValue("@Orderdet", TextBox3.Text);
+            cmd1.ExecuteNonQuery();
+            // Response.Write("Record inserted successsfully");
+            string message = "Record inserted successsfully";
+
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload=function(){");
+            sb.Append("alert('");
+            sb.Append(message);
+            sb.Append("')};");
+            sb.Append("</script>");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
+            conn.Close();
+            //bindgridview();
+
+        }
+        else
+        {
+
+        }
+
+
+       
+    }
 }
