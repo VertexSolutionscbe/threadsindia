@@ -1292,3 +1292,10 @@ Pricing tables
     -webkit-border-radius: 4px;
     
 }
+.ex1
+{
+    color:Maroon;
+    font-weight:600;
+    font-size:20px;
+    font-family:Century;
+}

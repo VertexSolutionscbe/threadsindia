@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Party-Master.aspx.cs" Inherits="Party_Master" %>
-=======
+
+
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Party-Master.aspx.cs" Inherits="Party_Master" %>
->>>>>>> 5b1ff72d0c89662c0d4646b7a7a5e3cb73593c5b
+
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 
@@ -237,7 +236,7 @@
         </nav>
         <section class="page">
 
-         <nav class="navbar-aside navbar-static-side" role="navigation">
+       <nav class="navbar-aside navbar-static-side" role="navigation">
                 <div class="sidebar-collapse nano">
                     <div class="nano-content">
                         <ul class="nav metismenu" id="side-menu">
@@ -260,6 +259,7 @@
                                     <li><a href="General-Masters.aspx">  General Masters Details</a></li>
                                     <li><a href="Delivery-Chellan-New.aspx"> Delivery Chellan New</a></li>
                                   
+                                  
                                 </ul>
                             </li>
                                    
@@ -269,14 +269,26 @@
                                     <li><a href="Company.aspx"> Company</a></li>
                                     <li><a href="Location.aspx"> Location</a></li>
                                      <li><a href="Dimensions.aspx"> Dimension</a></li>
-                                    <li><a href="Business-Segment.aspx"> Business Segment</a></li>
+                                    <li><a href="Business-Segment.aspx">Business Segment</a></li>
+                                  
+                                  
+                                </ul>
+                            </li>
+                                                <li>
+                                <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                <li><a href="Employee-Master.aspx"> Employee Master</a></li>
+                                    <li><a href="Designation.aspx"> Designation</a></li>
+                                    <li><a href="Department-Details.aspx"> Department</a></li>
+                                       <li><a href="Head-Of-Department.aspx"> Head of Department</a></li>
                                   
                                   
                                 </ul>
                             </li>
                                 </ul>
                             </li>
-                            <li class="active">
+                            
+                            <li  class="active">
                                 <a href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i> <span class="nav-label">Masters</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Shade-No-Master.aspx">Shade No.Master</a></li>
@@ -290,14 +302,14 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
                                     <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
-                                  
+                                     
                                 </ul>
                             </li>
                                 </ul>
                             </li>
 
                             <li>
-                                                <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
+                                            <a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> <span class="nav-label">Purchase</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                                           <li>
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i> <span class="nav-label">Transactions</span><span class="fa arrow"></span></a>
@@ -307,7 +319,7 @@
                                     <li><a href="Purchase-Oreder-Other.aspx">Purchase Order - Other</a></li>
                                     <li><a href="Goods-Received-Precot.aspx">Goods Received - Precot</a></li>
                                     <li><a href="Goods-Received-Note-Other.aspx">Goods Received Note - Other </a></li>
-                                <li><a href="Purchase-Invoice.aspx">Purchase Invoice</a></li>
+                                    <li><a href="Purchase-Invoice.aspx">Purchase Invoice</a></li>
                                     <li><a href="Mismatched-Invoice-Close.aspx">Mismatched Invoice Closed</a></li>
                                     <li><a href="Indenet-ShortClose-Entry.aspx">Intent Short Close Entry</a></li>
                                     <li><a href="Goods-Return.aspx">Goods Return</a></li>
@@ -318,7 +330,7 @@
 
                                 </ul>
                             </li>
-                                            <li>
+                                        <li>
                                 <a href="#"><i class="fa fa-files-o"></i>  <span class="nav-label">Report</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Order-Indent-Report.aspx">Order Indent Report</a></li>
@@ -340,94 +352,146 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-files-o fa-2x"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="lockscreen.html">Lockscreen</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="empty_page.html">Empty page</a></li>
-                                    <li><a href="gallery.html">gallery</a></li>
-                                    <li><a href="price_tables.html">Price tables</a></li>
-                                    <li><a href="page_contact.html">Contact Page</a></li>
+                                    <li><a href="Sales-Out-Sheet.aspx">Sales Out Sheet</a></li>
+                                    <li><a href="Small-Sales-Outsheet.aspx">Small Sales Out Sheet</a></li>
+                                    <li><a href="Branch-P-O.aspx">Branch PO</a></li>
+                               
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-calendar-times-o fa-2x" aria-hidden="true"></i> <span class="nav-label">Financial Management</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="orders.html">orders</a></li>
-                                    <li><a href="order-view.html">order View</a></li>
-                                    <li><a href="products.html">Products</a></li>
-                                    
-                                    
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
+                                  <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">General Ledger Master</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="icons.html">Icons</a></li>
-                                    <li><a href="buttons.html">Buttons</a></li>
-                                    <li><a href="video.html">Video</a></li>
-                                    <li><a href="tabs_panels.html">Panels</a></li>
-                                    <li><a href="tabs.html">Tabs</a></li>
-                                    <li><a href="alert_notifications.html">Alert & notifications</a></li>
-                                </ul>
-                            </li>
+                                    <li><a href="Account-Budget.aspx">Account Budget</a></li>
+                                    <li><a href="MIS-Configurator.aspx">MIS Configurator</a></li>
 
-                            <li>
-                                <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="table_basic.html">Static Tables</a></li>
-                                    <li><a href="table_data_tables.html">Data Tables</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-users"></i> <span class="nav-label">Users</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="user_profile.html">profile</a></li>
-                                    <li><a href="user_list.html">User list</a></li>
+                                    
                                     
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#"><i class="fa fa-map-marker"></i> <span class="nav-label">maps</span><span class="fa arrow"></span></a>
+                                           <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i> <span class="nav-label">Account Set Up</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="google_maps.html">Google maps</a></li>
-                                    <li><a href="vector_maps.html">Vector Maps</a></li>
+                                    <li><a href="Chart-Of-Accounts.aspx">Chart of Accounts</a></li>
+                                    <li><a href="Financial-Years.aspx">Financial Years</a></li>
+                                        <li><a href="Linked-Accounts.aspx">Linked Accounts</a></li>
+                                            <li><a href="Transaction-Controll-Setting.aspx">Transaction Controll Settings</a></li>
+                                           <li><a href="Sub-Ledger-Type.aspx">Sub Ledger Type</a></li>
+                                              <li><a href="Voucher-Types.aspx">Voucher Types</a></li>
+                                               <li><a href="Ledger-Opening-Balance.aspx">Ledger Opening </a></li>
+                                                <li><a href="AR-AP-Billwise-Opening-Balance.aspx">AP/AP Billwise Opening Balance</a></li>
+                                                 <li><a href="Customer-Vendor-Category.aspx">Customer / Vendor Category</a></li>
+                                                 <li><a href="Unreconciled-Cheques.aspx">Unreconciled-Cheques</a></li>
+                                    
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#"><i class="fa fa-pencil"></i> <span class="nav-label">Blog</span><span class="fa arrow"></span></a>
+                                        <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Journal</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
-                                    <li><a href="blog_list.html">Blog list</a></li>
-                                    <li><a href="blog_post.html">Blog post</a></li>
+                                    <li><a href="Journal-Templates.aspx">Journal Templates</a></li>
+                                    <li><a href="Journals.aspx">Journals</a></li>
+                                     <li><a href="Stock-Posting.aspx">Stock Post</a></li>
+                                     <li><a href="Year-End-Journals.aspx">Year End Journals</a></li>
+                                    
+                                </ul>
+                            </li> 
+                                <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Cash / Bank Accounting</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Receipt.aspx">Receipt</a></li>
+                                    <li><a href="Payment.aspx">Payment</a></li>
+                                      <li><a href="Fund-Transfer.aspx">Fund Transfer</a></li>
+                                   
+                                      <li >
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Bank Reconcilation</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Reconcile Account.aspx">Reconcile Account</a></li>
+                                      <li><a href="Reconcilation-Report.aspx">Reconcilation Report</a></li>
+                                   
+                                    
                                 </ul>
                             </li>
-                            <li><a href="calendar.html"><i class="fa fa-calendar"></i>  <span class="nav-label">Calendar </span></a></li>
-                            
-                            <li>
-                                <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li>
-                                        <a href="#">Third Level <span class="fa arrow"></span></a>
-                                        <ul class="nav nav-third-level">
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Second Level Item</a></li>
+                                    
                                 </ul>
-                            </li>                                    
-                        </ul>
+                            </li> 
+                               
+                            <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Receivable</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                  <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Receivable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Customer-Receipt.aspx">Customer Receipt</a></li>
+                                        <li><a href="AR-AP-Offset.aspx">AR/AP Offset</a></li>
+                                   
+                                    
+                                </ul>
+                            </li> 
+                                 <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Receivable Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Receivable-Ageing-Details.aspx">Receivable Ageing Details</a></li>
+                                    <li><a href="Receivable-Ageing-Summary.aspx">Receivable Ageing Summary</a></li>
+                                        <li><a href="Receivable-with-adjustment.aspx">Receivable with adjustment</a></li>
+                                          <li><a href="Receivable-Outstanding.aspx">Receivable Outstanding</a></li>
+                                     <li><a href="Adjustment-and-on-Accounts.aspx">Adjustment & on Accounts</a></li>
+                                    
+                                </ul>
+                            </li> 
+                                   
+                                  </ul>
+                            </li> 
+
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Payable</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                  <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Transaction</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                    <li><a href="Supplier-Payment.aspx">Supplier Payment</a></li>
+                                      
+                                   
+                                    
+                                </ul>
+                            </li> 
+                                 <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Reports</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Payable-Ageing-Details.aspx">Payable Ageing Details</a></li>
+                                    <li><a href="Payable-Ageing-Summary.aspx">Payable Ageing Summary</a></li>
+                                          <li><a href="Payable-Outstanding.aspx">Payable Outstanding</a></li>
+                                     <li><a href="Payable-With-Adjustment.aspx">Payable With Adjustment</a></li>
+                                    
+                                </ul>
+                            </li> 
+                                   
+                                    
+                                </ul>
+                            </li> 
+                              <li>
+                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Finance Report</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level collapse">
+                                     <li><a href="Voucher-Query.aspx">Voucher Query</a></li>
+                                    <li><a href="Group-Summary-Party.aspx">Group Summary Party</a></li>
+                                    
+                                    
+                                </ul>
+                            </li> 
+                                  
+                          
+                                    
+                                </ul>
+                            </li>
+                         </ul>
 
                     </div>
                 </div>
             </nav>
+
 
             <div id="wrapper">
                 <div class="content-wrapper container">

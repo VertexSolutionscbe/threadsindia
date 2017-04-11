@@ -569,9 +569,9 @@
                                                             </div>
                                                         </div>
                                  </div>
-                                 <div class="col-sm-6 btn1">
+                               
                                    
-                              </div></div><br />
+                              </div><br />
                               <div class="row">
                               <div class="col-sm-8" align="right">
                                 <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
