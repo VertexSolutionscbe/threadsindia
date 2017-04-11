@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 
 
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Party-Master.aspx.cs" Inherits="Party_Master" %>
+=======
+
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Party-Master.aspx.cs" Inherits="Party_Master" %>
+=======
+>>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
 
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>

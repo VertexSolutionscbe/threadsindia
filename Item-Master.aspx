@@ -579,8 +579,8 @@
                                                         </div>
                                                         <br />
                                                         
-                          <asp:CheckBox ID="CheckBox1" runat="server"></asp:CheckBox>        <asp:Label ID="Label5" runat="server" Text="Is Procot Item"></asp:Label>
-                                  
+                          <asp:CheckBox ID="itemChk" runat="server"></asp:CheckBox>        <asp:Label ID="Label5" runat="server" Text="Is Procot Item"></asp:Label>
+                                  <asp:Label ID="itemLbl" runat="server" Text="Label" Visible="false"></asp:Label>
                                  </div>
 
                                   
@@ -667,8 +667,10 @@
                                </div>   <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
+                                             Text="  Clear" onclick="Button2_Click"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
                                  </div>        </div>

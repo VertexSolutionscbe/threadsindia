@@ -1,9 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Head-Of-Department.aspx.cs" Inherits="Head_Of_Department" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Tax Template.aspx.cs" Inherits="Tax_Template" %>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
+
 <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +22,7 @@
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!-- WARNINGs: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -28,19 +30,9 @@
        
     </head>
     
-
    
     <body>
-<<<<<<< HEAD
      <form id="Form1" runat="server">
-
-=======
-    
-
-    <form id="Form1" runat="server">
-    <body>
->>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
-
         <!-- Static navbar -->
 
         <nav class="navbar navbar-inverse yamm navbar-fixed-top">
@@ -48,12 +40,7 @@
                 <button type="button" class="navbar-minimalize minimalize-styl-2  pull-left "><i class="fa fa-bars"></i></button>
                 <span class="search-icon"><i class="fa fa-search"></i></span>
                 <div class="search" style="display: none;">
-
-                   <%-- <form role="form">
-                        <input type="text" class="form-control" autocomplete="off" placeholder="Write something and press enter">
-                        <span class="search-close"><i class="fa fa-times"></i></span>
-                    </form>--%>
-
+                  
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -245,7 +232,8 @@
             </div><!--/.container-fluid -->
         </nav>
         <section class="page">
-        <nav class="navbar-aside navbar-static-side" role="navigation">
+
+         <nav class="navbar-aside navbar-static-side" role="navigation">
                 <div class="sidebar-collapse nano">
                     <div class="nano-content">
                         <ul class="nav metismenu" id="side-menu">
@@ -259,7 +247,7 @@
                                     
                                 </ul>
                             </li>
-                            <li class="active">>
+                            <li>
                                 <a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i> <span class="nav-label">Admin Setup </span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
                                      <li>
@@ -267,7 +255,6 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="General-Masters.aspx">  General Masters Details</a></li>
                                     <li><a href="Delivery-Chellan-New.aspx"> Delivery Chellan New</a></li>
-                                  
                                   
                                 </ul>
                             </li>
@@ -278,25 +265,13 @@
                                     <li><a href="Company.aspx"> Company</a></li>
                                     <li><a href="Location.aspx"> Location</a></li>
                                      <li><a href="Dimensions.aspx"> Dimension</a></li>
-                                    <li><a href="Business-Segment.aspx">Business Segment</a></li>
-                                  
-                                  
-                                </ul>
-                            </li>
-                                                <li class="active">
-                                <a href="#"> <i class="fa fa-spinner" aria-hidden="true"></i> &nbsp;&nbsp;<span class="nav-label">User Management</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                <li><a href="Employee-Master.aspx"> Employee Master</a></li>
-                                    <li><a href="Designation.aspx"> Designation</a></li>
-                                    <li><a href="Department-Details.aspx"> Department</a></li>
-                                      <li><a href="Head-Of-Department.aspx"> Head Of Department</a></li>
+                                    <li><a href="Business-Segment.aspx"> Business Segment</a></li>
                                   
                                   
                                 </ul>
                             </li>
                                 </ul>
                             </li>
-                            
                             <li>
                                 <a href="#"><i class="fa fa-clipboard fa-2x" aria-hidden="true"></i> <span class="nav-label">Masters</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
@@ -311,7 +286,7 @@
                                 <ul class="nav nav-second-level collapse">
                                     <li><a href="Addition-Deduction.aspx">Addition Deduction</a></li>
                                     <li><a href="Addition-Deduction-Type.aspx">Addition Deduction Type</a></li>
-                                     
+                                  
                                 </ul>
                             </li>
                                 </ul>
@@ -359,23 +334,7 @@
                                 </ul>
                             </li>
                                 </ul>
-                            </li>                             <li>
-                                <a href="#"><i class="fa fa-files-o fa-2x"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="Sales-Out-Sheet.aspx">Sales Out Sheet</a></li>
-                                    <li><a href="Small-Sales-Outsheet.aspx">Small Sales Out Sheet</a></li>
-                                    <li><a href="Branch-P-O.aspx">Branch PO</a></li>
-                               
-<<<<<<< HEAD
-                       <li>
-                                <a href="#"><i class="fa fa-files-o fa-2x"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="Sales-Out-Sheet.aspx">Sales Out Sheet</a></li>
-                                    <li><a href="Small-Sales-Outsheet.aspx">Small Sales Out Sheet</a></li>
-                                    <li><a href="Branch-P-O.aspx">Branch PO</a></li>
-                               
-=======
-
+                            </li>
                             <li>
                                 <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Sales</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level collapse">
@@ -387,8 +346,6 @@
                                     <li><a href="gallery.html">gallery</a></li>
                                     <li><a href="price_tables.html">Price tables</a></li>
                                     <li><a href="page_contact.html">Contact Page</a></li>
-
->>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
                                 </ul>
                             </li>
                             <li>
@@ -474,46 +431,9 @@
                                 </ul>
                             </li> 
                                    
-                                  </ul>
-                            </li> 
-
-                              <li>
-                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Accounts Payable</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                  <li>
-                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Transaction</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <li><a href="Supplier-Payment.aspx">Supplier Payment</a></li>
-                                      
-                                   
                                     
                                 </ul>
                             </li> 
-                                 <li>
-                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Payable Reports</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                     <li><a href="Payable-Ageing-Details.aspx">Payable Ageing Details</a></li>
-                                    <li><a href="Payable-Ageing-Summary.aspx">Payable Ageing Summary</a></li>
-                                          <li><a href="Payable-Outstanding.aspx">Payable Outstanding</a></li>
-                                     <li><a href="Payable-With-Adjustment.aspx">Payable With Adjustment</a></li>
-                                    
-                                </ul>
-                            </li> 
-                                   
-                                    
-                                </ul>
-                            </li> 
-                              <li>
-                                <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i>  <span class="nav-label">Finance Report</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                     <li><a href="Voucher-Query.aspx">Voucher Query</a></li>
-                                    <li><a href="Group-Summary-Party.aspx">Group Summary Party</a></li>
-                                    
-                                    
-                                </ul>
-                            </li> 
-                                  
-                          
                                     
                                 </ul>
                             </li>
@@ -522,12 +442,12 @@
                     </div>
                 </div>
             </nav>
-            <div id="wrapper">
+               <div id="wrapper">
                 <div class="content-wrapper container">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">Head Of Department</h1>
+                                <h1 class="gnrl">Tax Template <small> Details</small></h1>
                                
                             </div>
                         </div>
@@ -538,120 +458,72 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Head Of Department</h4>
+                                    <h4 class="panel-title">Tax Template</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
                                     </div>
                                 </div>
                                 <div class="panel-body">
-                                     <div class="row">
+                                 <br />    <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Department"></asp:Label></div>
-                                                            <div class="col-lg-8 col-md-9">
-
-                                                           
-                                                            
-                                                                 <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
-
-                                                           <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
-                                                            
-                                                                <%-- <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>--%>
-      
-                                                            </div>
-                                                        </div>
-                                  
-                                  
-                                 </div>
-
-                                  
-                                  
-                                 </div>
-                                 <br />                      <div class="row">
-                                 <div class="col-sm-6">
-                                 <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Head Of Department"></asp:Label></div>
-                                                            <div class="col-lg-8 col-md-9">
-                                                           
-                                                            <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>
+                                                            <div class="col-lg-5 col-md-2 control-label"> <asp:Label ID="Label1" runat="server" Text="Tax "></asp:Label></div>
+                                                            <div class="col-lg-7 col-md-8">
+                                                           <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                                <asp:TextBox ID="TextBox2" runat="server" class="txt" Visible="false"></asp:TextBox>
                                                                
                                                               
                                                             </div>
                                                         </div>
-
                                   
                                   
-                                 </div>
-
-                                  
-                                  
-                                 </div>
-                             
-
-                                 </div>   
-                                 </div>
-
-                                </div>
-                          
-                             
-                              
-                                 <br /><div class="row">
-                                    <div class="col-sm-8">
+                                 </div></div>
+                                   <br /><div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
                                       <div class="form-group">
-
-<<<<<<< HEAD
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
-
-=======
-                                                            <div class="col-sm-2"> </div>
-                                     <div class="col-sm-2"> </div>
-
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                            <div class="col-sm-2"> 
+                                                                <asp:Button ID="Button1" runat="server" Class="btn" 
                                                                     Text="Save" onclick="Button1_Click"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" 
-                                             Text="  Clear" onclick="Button2_Click"></asp:Button></div>
->>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
-
-                                  <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
-                                                        </div>
-                                 </div>          <br />
-                                 
-                         </div>
-
+                                                             <div class="col-sm-2"> 
+                                                                 <asp:Button ID="Button2" runat="server" Class="btn" 
+                                                                     Text="Clear" onclick="Button2_Click" ></asp:Button></div>
+                                                              <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" 
+                                                                      Text="Remove" onclick="Button3_Click"></asp:Button></div>
+                                  
+                                 </div>        <br />
+                      
                             
-                                </div>
-                            </div><!-- End .panel --> 
+                                </div></div>
+                               
+                    <br />
+                    </div></div></div></div>
+                            
+                            <!-- End .panel --> 
                 
-
+<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"  
+                        CssClass="table table-hover table-striped" 
+                        onselectedindexchanged="GridView1_SelectedIndexChanged" >
+    <Columns>
+        <asp:TemplateField HeaderText="TaxPer">
+            <EditItemTemplate>
+                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("TaxPer") %>'></asp:TextBox>
+            </EditItemTemplate>
+            <ItemTemplate>
+                <asp:Label ID="Label1" runat="server" Text='<%# Bind("TaxPer") %>'></asp:Label>
+                  <br /><asp:HiddenField ID="hfid" Value='<%# Bind("TaxCode") %>' runat="server"></asp:HiddenField>
+                                                                  
+            </ItemTemplate>
+        </asp:TemplateField>
+       
+        <asp:CommandField HeaderText="Select" ShowSelectButton="True" />
+    </Columns>
+                    </asp:GridView>
               
-                           <div class="row">
-                        <div class="col-md-12">
-                             <div class="panel panel-default recent-activites">
-                                <!-- Start .panel -->
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">Head Of Department</h4>
-                                    <div class="panel-actions">
-                                        <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
-                                        <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
-                                    </div>
-                                </div>
-                                <div class="panel-body">
-                                     <div class="row">
-                                     <div class="col-sm-12">
-
-
-
-
-
-                                     </div>
-                               </div></div>
-                         </div>
-                   
-                                </div>
-                            </div><!-- End .panel --> 
-  
+          
+                        </div>
+             </div>
+    
 
                       
                                 
@@ -691,16 +563,7 @@
             ga('create', 'UA-3560057-28', 'auto');
             ga('send', 'pageview');
         </script>
-
          </form>
     </body>
    
-
-<<<<<<< HEAD
-=======
-    </body>
-    </form>
-
->>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
 </html>
-

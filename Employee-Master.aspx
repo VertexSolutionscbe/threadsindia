@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Employee-Master.aspx.cs" Inherits="Employee_Master" %>
+=======
+
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Employee-Master.aspx.cs" Inherits="Employee_Master" %>
+>>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -696,7 +701,12 @@
         </script>
           </form>
     </body>
+<<<<<<< HEAD
     
   
 
+=======
+    </form>
+
+>>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
 </html>

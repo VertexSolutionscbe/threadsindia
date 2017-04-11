@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+<<<<<<< HEAD
 
 
 public partial class Head_Of_Department : System.Web.UI.Page
@@ -12,6 +13,8 @@ public partial class Head_Of_Department : System.Web.UI.Page
     {
 
 
+=======
+>>>>>>> c6909bccf4c0b37ddc7d84a4e66e2da45ca9b2d1
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
