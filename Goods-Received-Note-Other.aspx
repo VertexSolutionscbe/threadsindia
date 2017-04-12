@@ -530,7 +530,7 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label6" runat="server" Text="Doc Id"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                          <asp:TextBox ID="TextBox1" runat="server" class="txt"></asp:TextBox>
+                                                          <asp:TextBox ID="TextBox1" runat="server" class="txt" Enabled="false"></asp:TextBox>
                                                                
                                                               
                                                             </div>
@@ -546,7 +546,7 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label2" runat="server" Text="Reference No"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                            <asp:TextBox ID="TextBox2" runat="server" class="txt"></asp:TextBox>
+                                                            <asp:TextBox ID="TextBox2" runat="server" class="txt" Enabled="false"></asp:TextBox>
                                                                
                                                               
                                                             </div>
@@ -562,7 +562,7 @@
                                                            <cc1:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></cc1:ToolkitScriptManager>  
                                                             <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
                                                                
-                                                               <cc1:CalendarExtender ID="Calendar1" PopupButtonID="imgPopup" runat="server" TargetControlID="TextBox3" Format="dd/MM/yyyy" PopupPosition="Right"> </cc1:CalendarExtender>  
+                                                               <cc1:CalendarExtender ID="Calendar1" PopupButtonID="imgPopup" runat="server" TargetControlID="TextBox3" Format="dd/MM/yyyy" PopupPosition="BottomLeft"> </cc1:CalendarExtender>  
                                                             </div>
                                                         </div>
                                   
@@ -600,7 +600,7 @@
                                  </div>
                                                 </div>
                                             <br />    <div class="row">
-                                 <div class="col-sm-6">
+                                <%-- <div class="col-sm-6">
                                  <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label7" runat="server" Text="Gross Value"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
@@ -612,7 +612,7 @@
                                                         </div>
                                   
                                   
-                                 </div></div></div>
+                                 </div>--%></div></div>
                                <br />
                                  
                          </div>
@@ -637,7 +637,7 @@
                                 <div class="panel-body">
                                      <div class="row">
                                           <div class="col-sm-6">
-                                 <div class="form-group">
+                                <%-- <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label11" runat="server" Text="Sl No"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
@@ -646,11 +646,8 @@
                                                               
                                                             </div>
                                                         </div>
-                                  
-                                  
-                                 </div>
-                                 <div class="col-sm-6">
-                                 <div class="form-group">
+                                  --%>
+                                   <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label13" runat="server" Text="Shade"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
@@ -659,7 +656,26 @@
                                                               
                                                             </div>
                                                         </div>
-                                  
+                                 </div>
+                                 <div class="col-sm-6">
+                                <%-- <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label13" runat="server" Text="Shade"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                        <asp:TextBox ID="TextBox7" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>--%>
+                                  <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label18" runat="server" Text="Amount"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                       
+                                                                  <asp:TextBox ID="TextBox11" runat="server" class="txt"></asp:TextBox>
+                                                              
+                                                            </div>
+                                                        </div>
                                   
                                  </div></div>
                                  
@@ -729,7 +745,7 @@
                                   
                                  </div>
                                  <div class="col-sm-6">
-                                 <div class="form-group">
+                                 <%--<div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label18" runat="server" Text="Amount"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
@@ -737,7 +753,7 @@
                                                                   <asp:TextBox ID="TextBox11" runat="server" class="txt"></asp:TextBox>
                                                               
                                                             </div>
-                                                        </div>
+                                                        </div>--%>
                                   
                                   
                                  </div></div>
@@ -800,15 +816,33 @@
                                                         </div>
                                   
                                   
-                                 </div></div></div>
+                                 </div>
+                                  <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label7" runat="server" Text="Gross Value"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                        <asp:TextBox ID="TextBox5" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                 </div>
+                                 
+                                 </div>
                           
                              </div></div>
                               
                                  <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" Text="Save"></asp:Button></div>
-                                     <div class="col-sm-2"> <asp:Button ID="Button5" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button4_Click"></asp:Button></div>
+                                     <div class="col-sm-2"> <asp:Button ID="Button5" runat="server" Class="btn" 
+                                             Text="  Clear" onclick="Button5_Click"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button6" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
                                  </div>          <br />

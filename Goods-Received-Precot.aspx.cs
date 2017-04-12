@@ -32,6 +32,7 @@ public partial class Goods_Received_Precot : System.Web.UI.Page
         DropDownList1.DataTextField = "LocationName";
         // DropDownList4.DataValueField = "TaxCode";
         DropDownList1.DataBind();
+        conn.Close();
     }
     protected void BindPartydropdown()
     {
@@ -48,5 +49,6 @@ public partial class Goods_Received_Precot : System.Web.UI.Page
         DropDownList2.DataTextField = "Party";
         // DropDownList4.DataValueField = "TaxCode";
         DropDownList2.DataBind();
+        conn.Close();
     }
 }

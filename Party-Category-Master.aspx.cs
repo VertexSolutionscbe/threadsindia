@@ -19,37 +19,54 @@ public partial class Customer_Category_Master : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(connectstringweb);
         conn.Open();
-
-        SqlDataAdapter da = new SqlDataAdapter();
-        DataTable dt = new DataTable();
-
+        SqlCommand cmd = new SqlCommand("SELECT * FROM partycategory WHERE   partycategory='"+TextBox1.Text+"'", conn);
+        
+        DataSet dt = new DataSet ();
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+      //  cmd.Parameters.AddWithValue("@partycategorycode", this.TextBox2.Text.Trim());
+        cmd.Parameters.AddWithValue("@partycategory", this.TextBox1.Text.Trim());
         //  string strSQL = "SELECT * FROM DesignationMaster WHERE DesignationCode = " '"+ txtval1.Text"';
         //   da.SelectCommand = new SqlCommand(strSQL);
-        da.SelectCommand = new SqlCommand("SELECT * FROM partycategory WHERE partycategorycode ='" + TextBox2.Text + "'");
-        da.SelectCommand.Connection = conn;
+       // da.SelectCommand = new SqlCommand("SELECT * FROM partycategory WHERE partycategorycode ='" + TextBox2.Text + "'");
+       // da.SelectCommand.Connection = conn;
         da.Fill(dt);
 
-        if (dt.Rows.Count > 0) // Means Student Id is already present
+        if (dt.Tables[0].Rows.Count > 0) // Means Student Id is already present
         {
             // Label1.Text = "This designation is already added!";
             string message = "This Party Category is already added!')";
-            ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload=function(){");
+            sb.Append("alert('");
+            sb.Append(message);
+            sb.Append("')};");
+            sb.Append("</script>");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
         }
-        else if (dt.Rows.Count == 0 && TextBox1.Text != "")
+        else if (TextBox1.Text != "")
         {
             string query = "Insertpartycategory";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand cmd1 = new SqlCommand(query, conn);
+            cmd1.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.AddWithValue("@PartyCategory", TextBox1.Text);
+            cmd1.Parameters.AddWithValue("@PartyCategory", TextBox1.Text);
 
 
-            cmd.ExecuteNonQuery();
+            cmd1.ExecuteNonQuery();
             // Response.Write("Record inserted successsfully");
             string message = "Record inserted successsfully";
 
-            ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload=function(){");
+            sb.Append("alert('");
+            sb.Append(message);
+            sb.Append("')};");
+            sb.Append("</script>");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
             conn.Close();
+          
             //bindgridview();
         }
     }

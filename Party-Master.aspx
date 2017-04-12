@@ -666,7 +666,7 @@
                                    <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label11" runat="server" Text="Tin Date"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
-                                                           
+                                                               <%--  <asp:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></asp:ToolkitScriptManager>  --%>
                                                              <asp:TextBox ID="TextBox7" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
@@ -1098,7 +1098,8 @@
                                  <br /><div class="row">
                                     <div class="col-sm-8">
                                       <div class="form-group">
-                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" Text="Save"></asp:Button></div>
+                                                            <div class="col-sm-2"> <asp:Button ID="Button1" runat="server" Class="btn" 
+                                                                    Text="Save" onclick="Button1_Click"></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button2" runat="server" Class="btn" Text="  Clear"></asp:Button></div>
                                   <div class="col-sm-2"> <asp:Button ID="Button3" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>

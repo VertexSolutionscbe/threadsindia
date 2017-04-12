@@ -499,7 +499,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl">FInancial Yers <small>Details</small></h1>
+                                <h1 class="gnrl">Financial Yers <small>Details</small></h1>
                                
                             </div>
                         </div>
@@ -510,7 +510,7 @@
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Financial Yers</h4>
+                                    <h4 class="panel-title">Financial Years</h4>
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
@@ -544,7 +544,7 @@
                                                           <cc1:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></cc1:ToolkitScriptManager>  
                                                            <asp:TextBox ID="txtval2" runat="server" class="txt"></asp:TextBox>
                                                                <cc1:CalendarExtender ID="Calendar1" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval2" Format="dd/MM/yyyy" PopupPosition="Right"> </cc1:CalendarExtender>  
-                                                              
+                                                              <asp:CompareValidator ID="CompareValidator1" runat="server"  ErrorMessage="End Date should be greater than Start Date" ControlToValidate="txtval1" ControlToCompare="txtval2" Operator='LessThan'></asp:CompareValidator>
                                                             </div>
                                                         </div>
                                   
