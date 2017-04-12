@@ -45,7 +45,7 @@ public partial class Purchase_Oreder_Other : System.Web.UI.Page
         DropDownList1.DataSource = dt;
 
         DropDownList1.DataTextField = "TaxPer";
-        DropDownList1.DataValueField = "Taxcode";
+       // DropDownList1.DataValueField = "Taxcode";
         DropDownList1.DataBind();
     }
     protected void BindPartydropdown()
@@ -59,9 +59,9 @@ public partial class Purchase_Oreder_Other : System.Web.UI.Page
         DataTable dt = new DataTable();
         sda.Fill(dt);
         DropDownList2.DataSource = dt;
-
+        
         DropDownList2.DataTextField = "PartyCategory";
-        DropDownList2.DataValueField = "partycategorycode";
+       // DropDownList2.DataValueField = "partycategorycode";
         DropDownList2.DataBind();
     }
 
@@ -92,10 +92,10 @@ public partial class Purchase_Oreder_Other : System.Web.UI.Page
             cmd.CommandType = CommandType.StoredProcedure;
 
             cmd.Parameters.AddWithValue("@Docid", TextBox1.Text);
-            cmd.Parameters.AddWithValue("@Tax", DropDownList1.SelectedValue);
-            cmd.Parameters.AddWithValue("@Party", DropDownList2.SelectedValue);
-            cmd.Parameters.AddWithValue("@Potype", DropDownList3.SelectedValue);
-            cmd.Parameters.AddWithValue("@Pay", DropDownList4.SelectedValue);
+            cmd.Parameters.AddWithValue("@Tax", DropDownList1.Text.ToString());
+            cmd.Parameters.AddWithValue("@Party", DropDownList2.SelectedItem.Value);
+            cmd.Parameters.AddWithValue("@Potype", DropDownList3.SelectedItem.Value);
+            cmd.Parameters.AddWithValue("@Pay", DropDownList4.SelectedItem.Value);
             cmd.Parameters.AddWithValue("@Date", TextBox2.Text);
 
             cmd.ExecuteNonQuery();

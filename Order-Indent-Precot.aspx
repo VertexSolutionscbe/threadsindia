@@ -621,9 +621,9 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label7" runat="server" Text="Order Half Id"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                           <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
+                                                         <%--  <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>--%>
                                                                
-                                                              
+                                                              <asp:DropDownList ID="DropDownList5" runat="server"></asp:DropDownList>
                                                             </div>
                                                         </div>
                                   

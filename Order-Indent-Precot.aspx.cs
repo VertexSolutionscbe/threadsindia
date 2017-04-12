@@ -17,7 +17,7 @@ public partial class Order_Indent_Precot : System.Web.UI.Page
         BindPartydropdown();
         BindItemdropdown();
         BindTaxdropdown();
-
+        BindOrderHalfdropdown();
         SqlConnection con = new SqlConnection(connectstringweb);
 
         SqlCommand cmd = new SqlCommand("select count(*) from orderindent", con); ;
@@ -46,7 +46,7 @@ public partial class Order_Indent_Precot : System.Web.UI.Page
         DropDownList4.DataSource = dt;
 
         DropDownList4.DataTextField = "TaxPer";
-        DropDownList4.DataValueField = "TaxCode";
+       // DropDownList4.DataValueField = "TaxCode";
         DropDownList4.DataBind();
     }
     protected void BindPartydropdown()
@@ -62,8 +62,24 @@ public partial class Order_Indent_Precot : System.Web.UI.Page
         DropDownList1.DataSource = dt;
 
         DropDownList1.DataTextField = "Party";
-        DropDownList1.DataValueField = "PartyCatMastID";
+       // DropDownList1.DataValueField = "PartyCatMastID";
         DropDownList1.DataBind();
+    }
+    protected void BindOrderHalfdropdown()
+    {
+
+        SqlConnection conn = new SqlConnection(connectstringweb);
+        conn.Open();
+
+        SqlCommand cmd = new SqlCommand("select Ordhalfid,Orderhalf from orderhalf", conn);
+        SqlDataAdapter sda = new SqlDataAdapter(cmd);
+        DataTable dt = new DataTable();
+        sda.Fill(dt);
+        DropDownList5.DataSource = dt;
+
+        DropDownList5.DataTextField = "Orderhalf";
+        // DropDownList1.DataValueField = "PartyCatMastID";
+        DropDownList5.DataBind();
     }
 
     protected void BindItemdropdown()
@@ -79,13 +95,13 @@ public partial class Order_Indent_Precot : System.Web.UI.Page
         DropDownList2.DataSource = dt;
 
         DropDownList2.DataTextField = "Item";
-        DropDownList2.DataValueField = "ItemGrpCode";
+      //  DropDownList2.DataValueField = "ItemGrpCode";
         DropDownList2.DataBind();
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
         TextBox2.Text = "";
-        TextBox3.Text = "";
+      //  TextBox3.Text = "";
         
         }
     protected void Button1_Click(object sender, EventArgs e)
@@ -96,7 +112,7 @@ public partial class Order_Indent_Precot : System.Web.UI.Page
         DataSet ds = new DataSet();
 
         SqlDataAdapter da = new SqlDataAdapter(cmd);
-        cmd.Parameters.AddWithValue("@Orderdet", this.TextBox3.Text.Trim());
+        cmd.Parameters.AddWithValue("@Orderdet", this.DropDownList5.Text.Trim());
 
 
 
@@ -114,7 +130,7 @@ public partial class Order_Indent_Precot : System.Web.UI.Page
             ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
         }
 
-        else if (TextBox1.Text!="" && TextBox2.Text!="" &&   TextBox3.Text != "" )
+        else if (TextBox1.Text!="" && TextBox2.Text!=""  )
         {
             string query = "InsertOrderIndent";
             SqlCommand cmd1 = new SqlCommand(query, conn);
@@ -125,7 +141,7 @@ public partial class Order_Indent_Precot : System.Web.UI.Page
             cmd1.Parameters.AddWithValue("@Item", DropDownList2.SelectedValue);
             cmd1.Parameters.AddWithValue("@Pay", DropDownList3.SelectedValue);
             cmd1.Parameters.AddWithValue("@Party", DropDownList1.SelectedValue);
-            cmd1.Parameters.AddWithValue("@Orderdet", TextBox3.Text);
+            cmd1.Parameters.AddWithValue("@Orderdet", DropDownList5.SelectedValue);
             cmd1.ExecuteNonQuery();
             // Response.Write("Record inserted successsfully");
             string message = "Record inserted successsfully";
