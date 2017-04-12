@@ -636,10 +636,112 @@
                                 </div>
                                 <div class="panel-body">
                                      <div class="row">
-                                     <div class="col-sm-12">
-
-
-                                    </div></div></div></div></div></div>
+                                          <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label11" runat="server" Text="Sl No"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                        <asp:TextBox ID="TextBox6" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label13" runat="server" Text="Shade"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                        <asp:TextBox ID="TextBox7" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                 
+                                 <br />  <div class="row">   <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label12" runat="server" Text="Item"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                       <asp:DropDownList ID="DropDownList1" runat="server" class="txt"></asp:DropDownList>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label14" runat="server" Text="Unit"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                       
+                                                               <asp:DropDownList ID="DropDownList4" runat="server" class="txt"></asp:DropDownList>
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                 <br /> <div class="row">   <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label15" runat="server" Text="Cones"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                      <asp:TextBox ID="TextBox8" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label16" runat="server" Text="Quantity"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                       
+                                                                  <asp:TextBox ID="TextBox9" runat="server" class="txt"></asp:TextBox>
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                   <br /> <div class="row">   <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label17" runat="server" Text="Rate"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                      <asp:TextBox ID="TextBox10" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                 <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label18" runat="server" Text="Amount"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                       
+                                                                  <asp:TextBox ID="TextBox11" runat="server" class="txt"></asp:TextBox>
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div></div>
+                                 </div></div></div></div>
 
 
                             
@@ -664,7 +766,7 @@
                                                             <div class="col-lg-8 col-md-9">
                                                          
                                                       
-                                                               <asp:TextBox ID="TextBox6" runat="server" class="txt"></asp:TextBox>
+                                                               <asp:TextBox ID="TextBox12" runat="server" class="txt"></asp:TextBox>
                                                               
                                                             </div>
                                                         </div>
@@ -676,7 +778,7 @@
                                                             <div class="col-lg-2 col-md-3 control-label"> <asp:Label ID="Label9" runat="server" Text="Net"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                        <asp:TextBox ID="TextBox7" runat="server" class="txt"></asp:TextBox>
+                                                        <asp:TextBox ID="TextBox13" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
@@ -692,7 +794,7 @@
                                                             <div class="col-lg-8 col-md-9">
                                                            
                                                       
-                                                             <asp:TextBox ID="TextBox8" runat="server" class="txt"></asp:TextBox>   
+                                                             <asp:TextBox ID="TextBox14" runat="server" class="txt" TextMode="MultiLine"></asp:TextBox>   
                                                               
                                                             </div>
                                                         </div>
