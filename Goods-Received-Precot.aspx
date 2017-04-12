@@ -559,9 +559,9 @@
                                  <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label8" runat="server" Text="Document Date"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
-                                                           
+                                                          <%--  <asp:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></asp:ToolkitScriptManager>  --%>
                                                            <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
-                                                              <asp:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="TextBox3"></asp:CalendarExtender>
+                                                              <asp:CalendarExtender ID="CalendarExtender1" PopupButtonID="imgPopup" runat="server" TargetControlID="TextBox3" Format="dd/MM/yyyy" PopupPosition="TopRight"></asp:CalendarExtender>
                                                                
                                                               
                                                             </div>
@@ -645,23 +645,34 @@
                                      <div class="row">
                                      <div class="col-sm-4">
 
-                                      <div class="form-group">
+                                     <%-- <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="  SL No"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                             <asp:TextBox ID="TextBox6" runat="server" class="txt"></asp:TextBox>
                                                        
                                                               </div>
                                                         </div>
-
-                            
- </div>
-                                               <div class="col-sm-4">
-
-                                      <div class="form-group">
+--%>
+ <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label6" runat="server" Text="  Pack No"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                             <asp:TextBox ID="TextBox7" runat="server" class="txt"></asp:TextBox>
                                                        
+                                                              </div>
+                                                        </div>
+                            
+ </div>
+                                               <div class="col-sm-4">
+
+                                        <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label19" runat="server" Text="Priority"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                          
+                                                         <asp:DropDownList ID="DropDownList3" runat="server" class="txt">
+                                                             <asp:ListItem>High</asp:ListItem>
+                                                             <asp:ListItem>Medium</asp:ListItem>
+                                                             <asp:ListItem>Low</asp:ListItem>
+                                                                </asp:DropDownList>
                                                               </div>
                                                         </div>
 
@@ -706,7 +717,8 @@
                                       <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label13" runat="server" Text="  Count Code"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
-                                                            <asp:DropDownList ID="DropDownList3" runat="server" class="txt"></asp:DropDownList>
+                                                              <asp:TextBox ID="TextBox16" runat="server" class="txt"></asp:TextBox>
+                                                          
                                                        
                                                               </div>
                                                         </div>
@@ -769,13 +781,7 @@
  </div>
            <div class="col-sm-4">
 
-                                      <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label19" runat="server" Text="Priority"></asp:Label></div>
-                                                            <div class="col-lg-8 col-md-9">
-                                                            <asp:TextBox ID="TextBox16" runat="server" class="txt"></asp:TextBox>
-                                                       
-                                                              </div>
-                                                        </div>
+                                   
                                                          </div>
 
  </div>
