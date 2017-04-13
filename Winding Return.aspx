@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Designation.aspx.cs" Inherits="Designation" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Winding Return.aspx.cs" Inherits="Winding_Return" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
+<head runat="server">
   <meta charset="utf-8" >
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
@@ -73,10 +73,9 @@
 <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
     rel="stylesheet" type="text/css" />
 
-    </head>
- 
-    <body>
-       <form id="Form1" runat="server">
+</head>
+<body>
+   <form id="Form1" runat="server">
         <!-- Static navbar -->
 
         <nav class="navbar navbar-inverse yamm navbar-fixed-top">
@@ -536,7 +535,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl"> Designation<small></small></h1>
+                                <h1 class="gnrl"> Winding Return<small></small></h1>
                                
                             </div>
                         </div>
@@ -561,7 +560,7 @@
                                       <div  style ="float:left; padding:10px;">
                                     <h4 class="panel-title" >   <%--<img src="images/rsz_save-icon-5.jpg" alt="" class="img-square" width="20"   />--%>
                                      <asp:Button ID="Button2" runat="server" class="btn1" Text="Save"  
-                                            onclick="Button2_Click" OnClientClick="ShowMessage();"></asp:Button>                               
+                                             OnClientClick="ShowMessage();"></asp:Button>                               
                                                                        </h4>     </div>
 
 
@@ -569,14 +568,14 @@
                                        <div  style ="float:left; padding:10px;">
                                     <h4 class="panel-title" >  <%-- <img src="images/rsz_1search-icon.jpg" alt="" class="img-square" width="20"   />--%>
                                      <asp:Button ID="Button3" runat="server" Class="btn1" Text="Search" 
-                                            onclick="Button3_Click"></asp:Button>                               
+                                           ></asp:Button>                               
                                                                        </h4>     </div>
                                    
                                  
                                       <div  style ="float:left; padding:10px;">
                                     <h4 class="panel-title" >   <%-- <img src="images/rsz_untitled-25-512.jpg" alt="" class="img-square" width="20"   />--%>
                                      <asp:Button ID="Button4" runat="server" class="btn1" Text="Remove" 
-                                            onclick="Button4_Click"></asp:Button>                               
+                                        ></asp:Button>                               
                                                                        </h4>     </div>
                                     
                                     
@@ -601,14 +600,21 @@
                                      <div class="row">
                                  <div class="col-sm-12">
                                  <div class="form-group">
-
-                                                           <div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Designation Code* " Visible="false" ></asp:Label></div>
+                                  <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="DC No* "  ></asp:Label> </div>
+                                                            <div class="col-lg-9 col-md-8">
+                                                                   <asp:TextBox ID="txtval2" runat="server" class="txt|" Width ="200px" ></asp:TextBox>
+                                                                
+                                                            </div>
+                                                        </div>
+                                 </div>
+                                                           <div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="DC Date* "  ></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
                                                              <%-- <asp:DropDownList ID="DropDownList1" runat="server" class="txt" Width="200px"></asp:DropDownList>--%>
-                                                              <asp:TextBox ID="txtval1" runat="server" class="txt|" Width ="200px" visible="false"></asp:TextBox>
-             <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="CustomValidator" 
-                                                                    onservervalidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
-             
+                                                              <asp:TextBox ID="txtval1" runat="server" class="txt|" Width ="200px" ></asp:TextBox>
+           
+              <asp:CalendarExtender ID="CalendarExtender1" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval1" Format="dd/MM/yyyy" PopupPosition="Right"> </asp:CalendarExtender>  
                                                               <asp:ScriptManager ID="ScriptManager1" runat="server">
 </asp:ScriptManager>
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -618,15 +624,7 @@
 </asp:UpdatePanel>
                                                             </div>
                                                         </div>
-                                                         <div class="col-sm-6">
-                                                                        <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> </div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                               
-                                                                
-                                                            </div>
-                                                        </div>
-                                 </div>
+                                                        
                                    </div>
                                   
                                  </div>
@@ -637,19 +635,20 @@
                                  <div class="col-sm-12">
                                       <div class="form-group">
                                       <div class="col-sm-6">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Designation Name*"></asp:Label></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                              <asp:TextBox ID="txtval2" runat="server" class="txt|" Width ="200px" ></asp:TextBox>
+                                                            <div class="col-lg-3 col-md-1 control-label"> <asp:Label ID="Label5" runat="server" Text="Refer No*"></asp:Label></div>
+                                                            <div class="col-lg-9 col-md-1">
+                                                              <asp:TextBox ID="txtval3" runat="server" class="txt|" Width ="200px"></asp:TextBox>
                                                          <%-- <asp:DropDownList ID="DropDownList3" runat="server" class="txt" Width="200px"></asp:DropDownList>
                                                                --%>
                                                               </div>
                                                             </div>
                                                               <div class="col-sm-6">
-                                                            <div class="col-lg-3 col-md-3 control-label"> </div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                           
+                                                            <div class="col-lg-3 col-md-1 control-label"><asp:Label ID="Label6" runat="server" Text="Refer Date*"></asp:Label> </div>
+                                                            <div class="col-lg-9 col-md-1">
+                                                            <asp:TextBox ID="txtval4" runat="server" class="txt|" Width ="200px"></asp:TextBox>
                                                        <%--    <asp:TextBox ID="txtval3" runat="server" class="txt" Width="200px"></asp:TextBox>
                                                                --%>
+                                                                <asp:CalendarExtender ID="CalendarExtender2" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval4" Format="dd/MM/yyyy" PopupPosition="Right"> </asp:CalendarExtender>  
                                                               </div>
                                                             </div>
                                                            <div class="col-sm-6">
@@ -657,8 +656,8 @@
                                                             
                                                             </div>
                                                             <div class="col-sm-6">
-                                                            <div class="col-lg-3 col-md-3 control-label"> </div>
-                                                            <div class="col-lg-9 col-md-8">
+                                                            <div class="col-lg-3 col-md-1 control-label"> </div>
+                                                            <div class="col-lg-9 col-md-1">
                                                              
                                                               </div>
                                                             </div>
@@ -667,13 +666,15 @@
                                  </div>
                                            
                                  </div>
-                                  <br /><div class="row">
+                                  <br />
+                                      <div class="col-sm-12">
+                                  <div class="row">
                                  <div class="col-sm-6">
                                       <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <%--<asp:Label ID="Label2" runat="server" Text="Budget Description"></asp:Label>--%></div>
-                                                            <div class="col-lg-9 col-md-8">
-                                                         <%--      <asp:TextBox ID="txtval2" runat="server" class="txt" Width="880px"></asp:TextBox>
-                                                     --%>
+                                                            <div class="col-lg-3 col-md-1 control-label"> <asp:Label ID="Label2" runat="server" Text="Winding Party"></asp:Label></div>
+                                                            <div class="col-lg-9 col-md-1">
+                                                               <asp:TextBox ID="txtval5" runat="server" class="txt|" Width="200px" ></asp:TextBox>
+                                                     
                                                             </div>
                                                         </div>
                                                           
@@ -682,14 +683,85 @@
                                  </div>
                                   
                                  
-                                 
                                  </div>
-                                 <br /><div class="row">
-                                    <div class="col-sm-8">
-                                      <div class="form-group">
-                                                           </div>
-                                                        </div>
-                                 </div><br />
+                                 </div>
+                                 <br /> <div class="row">
+                                 <div class="col-sm-12">
+                                
+                                  <div class="form-group">
+                                   <div class="col-sm-2">
+                                    <div class="col-lg-6 col-md-2 control-label" > 
+                                    <asp:Label ID="Label7" runat="server" Text="Shade"></asp:Label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-2"><asp:TextBox ID="txtval6" runat="server" Width="50px" ></asp:TextBox> </div>
+
+ </div>
+ <div class="col-sm-2">
+                                    <div class="col-lg-6 col-md-2 control-label"> 
+                                    <asp:Label ID="Label8" runat="server" Text="Item"></asp:Label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-2"><asp:TextBox ID="txtval7" runat="server" Width="150px"></asp:TextBox> </div>
+
+ </div>
+ <div class="col-sm-2">
+                                    <div class="col-lg-6 col-md-6 control-label"> 
+                                    <asp:Label ID="Label9" runat="server" Text="Lot"></asp:Label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-8"><asp:TextBox ID="txtval8" runat="server" Width="50px"></asp:TextBox> </div>
+
+ </div>
+  <div class="col-sm-2">
+                                    <div class="col-lg-6 col-md-6 control-label"> 
+                                    <asp:Label ID="Label10" runat="server" Text="Cones"></asp:Label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-8"><asp:TextBox ID="txtval9" runat="server" Width="100px"></asp:TextBox> </div>
+
+ </div>
+  <div class="col-sm-4">
+                                    <div class="col-lg-6 col-md-8 control-label"> 
+                                    <asp:Label ID="Label11" runat="server" Text="Gross Weight"></asp:Label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-8"><asp:TextBox ID="txtval10" runat="server" Width="50px"></asp:TextBox> </div>
+
+ </div>
+  <div class="col-sm-4">
+                                    <div class="col-lg-6 col-md-6 control-label"> 
+                                    <asp:Label ID="Label12" runat="server" Text="Net Weight"></asp:Label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-8"><asp:TextBox ID="txtval11" runat="server" Width="50px"></asp:TextBox> </div>
+
+ </div>
+                                   </div>
+</div></div>
+                                 
+                                
+                                 <br />
+                                 <div class="container">                               
+                                   <div class="col-sm-12"><div class="row" >
+                                 
+
+<%--<table style="width:100%;"   >
+<tr>   
+                                     <td> <asp:Label ID="Label7" runat="server" Text="Shade"></asp:Label>&nbsp;</td>
+<td><asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>&nbsp;</td>  
+<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label8" runat="server" Text="Item"></asp:Label></div>&nbsp;</td>
+<td><asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>&nbsp;</td>
+<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label9" runat="server" Text="Lot"></asp:Label></div>&nbsp;</td><td>
+<asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>&nbsp;</td>
+<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label10" runat="server" Text="Cones"></asp:Label></div>&nbsp;</td>
+<td><asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>&nbsp;</td>
+<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label11" runat="server" Text="Gross weight"></asp:Label></div>&nbsp;</td>
+<td><asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>&nbsp;</td>
+<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label12" runat="server" Text="Net weight"></asp:Label></div> &nbsp;</td>
+<td><asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>--%>
+
+                                                         
+                                                       
+                                 </div></div></div>
+  <br />
                          </div>
 <br />
                             
@@ -697,43 +769,12 @@
                             </div><!-- End .panel --> 
                            <%-- <div>
                             
-                                <table style="width:100%;">
-                                    <tr>
-                                        <td class="style1" style="margin:-25px 20px 20px 45px" >
-                                            |&nbsp; List View</td>
-                                        <td class="style2">
-                                              <img src="images/new.png" alt="" class="img-square" width="20" " style="margin:10px 10px 10px 10px"/>
-                                       
-&nbsp;<h4 class="panel-title" style="margin:-35px 7px 6px 46px" >New |</h4>
-
-</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                    </tr>
-                                </table>
+                                
                             
                             </div>--%>
                             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-                        CssClass="table table-hover" 
-                        onselectedindexchanged="GridView1_SelectedIndexChanged">
+                        CssClass="table table-hover table-striped" 
+                        >
                                                     <Columns>
                                                         <asp:TemplateField HeaderText="ID" Visible="false">
                                                             <EditItemTemplate>
@@ -784,12 +825,12 @@
         <!--        <script src="js/jquery.nanoscroller.min.js"></script>-->
         <script type="text/javascript" src="js/custom.js"></script>
         <!--page plugins-->
-        <script src="js/select/fancySelect.js"></script>
-        <script src="js/switch/bootstrap-switch.min.js"></script>
-        <script src="js/input-mask/jquery.inputmask.bundle.min.js"></script>
-        <script src="js/select/select2.js"></script>
-        <script src="js/slider/bootstrap-slider.min.js"></script>
-        <script src="js/custom-advanced-form.js"></script>
+        <script type="text/javascript" src="js/select/fancySelect.js"></script>
+        <script type="text/javascript" src="js/switch/bootstrap-switch.min.js"></script>
+        <script type="text/javascript" src="js/input-mask/jquery.inputmask.bundle.min.js"></script>
+        <script type="text/javascript" src="js/select/select2.js"></script>
+        <script type="text/javascript" src="js/slider/bootstrap-slider.min.js"></script>
+        <script type="text/javascript" src="js/custom-advanced-form.js"></script>
         <!-- Google Analytics:  -->
         <script>
             (function (i, s, o, g, r, a, m) {
@@ -807,7 +848,5 @@
             ga('send', 'pageview');
         </script>
             </form>
-    </body>
-
+</body>
 </html>
-

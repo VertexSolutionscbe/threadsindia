@@ -5,21 +5,22 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-  <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%--<meta charset="utf-8">--%>
+  <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
 
         <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/waves.min.css" type="text/css" rel="stylesheet">
-        <link href="css/select.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap-slider.min.css">
-        <link href="css/bootstrap-switch.min.css" type="text/css" rel="stylesheet">
-        <link href="css/menu.css" type="text/css" rel="stylesheet">
-        <link href="css/style.css" type="text/css" rel="stylesheet">
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/waves.min.css" type="text/css" rel="stylesheet" />
+        <link href="css/select.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bootstrap-slider.min.css" />
+        <link href="css/bootstrap-switch.min.css" type="text/css" rel="stylesheet" />
+        <link href="css/menu.css" type="text/css" rel="stylesheet" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
