@@ -580,7 +580,7 @@
                                                             <div class="col-lg-8 col-md-9">
                                                            
                                                            
-                                                               <asp:TextBox ID="TextBox3" runat="server" class="txt"></asp:TextBox>
+                                                               <asp:TextBox ID="TextBox3" runat="server" class="txt" Enabled="False">MS</asp:TextBox>
                                                               
                                                             </div>
                                                         </div>
@@ -609,7 +609,10 @@
                                  <div class="form-group">
                               <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="Control Account"></asp:Label></div>
                                <div class="col-lg-8 col-md-9">
-                                 <asp:DropDownList ID="DropDownList3" runat="server" class="txt"></asp:DropDownList>
+                                 <asp:DropDownList ID="DropDownList3" runat="server" class="txt">
+                                     <asp:ListItem>Sundry Debtor</asp:ListItem>
+                                     <asp:ListItem>Sundry Creditor</asp:ListItem>
+                                   </asp:DropDownList>
                                  </div>
                                   </div>
                      
@@ -666,7 +669,8 @@
                                    <div class="form-group">
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label11" runat="server" Text="Tin Date"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
-                                                               <%--  <asp:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></asp:ToolkitScriptManager>  --%>
+                                                                <%-- <asp:ToolkitScriptManager ID="toolScriptManageer1" runat="server"></asp:ToolkitScriptManager>  --%>
+                                                                  <asp:CalendarExtender ID="Calendar1" PopupButtonID="imgPopup" runat="server" TargetControlID="TextBox7" Format="dd/MM/yyyy" PopupPosition="Right"> </asp:CalendarExtender>  
                                                              <asp:TextBox ID="TextBox7" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
@@ -693,7 +697,10 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label14" runat="server" Text="Party Type"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                           <asp:DropDownList ID="DropDownList5" runat="server" class="txt"></asp:DropDownList>
+                                                           <asp:DropDownList ID="DropDownList5" runat="server" class="txt">
+                                                               <asp:ListItem>Customer</asp:ListItem>
+                                                               <asp:ListItem>Supplier</asp:ListItem>
+                                                                </asp:DropDownList>
                                                                
                                                               
                                                             </div>
@@ -791,7 +798,10 @@
                                                             <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label21" runat="server" Text="Introduced By"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                            <asp:DropDownList ID="DropDownList6" runat="server" class="txt"></asp:DropDownList>
+                                                            <asp:DropDownList ID="DropDownList6" runat="server" class="txt">
+                                                                <asp:ListItem>Admin</asp:ListItem>
+                                                                <asp:ListItem>Dealer</asp:ListItem>
+                                                                </asp:DropDownList>
                                                                
                                                               
                                                             </div>

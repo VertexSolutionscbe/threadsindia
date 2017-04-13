@@ -19,7 +19,7 @@ public partial class Customer_Category_Master : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(connectstringweb);
         conn.Open();
-        SqlCommand cmd = new SqlCommand("SELECT * FROM partycategory WHERE   partycategory='"+TextBox1.Text+"'", conn);
+        SqlCommand cmd = new SqlCommand("SELECT * FROM partycategory WHERE   partycategory='"+TextBox1.Text+"' ", conn);
         
         DataSet dt = new DataSet ();
         SqlDataAdapter da = new SqlDataAdapter(cmd);
