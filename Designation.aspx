@@ -31,8 +31,8 @@
 <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
     rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#divdialog").dialog({
@@ -640,6 +640,8 @@
                                                             <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label5" runat="server" Text="Designation Name*"></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
                                                               <asp:TextBox ID="txtval2" runat="server" class="txt|" Width ="200px" ></asp:TextBox>
+
+                                                              <asp:Label ID="Label4" runat="server" Text="Designation ID*" Visible="false"></asp:Label>
                                                          <%-- <asp:DropDownList ID="DropDownList3" runat="server" class="txt" Width="200px"></asp:DropDownList>
                                                                --%>
                                                               </div>
@@ -784,12 +786,12 @@
         <!--        <script src="js/jquery.nanoscroller.min.js"></script>-->
         <script type="text/javascript" src="js/custom.js"></script>
         <!--page plugins-->
-        <script src="js/select/fancySelect.js"></script>
-        <script src="js/switch/bootstrap-switch.min.js"></script>
-        <script src="js/input-mask/jquery.inputmask.bundle.min.js"></script>
-        <script src="js/select/select2.js"></script>
-        <script src="js/slider/bootstrap-slider.min.js"></script>
-        <script src="js/custom-advanced-form.js"></script>
+        <script  type="text/javascript" src="js/select/fancySelect.js"></script>
+        <script  type="text/javascript" src="js/switch/bootstrap-switch.min.js"></script>
+        <script  type="text/javascript" src="js/input-mask/jquery.inputmask.bundle.min.js"></script>
+        <script  type="text/javascript" src="js/select/select2.js"></script>
+        <script  type="text/javascript" src="js/slider/bootstrap-slider.min.js"></script>
+        <script  type="text/javascript" src="js/custom-advanced-form.js"></script>
         <!-- Google Analytics:  -->
         <script>
             (function (i, s, o, g, r, a, m) {

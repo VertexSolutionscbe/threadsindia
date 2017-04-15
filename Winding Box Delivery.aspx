@@ -31,8 +31,8 @@
 <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
     rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#divdialog").dialog({
@@ -543,13 +543,55 @@
                         <div class="col-md-12">
                              <div class="panel panel-default recent-activites">
                                 <!-- Start .panel -->
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">Winding Box</h4>
+                                
+                                <div class="panel-heading"  >
+                                 
+                               <div style="width:100%;" >
+                                    
+
+                                     <div  style ="float:left; padding:10px;">
+
+                                    <h4 class="panel-title" ><%-- <img src="images/new.png" alt="" class="img-square" width="20" />   --%>
+                                     <asp:Button ID="Button4" runat="server" class="btn1" Text="New"></asp:Button>                               
+                                                                       </h4>     </div>
+                                    
+                                      <div  style ="float:left; padding:10px;">
+                                    <h4 class="panel-title" >   <%--<img src="images/rsz_save-icon-5.jpg" alt="" class="img-square" width="20"   />--%>
+                                     <asp:Button ID="Button5" runat="server" class="btn1" Text="Save"  
+                                             OnClientClick="ShowMessage();"></asp:Button>                               
+                                                                       </h4>     </div>
+
+
+                                  
+                                       <div  style ="float:left; padding:10px;">
+                                    <h4 class="panel-title" >  <%-- <img src="images/rsz_1search-icon.jpg" alt="" class="img-square" width="20"   />--%>
+                                     <asp:Button ID="Button6" runat="server" Class="btn1" Text="Search" 
+                                           ></asp:Button>                               
+                                                                       </h4>     </div>
+                                   
+                                 
+                                      <div  style ="float:left; padding:10px;">
+                                    <h4 class="panel-title" >   <%-- <img src="images/rsz_untitled-25-512.jpg" alt="" class="img-square" width="20"   />--%>
+                                     <asp:Button ID="Button7" runat="server" class="btn1" Text="Remove" 
+                                        ></asp:Button>                               
+                                                                       </h4>     </div>
+                                    
+                                    
+                                        <div  style ="float:left; padding:10px;">
+                                    <h4 class="panel-title" >  <%--  <img src="images/rsz_1images.jpg" alt="" class="img-square" width="20"   />--%>
+                                     <asp:Button ID="Button8" runat="server" class="btn1" Text="Task"></asp:Button>                               
+                                                                       </h4>     </div>
+                               
+                                   
+                               </div>
+                               <br />
+                               <br />
+
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
                                     </div>
-                                </div>
+                             </div>
                                 <div class="panel-body">
                                      <div class="row">
                                  <div class="col-sm-6">

@@ -59,26 +59,52 @@ public partial class Designation : System.Web.UI.Page
 
         else if (txtval2.Text != "")
         {
-            string query = "InsertDesignation";
-            SqlCommand cmd1 = new SqlCommand(query, conn);
-            cmd1.CommandType = CommandType.StoredProcedure;
-            // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
-            // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
-            cmd1.Parameters.AddWithValue("@DesignationName", txtval2.Text);
-            cmd1.ExecuteNonQuery();
-            // Response.Write("Record inserted successsfully");
-            string message = "Record inserted successsfully";
+            if (Button2.Text == "Save")
+            {
+                string query = "InsertDesignation";
+                SqlCommand cmd1 = new SqlCommand(query, conn);
+                cmd1.CommandType = CommandType.StoredProcedure;
+                // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
+                // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
+                cmd1.Parameters.AddWithValue("@DesignationName", txtval2.Text);
+                cmd1.ExecuteNonQuery();
+                // Response.Write("Record inserted successsfully");
+                string message = "Record inserted successsfully";
 
-            System.Text.StringBuilder sb = new System.Text.StringBuilder();
-            sb.Append("<script type = 'text/javascript'>");
-            sb.Append("window.onload=function(){");
-            sb.Append("alert('");
-            sb.Append(message);
-            sb.Append("')};");
-            sb.Append("</script>");
-            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
-            conn.Close();
-            //bindgridview();
+                System.Text.StringBuilder sb = new System.Text.StringBuilder();
+                sb.Append("<script type = 'text/javascript'>");
+                sb.Append("window.onload=function(){");
+                sb.Append("alert('");
+                sb.Append(message);
+                sb.Append("')};");
+                sb.Append("</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
+                conn.Close();
+                //bindgridview();
+            }
+            else
+            {
+                string query = "DesignationUpdate";
+                SqlCommand cmd1 = new SqlCommand(query, conn);
+                cmd1.CommandType = CommandType.StoredProcedure;
+                // cmd.Parameters.AddWithValue("@Designationcode", txtval1.Text);
+                // cmd.Parameters.AddWithValue("@DesignationName", txtval2.Text);
+                cmd1.Parameters.AddWithValue("@DesignationCode", Label4.Text);
+                cmd1.Parameters.AddWithValue("@DesignationName", txtval2.Text);
+                cmd1.ExecuteNonQuery();
+                // Response.Write("Record inserted successsfully");
+                string message = "Record updated successsfully";
+
+                System.Text.StringBuilder sb = new System.Text.StringBuilder();
+                sb.Append("<script type = 'text/javascript'>");
+                sb.Append("window.onload=function(){");
+                sb.Append("alert('");
+                sb.Append(message);
+                sb.Append("')};");
+                sb.Append("</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
+                conn.Close();
+            }
 
         }
         else
@@ -139,6 +165,8 @@ public partial class Designation : System.Web.UI.Page
         GridViewRow gr = GridView1.SelectedRow;
         txtval2.Text = (gr.FindControl("Label3") as Label).Text;
         Session["mysession"] = (gr.FindControl("hfid") as HiddenField).Value;
+        Label4.Text = (gr.FindControl("hfid") as HiddenField).Value;
+        Button2.Text = "Update";
     }
     protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
     {

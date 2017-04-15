@@ -1,79 +1,40 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Winding Return.aspx.cs" Inherits="Winding_Return" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Sample.aspx.cs" Inherits="Sample" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-  <meta charset="utf-8" >
+<head id="Head1" runat="server">
+<meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Piple - Admin</title>
 
         <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="css/waves.min.css" type="text/css" rel="stylesheet"/>
-        <link href="css/select.css" type="text/css" rel="stylesheet"/>
-        <link rel="stylesheet" href="css/bootstrap-slider.min.css"/>
-        <link href="css/bootstrap-switch.min.css" type="text/css" rel="stylesheet"/>
-        <link href="css/menu.css" type="text/css" rel="stylesheet"/>
-        <link href="css/style.css" type="text/css" rel="stylesheet"/>
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/waves.min.css" type="text/css" rel="stylesheet" />
+        <link href="css/select.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bootstrap-slider.min.css" />
+        <link href="css/bootstrap-switch.min.css" type="text/css" rel="stylesheet" />
+        <link href="css/menu.css" type="text/css" rel="stylesheet" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
-<link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
-    rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#divdialog").dialog({
-                autoOpen: false,
-                show: {
-                    effect: "shake",
-                    duration: 1000
-                }
-            });
-        });
-        function ShowMessage() {
-            if ($('#txtName').val() == "") {
-                $("#divdialog").dialog("open");
-                return false;
-            } else {
-                return true;
-            }
-        }
-    </script>
-    <style type="text/css">
-        .MessageStyle
-        {
-            font-size: 12px;
-        }
-    </style>
-    <style type="text/css">
-        .style1
-        {
-            width: 71px;
-        }
-        .style2
-        {
-            width: 110px
-        }
-    </style>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
-<link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
-    rel="stylesheet" type="text/css" />
-
-</head>
+       <style type="text/css">
+       table, th, td {
+    border: 0.5px groove	;
+   <%--  border: 1px solid black;--%>
+    padding: 5px;
+}table {
+    border-spacing: 5px;
+}
+        </style>
+    </head>
 <body>
    <form id="Form1" runat="server">
         <!-- Static navbar -->
@@ -535,7 +496,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-title">
-                                <h1 class="gnrl"> Winding Return<small></small></h1>
+                                <h1 class="gnrl"> Winding Billing<small></small></h1>
                                
                             </div>
                         </div>
@@ -546,7 +507,7 @@
                                 <!-- Start .panel -->
                             
                                 <div class="panel-heading"  >
-                            <h4 class="panel-title">Winding Return</h4>
+                            <h4 class="panel-title">Winding Billing</h4>
 
                                     <div class="panel-actions">
                                         <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
@@ -561,19 +522,20 @@
                                  <div class="form-group">
                                   <div class="col-sm-6">
                                                                         <div class="form-group">
-                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="Receipt ID* "  ></asp:Label> </div>
+                                                            <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label4" runat="server" Text="Company* "  ></asp:Label> </div>
                                                             <div class="col-lg-9 col-md-8">
-                                                                   <asp:TextBox ID="txtval2" runat="server" class="txt|" Width ="200px" ></asp:TextBox>
-                                                               
+                                                                  <%-- <asp:TextBox ID="txtval2" runat="server" class="txt|" Width ="200px" ></asp:TextBox>--%>
+                                                                     <asp:DropDownList ID="DropDownList1" runat="server" class="txt" Width="200px"></asp:DropDownList>
+                                                                 <asp:Label ID="Label7" runat="server" Text="WindingBillId*" Visible="false"></asp:Label>
                                                             </div>
                                                         </div>
                                  </div>
-                                                           <div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Receipt Date* "  ></asp:Label></div>
+                                                           <%--<div class="col-sm-6">   <div class="col-lg-3 col-md-3 control-label"> <asp:Label ID="Label1" runat="server" Text="Company* "  ></asp:Label></div>
                                                             <div class="col-lg-9 col-md-8">
-                                                             <%-- <asp:DropDownList ID="DropDownList1" runat="server" class="txt" Width="200px"></asp:DropDownList>--%>
-                                                              <asp:TextBox ID="txtval1" runat="server" class="txt|" Width ="200px" ></asp:TextBox>
-           
-               <asp:CalendarExtender ID="CalendarExtender1" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval1" Format="dd/MM/yyyy" PopupPosition="Right"> </asp:CalendarExtender>  
+                                                            
+                                                             <%-- <asp:TextBox ID="txtval1" runat="server" class="txt|" Width ="200px" ></asp:TextBox>
+           --%>
+              
                                                               <asp:ScriptManager ID="ScriptManager1" runat="server">
 </asp:ScriptManager>
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -583,10 +545,10 @@
 </asp:UpdatePanel>
                                                             </div>
                                                         </div>
-                                                        
+                               <%--                         
                                    </div>
                                   
-                                 </div>
+                                 </div>--%>
                               
                                 </div>
                               
@@ -594,20 +556,21 @@
                                  <div class="col-sm-12">
                                       <div class="form-group">
                                       <div class="col-sm-6">
-                                                            <div class="col-lg-3 col-md-1 control-label"> <asp:Label ID="Label5" runat="server" Text="Refer No*"></asp:Label></div>
+                                                            <div class="col-lg-3 col-md-1 control-label"> <asp:Label ID="Label5" runat="server" Text="Bill Date*"></asp:Label></div>
                                                             <div class="col-lg-9 col-md-1">
                                                               <asp:TextBox ID="txtval3" runat="server" class="txt|" Width ="200px"></asp:TextBox>
+                                                              <asp:CalendarExtender ID="CalendarExtender1" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval3" Format="dd/MM/yyyy" PopupPosition="Right"> </asp:CalendarExtender>  
                                                          <%-- <asp:DropDownList ID="DropDownList3" runat="server" class="txt" Width="200px"></asp:DropDownList>
                                                                --%>
                                                               </div>
                                                             </div>
                                                               <div class="col-sm-6">
-                                                            <div class="col-lg-3 col-md-1 control-label"><asp:Label ID="Label6" runat="server" Text="Refer Date*"></asp:Label> </div>
+                                                            <div class="col-lg-3 col-md-1 control-label"><asp:Label ID="Label6" runat="server" Text="Bill No*"></asp:Label> </div>
                                                             <div class="col-lg-9 col-md-1">
-                                                            <asp:TextBox ID="txtval4" runat="server" class="txt|" Width ="200px"></asp:TextBox>
+                                                            <asp:TextBox ID="txtval4" runat="server" class="txt|" Width ="200px" Enabled="false"></asp:TextBox>
                                                        <%--    <asp:TextBox ID="txtval3" runat="server" class="txt" Width="200px"></asp:TextBox>
                                                                --%>
-                                                                <asp:CalendarExtender ID="CalendarExtender2" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval4" Format="dd/MM/yyyy" PopupPosition="Right"> </asp:CalendarExtender>  
+                                                                
                                                               </div>
                                                             </div>
                                                            <div class="col-sm-6">
@@ -630,7 +593,7 @@
                                   <div class="row">
                                  <div class="col-sm-6">
                                       <div class="form-group">
-                                                            <div class="col-lg-3 col-md-1 control-label"> <asp:Label ID="Label2" runat="server" Text="Winding Party"></asp:Label></div>
+                                                            <div class="col-lg-3 col-md-1 control-label"> <asp:Label ID="Label2" runat="server" Text="Party Id"></asp:Label></div>
                                                             <div class="col-lg-9 col-md-1">
                                                                <asp:TextBox ID="txtval5" runat="server" class="txt|" Width="200px" ></asp:TextBox>
                                                      
@@ -656,61 +619,172 @@
                                         <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
                                     </div>
                                 </div>
-                                 <div class="panel-body">
+                                <div class="panel-body">
+                                <div class="row">
+                          <%--      <table style="width:100%;">
+                                <tr>
+                                <%--<td  style="width: 55px;"><asp:Label ID="Label7" runat="server" Text="DC No"></asp:Label>&nbsp;</td>
+                                <td> <asp:Label ID="Label8" runat="server" Text="DC Date"></asp:Label>&nbsp;</td>
+                                <td><asp:Label ID="Label9" runat="server" Text="Rec No"></asp:Label>&nbsp;</td>
+                                <td>  <asp:Label ID="Label10" runat="server" Text="Rec Date"></asp:Label>&nbsp;</td>
+                                <td> <asp:Label ID="Label11" runat="server" Text="DC Wt "></asp:Label>&nbsp;</td>
+                                <td> <asp:Label ID="Label12" runat="server" Text="Rec Cones "></asp:Label>&nbsp;</td>
+                                <td> <asp:Label ID="Label22" runat="server" Text="Rec Wt "></asp:Label>&nbsp;</td>
+                                <td> <asp:Label ID="Label23" runat="server" Text="Rate "></asp:Label>&nbsp;</td>
+                                <td>  <asp:Label ID="Label24" runat="server" Text="Amount"></asp:Label>&nbsp;</td>--%>
+                                <%-- <th><asp:Label ID="Label25" runat="server" Text="DC No" style="width: 65px;"></asp:Label>&nbsp;</th>
+                                <th> <asp:Label ID="Label26" runat="server" Text="DC Date" style="width: 69px;"></asp:Label>&nbsp;</th>
+                                <th><asp:Label ID="Label27" runat="server" Text="Rec No" style="width: 65px;"></asp:Label>&nbsp;</th>
+                                <th>  <asp:Label ID="Label28" runat="server" Text="Rec Date" style="width: 69px;"></asp:Label>  &nbsp;</th>
+                                <th> <asp:Label ID="Label29" runat="server" Text="DC Wt " style="width: 65px;"></asp:Label>&nbsp;</th>
+                                <th> <asp:Label ID="Label30" runat="server" Text="Rec Cones " style="width: 65px;"></asp:Label>&nbsp;</th>
+                                <th> <asp:Label ID="Label31" runat="server" Text="Rec Wt " style="width: 65px;"></asp:Label>&nbsp;</th>
+                                <th> <asp:Label ID="Label32" runat="server" Text="Rate " style="width: 65px;"></asp:Label>&nbsp;</th>
+                                <th>  <asp:Label ID="Label33" runat="server" Text="Amount" style="width: 65px;"></asp:Label>&nbsp;</th>
+                                </tr>
+                                <tr>
+                                <td><asp:TextBox ID="txtval6" runat="server" Width="50px" Enabled="false"></asp:TextBox>&nbsp;</td>
+                                <td><asp:TextBox ID="txtval7" runat="server" style="width: 80px;"></asp:TextBox><asp:CalendarExtender ID="CalendarExtender3" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval7" Format="dd/MM/yyyy" PopupPosition="Right"> </asp:CalendarExtender> &nbsp;</td>
+                                <td><asp:TextBox ID="txtval8" runat="server" Width="50px" ></asp:TextBox>&nbsp;</td>
+                                <td><asp:TextBox ID="txtval9" runat="server" Width="50px" style="width: 80px;" ></asp:TextBox><asp:CalendarExtender ID="CalendarExtender2" PopupButtonID="imgPopup" runat="server" TargetControlID="txtval9" Format="dd/MM/yyyy" PopupPosition="Right"> </asp:CalendarExtender> &nbsp;</td>
+                                <td><asp:TextBox ID="txtval10" runat="server" Width="50px" ></asp:TextBox>&nbsp;</td>
+                                <td><asp:TextBox ID="txtval11" runat="server" Width="50px" ></asp:TextBox>&nbsp;</td>
+                                <td><asp:TextBox ID="txtval12" runat="server" Width="50px" ></asp:TextBox>&nbsp;</td>
+                                <td><asp:TextBox ID="txtval13" runat="server" Width="50px" ></asp:TextBox>&nbsp;</td>
+                                <td><asp:TextBox ID="txtval14" runat="server" Width="50px" ></asp:TextBox>&nbsp;</td>
+
+                                </tr>
+                                <tr>
+                                
+                                </tr>
+                                </table>--%>--%>
+                                <div class="row">
+                    <div class="col-md-2">
+                        <div class="col-lg-9 col-md-3 control-label">
+                            <asp:Label ID="Label1" runat="server" Text="Shade"></asp:Label>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <asp:TextBox ID="txtval6" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-lg-9 col-md-3 control-label">
+                            <asp:Label ID="Label8" runat="server" Text="Item"></asp:Label>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <asp:TextBox ID="txtval7" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-lg-9 col-md-3 control-label">
+                            <asp:Label ID="Label9" runat="server" Text="Lot"></asp:Label>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <asp:TextBox ID="txtval8" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-lg-9 col-md-3 control-label">
+                            <asp:Label ID="Label10" runat="server" Text="Cones"></asp:Label>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <asp:TextBox ID="txtval9" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
+ 
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-lg-9 col-md-4 control-label">
+                            <asp:Label ID="Label11" runat="server" Text="Gross Weight"></asp:Label>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <asp:TextBox ID="txtval10" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-lg-9 col-md-4 control-label">
+                            <asp:Label ID="Label12" runat="server" Text="Net Weight"></asp:Label>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <asp:TextBox ID="txtval11" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
+                    </div>
+                </div>
+Think Twice Code Once.
+                                </div>
+                                </div>
+
+                                <%-- <div class="panel-body">
                                  <div class="row">
+
+
                                    <div class="col-sm-2">
                                     <div class="form-group">
                                     <div class="col-lg-6 col-md-2 control-label" > 
-                                    <asp:Label ID="Label7" runat="server" Text="D.C No"></asp:Label>
+                                    <asp:Label ID="Label7" runat="server" Text="DC No"></asp:Label>
                                     </div>
                                     <div class="col-lg-9 col-md-2"><asp:TextBox ID="txtval6" runat="server" Width="50px" ></asp:TextBox> </div>
  </div>
  </div>
  <div class="col-sm-2"><div class="form-group">
                                     <div class="col-lg-6 col-md-2 control-label"> 
-                                    <asp:Label ID="Label8" runat="server" Text="D.C Dt"></asp:Label>
+                                    <asp:Label ID="Label8" runat="server" Text="DC Date"></asp:Label>
                                     </div>
                                     <div class="col-lg-9 col-md-2"><asp:TextBox ID="txtval7" runat="server" Width="150px"></asp:TextBox> </div>
 
  </div></div>
  <div class="col-sm-2"><div class="form-group">
                                     <div class="col-lg-6 col-md-6 control-label"> 
-                                    <asp:Label ID="Label9" runat="server" Text="Shade"></asp:Label>
+                                    <asp:Label ID="Label9" runat="server" Text="Rec No"></asp:Label>
                                     </div>
                                     <div class="col-lg-9 col-md-8"><asp:TextBox ID="txtval8" runat="server" Width="50px"></asp:TextBox> </div>
 
  </div></div>
   <div class="col-sm-2"><div class="form-group">
                                     <div class="col-lg-6 col-md-6 control-label"> 
-                                    <asp:Label ID="Label10" runat="server" Text="Item"></asp:Label>
+                                    <asp:Label ID="Label10" runat="server" Text="Rec Date"></asp:Label>
                                     </div>
                                     <div class="col-lg-9 col-md-8"><asp:TextBox ID="txtval9" runat="server" Width="100px"></asp:TextBox> </div>
 
  </div></div>
   <div class="col-sm-2"><div class="form-group">
                                     <div class="col-lg-6 col-md-8 control-label"> 
-                                    <asp:Label ID="Label11" runat="server" Text="Bal Kgs "></asp:Label>
+                                    <asp:Label ID="Label11" runat="server" Text="DC Wt "></asp:Label>
                                     </div>
                                     <div class="col-lg-9 col-md-8"><asp:TextBox ID="txtval10" runat="server" Width="50px"></asp:TextBox> </div>
 
  </div></div>
   <div class="col-sm-2"><div class="form-group">
                                     <div class="col-lg-6 col-md-6 control-label"> 
-                                    <asp:Label ID="Label12" runat="server" Text="Ret kgs "></asp:Label>
+                                    <asp:Label ID="Label12" runat="server" Text="Rec Cones "></asp:Label>
                                     </div>
                                     <div class="col-lg-9 col-md-8"><asp:TextBox ID="txtval11" runat="server" Width="50px"></asp:TextBox> </div>
 
  </div></div>
  <div class="col-sm-2"><div class="form-group">
                                     <div class="col-lg-6 col-md-6 control-label"> 
-                                    <asp:Label ID="Label14" runat="server" Text="unique id "></asp:Label>
+                                    <asp:Label ID="Label22" runat="server" Text="Rec Wt "></asp:Label>
                                     </div>
-                                    <div class="col-lg-9 col-md-8"><asp:TextBox ID="TextBox4" runat="server" Width="50px"></asp:TextBox> </div>
+                                    <div class="col-lg-9 col-md-8"><asp:TextBox ID="TextBox10" runat="server" Width="50px"></asp:TextBox> </div>
+
+ </div></div>
+
+ <div class="col-sm-2"><div class="form-group">
+                                    <div class="col-lg-6 col-md-6 control-label"> 
+                                    <asp:Label ID="Label23" runat="server" Text="Rate "></asp:Label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-8"><asp:TextBox ID="TextBox11" runat="server" Width="50px"></asp:TextBox> </div>
+
+ </div></div>
+ <div class="col-sm-2"><div class="form-group">
+                                    <div class="col-lg-6 col-md-6 control-label"> 
+                                    <asp:Label ID="Label24" runat="server" Text="Amount"></asp:Label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-8"><asp:TextBox ID="TextBox15" runat="server" Width="50px"></asp:TextBox> </div>
 
  </div></div>
                                   
 </div>
-                                 </div>
+                                 </div>--%>
                                  </div>
                                  </div>
                                 </div><!-- End .panel --> 
@@ -731,11 +805,11 @@
                                           <br /> <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label13" runat="server" Text="Total Return Kgs"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label13" runat="server" Text="Total Cones"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                          
                                                       
-                                                               <asp:TextBox ID="TextBox12" runat="server" class="txt"></asp:TextBox>
+                                                               <asp:TextBox ID="txtval15" runat="server" class="txt"></asp:TextBox>
                                                               
                                                             </div>
                                                         </div>
@@ -743,15 +817,15 @@
                                   
                                  </div>
                                     <div class="col-sm-6">
-                                 <%--<div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label14" runat="server" Text=" Total Net Wt"></asp:Label></div>
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label14" runat="server" Text=" Total Received"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                        <asp:TextBox ID="TextBox13" runat="server" class="txt"></asp:TextBox>
+                                                        <asp:TextBox ID="txtval16" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
-                                                        </div>--%>
+                                                        </div>
                                   
                                   
                                  </div>
@@ -759,34 +833,102 @@
                                             <br />    <div class="row">
                                  <div class="col-sm-6">
                                  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label15" runat="server" Text="Narration"></asp:Label></div>
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label15" runat="server" Text="Total DC kgs"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
                                                       
-                                                             <asp:TextBox ID="TextBox14" runat="server" class="txt" ></asp:TextBox>   
+                                                             <asp:TextBox ID="txtval17" runat="server" class="txt" ></asp:TextBox>   
                                                               
                                                             </div>
                                                         </div>
-                                  <br /><br />
-
-<br />                                <%--  <div class="form-group">
-                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label16" runat="server" Text="Gross Value"></asp:Label></div>
+                                 
+                                 
+                   
+                                  
+                                 </div>  <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label19" runat="server" Text="Net"></asp:Label></div>
                                                             <div class="col-lg-8 col-md-9">
                                                            
-                                                        <asp:TextBox ID="TextBox5" runat="server" class="txt"></asp:TextBox>
+                                                        <asp:TextBox ID="txtval18" runat="server" class="txt"></asp:TextBox>
                                                                
                                                               
                                                             </div>
-                                                        </div>--%>
+                                                        </div>
+                                  
                                   
                                  </div>
-                                  <div class="col-sm-6">
+                                  
+                                 </div> <br /> 
+                                  <div class="row">
+                                                   <div class="col-sm-6">
                                  
+                                    <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label16" runat="server" Text="Received Boxes"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                        <asp:TextBox ID="txtval19" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                 </div>
+                                   <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label20" runat="server" Text="Box Rate"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                        <asp:TextBox ID="txtval20" runat="server" class="txt" AutoPostBack="True" ></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
                                   
                                   
                                  </div>
                                  </div>
-                                 
+                                 <br />
+                                 <div class="row">
+                                 <div class="col-sm-6">
+                                  <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label17" runat="server" Text="Box Amount"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                        <asp:TextBox ID="txtval21" runat="server" class="txt" AutoPostBack="True" ></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                 </div>
+                                   <div class="col-sm-6">
+                                 <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label21" runat="server" Text=" Gross "></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                        <asp:TextBox ID="txtval22" runat="server" class="txt"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                  
+                                  
+                                 </div>
+                                 </div>
+                                 <br />
+                                 <div class="row">
+                                 <div class="col-sm-6">
+                                  <div class="form-group">
+                                                            <div class="col-lg-4 col-md-3 control-label"> <asp:Label ID="Label18" runat="server" Text="Narration"></asp:Label></div>
+                                                            <div class="col-lg-8 col-md-9">
+                                                           
+                                                        <asp:TextBox ID="txtval23" runat="server" class="txt" TextMode="MultiLine"></asp:TextBox>
+                                                               
+                                                              
+                                                            </div>
+                                                        </div>
+                                 </div>
+                                 </div>
                                  </div>
                           
                              </div></div>
@@ -794,31 +936,15 @@
                                     <div class="col-sm-8">
                                       <div class="form-group">
                                                             <div class="col-sm-2"> <asp:Button ID="Button4" runat="server" Class="btn" 
-                                                                    Text="Save"></asp:Button></div>
+                                                                    Text="Save" ></asp:Button></div>
                                      <div class="col-sm-2"> <asp:Button ID="Button5" runat="server" Class="btn" 
-                                             Text="  Clear" ></asp:Button></div>
-                                  <div class="col-sm-2"> <asp:Button ID="Button6" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
+                                             Text="  Clear"     ></asp:Button></div>
+                                              <div class="col-sm-2"> <asp:Button ID="Button6" runat="server" Class="btn" Text="Remove"  ></asp:Button></div>
+                                  <div class="col-sm-2"> <asp:Button ID="Button7" runat="server" Class="btn" Text="Exit"></asp:Button></div></div>
                                                         </div>
                                  </div>          <br />
                                  
 
-<%--<table style="width:100%;"   >
-<tr>   
-                                     <td> <asp:Label ID="Label7" runat="server" Text="Shade"></asp:Label>&nbsp;</td>
-<td><asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>&nbsp;</td>  
-<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label8" runat="server" Text="Item"></asp:Label></div>&nbsp;</td>
-<td><asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>&nbsp;</td>
-<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label9" runat="server" Text="Lot"></asp:Label></div>&nbsp;</td><td>
-<asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>&nbsp;</td>
-<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label10" runat="server" Text="Cones"></asp:Label></div>&nbsp;</td>
-<td><asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>&nbsp;</td>
-<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label11" runat="server" Text="Gross weight"></asp:Label></div>&nbsp;</td>
-<td><asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>&nbsp;</td>
-<td><div class="col-lg-3 col-md-3 control-label"><asp:Label ID="Label12" runat="server" Text="Net weight"></asp:Label></div> &nbsp;</td>
-<td><asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>&nbsp;</td></tr>
-<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-</table>--%>
 
                                                          
                                                        
@@ -836,7 +962,9 @@
                                 
                             
                             </div>--%>
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                           
+                    </div>
+                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
                         CssClass="table table-hover table-striped" 
                         >
                                                     <Columns>
@@ -845,31 +973,194 @@
                                                                 <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("ID") %>'></asp:TextBox>
                                                             </EditItemTemplate>
                                                             <ItemTemplate>
-                                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("ID") %>'></asp:Label>
+                                                                <asp:Label ID="gridLabel1" runat="server" Text='<%# Bind("ID") %>'></asp:Label>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="DesignationCode" Visible="false">
+                                                        <asp:TemplateField HeaderText="Company" >
                                                             <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("DesignationCode") %>'></asp:TextBox>
+                                                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("Company") %>'></asp:TextBox>
                                                             </EditItemTemplate>
                                                             <ItemTemplate>
-                                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("DesignationCode") %>'></asp:Label>
+                                                                <asp:Label ID="gridLabel2" runat="server" Text='<%# Bind("Company") %>'></asp:Label>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
-                                                        <asp:TemplateField HeaderText="DesignationName">
+                                                        <asp:TemplateField HeaderText="BillDate">
                                                             <EditItemTemplate>
-                                                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("DesignationName") %>'></asp:TextBox>
+                                                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("BillDate") %>'></asp:TextBox>
                                                             </EditItemTemplate>
                                                             <ItemTemplate>
-                                                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("DesignationName") %>'></asp:Label>
-                                                                <br /><asp:HiddenField ID="hfid" Value='<%# Bind("DesignationCode") %>' runat="server"></asp:HiddenField>
+                                                                <asp:Label ID="gridLabel3" runat="server" Text='<%# Bind("BillDate") %>'></asp:Label>
+                                                                <br /><asp:HiddenField ID="hfid" Value='<%# Bind("WindingBillId") %>' runat="server"></asp:HiddenField>
                                                                   
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
+                                                        
+                                                        
+                                                         <asp:TemplateField HeaderText="PartyId" Visible="false">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("PartyId") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel4" runat="server" Text='<%# Bind("PartyId") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="BillNo" Visible="false">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("BillNo") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel5" runat="server" Text='<%# Bind("BillNo") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="DCNo" Visible="false">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("DCNo") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel6" runat="server" Text='<%# Bind("DCNo") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="DCDate" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("DCDate") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel7" runat="server" Text='<%# Bind("DCDate") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="RecNo" Visible="false">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("RecNo") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel8" runat="server" Text='<%# Bind("RecNo") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="RecDate" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("RecDate") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel9" runat="server" Text='<%# Bind("RecDate") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="DCWt">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox10" runat="server" Text='<%# Bind("DCWt") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel10" runat="server" Text='<%# Bind("DCWt") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="RecCones">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox11" runat="server" Text='<%# Bind("RecCones") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel11" runat="server" Text='<%# Bind("RecCones") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="RecWt" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox12" runat="server" Text='<%# Bind("RecWt") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel12" runat="server" Text='<%# Bind("RecWt") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="Rate" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox13" runat="server" Text='<%# Bind("Rate") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel13" runat="server" Text='<%# Bind("Rate") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="Amount" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox14" runat="server" Text='<%# Bind("Amount") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel14" runat="server" Text='<%# Bind("Amount") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="TotalCones" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox15" runat="server" Text='<%# Bind("TotalCones") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel15" runat="server" Text='<%# Bind("TotalCones") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="TotalDCkgs" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox16" runat="server" Text='<%# Bind("TotalDCkgs") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel16" runat="server" Text='<%# Bind("TotalDCkgs") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="ReceiveBox">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox17" runat="server" Text='<%# Bind("ReceiveBox") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel17" runat="server" Text='<%# Bind("ReceiveBox") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="Net" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox18" runat="server" Text='<%# Bind("Net") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel18" runat="server" Text='<%# Bind("Net") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="Narration" Visible="false">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox19" runat="server" Text='<%# Bind("Narration") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel19" runat="server" Text='<%# Bind("Narration") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="Totalrecive" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox20" runat="server" Text='<%# Bind("Totalrecive") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel20" runat="server" Text='<%# Bind("Totalrecive") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="Gross" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox22" runat="server" Text='<%# Bind("Gross") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel22" runat="server" Text='<%# Bind("Gross") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="Boxrate" >
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox23" runat="server" Text='<%# Bind("Boxrate") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel23" runat="server" Text='<%# Bind("Boxrate") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         <asp:TemplateField HeaderText="BoxAmount">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="TextBox24" runat="server" Text='<%# Bind("BoxAmount") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="gridLabel24" runat="server" Text='<%# Bind("BoxAmount") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                         
                                                         <asp:CommandField HeaderText="Select" ShowSelectButton="True" />
                                                     </Columns>
                                                 </asp:GridView>
-                    </div> </div>  </div>
+                     </div>  </div>
                        
                                                 
                                               

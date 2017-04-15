@@ -82,7 +82,7 @@ public partial class Purchase_Oreder_Other : System.Web.UI.Page
         if (dt.Rows.Count > 0) // Means Student Id is already present
         {
 
-            string message = "This Purchase is already added!')";
+            string message = "This Purchase is already added!";
             ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
         }
         else if (dt.Rows.Count == 0 && TextBox1.Text != "")
